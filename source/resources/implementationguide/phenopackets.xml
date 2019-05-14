@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="ga4gh.fhir.phenopackets-0.0.1"/>
+    <url value="http://ga4gh.org/fhir/phenopackets/ImplementationGuide/ga4gh.fhir.phenopackets-0.0.1"/>
+    <version value="0.0.1"/>
+    <name value="Phenopackets"/>
+    <title value="Phenopackets"/>
+    <status value="draft"/>
+    <contact>
+        <name value="Alejandro Metke"/>
+        <telecom>
+            <system value="email"/>
+            <value value="alejandro.metke@csiro.au"/>
+        </telecom>
+    </contact>
+    <description value="An open standard for sharing disease and phenotype information will improve our ability to understand, diagnose, and treat both rare and common diseases. A PhenoPacket links detailed phenotype descriptions with disease, patient, and genetic information, enabling clinicians, biologists, and disease and drug researchers to build more complete models of disease. The standard is designed to encourage wide adoption and synergy between the people, organizations and systems that comprise the joint effort to address human disease and biological understanding."/>
+    <packageId value="ga4gh.fhir.phenopackets"/>
+    <fhirVersion value="4.0.0"/>
+    <definition>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/coded-onset"/>
+                <display value="Coded Onset"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/phenotype"/>
+                <display value="Phenotype"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/phenotype-modifier"/>
+                <display value="Phenotype Modifier"/>
+            </reference>
+        </resource>
+        <page>
+            <nameUrl value="toc.md"/>
+            <title value="Table of Contents"/>
+            <generation value="generated"/>
+            <page>
+                <nameUrl value="Home.html"/>
+                <title value="Home"/>
+                <generation value="markdown"/>
+                <page>
+                    <nameUrl value="Overview.html"/>
+                    <title value="Overview"/>
+                    <generation value="markdown"/>
+                </page>
+            </page>
+            <page>
+                <nameUrl value="Introduction.html"/>
+                <title value="Introduction"/>
+                <generation value="markdown"/>
+                <page>
+                    <nameUrl value="Purpose_Content_and_Organization.html"/>
+                    <title value="Purpose Content and Organization"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="About_FHIR.html"/>
+                    <title value="About FHIR"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="About_Supporting_Specifications.html"/>
+                    <title value="About Supporting Specifications"/>
+                    <generation value="markdown"/>
+                </page>
+            </page>
+            <page>
+                <nameUrl value="Credits.html"/>
+                <title value="Credits"/>
+                <generation value="markdown"/>
+            </page>
+        </page>
+    </definition>
+</ImplementationGuide>
