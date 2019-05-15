@@ -18,15 +18,22 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+	  <mustSupport value="true"/>
+      <isModifier value="true"/>
       <isModifierReason value="Modifies a phenotype." />
     </element>
-    <element id="Extension.value[x]:valueCoding">
-      <path value="Extension.value[x]" />
-      <sliceName value="valueCoding" />
-      <min value="1" />
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype-modifier"/>
+    </element>
+    <element id="Extension.valueCoding">
+      <path value="Extension.valueCoding" />
+      <min value="0" />
+	  <max value="*" />
       <type>
         <code value="Coding" />
       </type>
+	  <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

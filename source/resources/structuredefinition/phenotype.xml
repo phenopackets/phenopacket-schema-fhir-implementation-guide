@@ -25,32 +25,31 @@
     </element>
     <element id="Condition.extension:coded-onset">
       <path value="Condition.extension" />
-      <sliceName value="codedOnset" />
+      <sliceName value="coded-onset" />
       <sliceIsConstraining value="false" />
       <label value="onset" />
       <short value="This element can be used to describe the age at which a phenotypic feature was first noticed or diagnosed." />
       <definition value="This element can be used to describe the age at which a phenotypic feature was first noticed or diagnosed. For many medical use cases, either the Age subelement or an ontology class (e.g., from the HPO Onset (HP:0003674) terms) will be used." />
-      <max value="1" />
+      <min value="0" />
+	  <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/coded-onset" />
       </type>
     </element>
-    <element id="Condition.extension:modifier">
+    <element id="Condition.extension:phenotype-modifier">
       <path value="Condition.extension" />
-      <sliceName value="modifier" />
+      <sliceName value="phenotype-modifier" />
+	  <sliceIsConstraining value="false" />
+	  <label value="phenotype-modifier" />
       <short value="This element is a list of ontology class elements that can be empty or contain one or more ontology terms that are intended to provide more expressive or precise descriptions of a phenotypic feature, including attributes such as positionality and external factors that tend to trigger or ameliorate the feature." />
       <definition value="This element is a list of ontology class elements that can be empty or contain one or more ontology terms that are intended to provide more expressive or precise descriptions of a phenotypic feature, including attributes such as positionality and external factors that tend to trigger or ameliorate the feature. Terms can be taken from the hierarchy of Clinical modifier in the HPO (noting that severity should be coded in the severity element)." />
       <min value="0" />
-      <max value="*" />
+	  <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype-modifier" />
       </type>
-    </element>
-    <element id="Condition.extension:modifier.value[x]:valueCoding">
-      <path value="Condition.extension.value[x]" />
-      <sliceName value="valueCoding" />
     </element>
     <element id="Condition.severity">
       <path value="Condition.severity" />

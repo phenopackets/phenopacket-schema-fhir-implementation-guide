@@ -2,8 +2,8 @@ output/
 qa/
 temp/
 txCache/
-resources/ig-new.json
-resources/ig-new.xml
-resources/ig-validation-parameters.json
-resources/ig-expansion-parameters.json
+source/resources/implementationguide/ig-new.json
+source/resources/implementationguide/ig-new.xml
+source/resources/implementationguide/ig-validation-parameters.json
+source/resources/implementationguide/ig-expansion-parameters.json
 ig.ini
