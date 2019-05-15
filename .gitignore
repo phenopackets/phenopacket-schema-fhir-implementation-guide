@@ -1,3 +1,4 @@
+# FHIR IG generated files
 output/
 qa/
 temp/
@@ -7,3 +8,27 @@ source/resources/implementationguide/ig-new.xml
 source/resources/implementationguide/ig-validation-parameters.json
 source/resources/implementationguide/ig-expansion-parameters.json
 ig.ini
+
+# IntelliJ project files 
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# eclipse project file
+.settings/
+.classpath
+.project
+
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+
+# OS
+.DS_Store
