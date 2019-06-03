@@ -1,0 +1,23 @@
+{
+		"resourceType": "ValueSet",
+		"id": "phenotype-modifier",
+		"url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-modifier",
+		"version": "1.0.0",
+		"name": "Phenotype Modifier",
+		"status": "active",
+		"description": "Clinical modifier terms from the Human Phenotype Ontology.",
+		"compose": {
+				"include": [
+						{
+								"system": "http://purl.obolibrary.org/obo/hp.owl",
+								"filter": [
+										{
+												"property": "concept",
+												"op": "descendent-of",
+												"value": "HP:0012823"
+										}
+								]
+						}
+				]
+		}
+}

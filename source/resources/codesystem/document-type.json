@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "document-type",
+  "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type",
+  "version": "1.0.0",
+  "name": "Document Type",
+  "status": "active",
+  "experimental": false,
+  "publisher": "GA4GH",
+  "description": "Represents the different types of documents in the Phenopackets standard.",
+  "caseSensitive": false,
+  "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type?vs",
+  "title": "Document Type",
+  "concept": [
+    {
+      "code": "phenopacket",
+      "display": "Phenopacket",
+      "definition": "Phenopacket"
+    },
+    {
+      "code": "family",
+      "display": "Family",
+      "definition": "Family"
+    },
+    {
+      "code": "cohort",
+      "display": "Cohort",
+      "definition": "Cohort"
+    },
+    {
+      "code": "biosample",
+      "display": "Biosample",
+      "definition": "Biosample"
+    }
+  ]
+}

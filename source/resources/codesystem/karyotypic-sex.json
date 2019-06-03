@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "karyotypic-sex",
+  "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/karyotypic-sex",
+  "version": "1.0.0",
+  "name": "Karyotypic Sex",
+  "status": "active",
+  "experimental": false,
+  "publisher": "GA4GH",
+  "description": "Represents the chromosomal sex of an individual.",
+  "caseSensitive": false,
+  "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/karyotypic-sex?vs",
+  "title": "Karyotypic Sex",
+  "concept": [
+    {
+      "code": "UNKNOWN_KARYOTYPE",
+      "display": "Unknown karyotype",
+      "definition": "Unknown karyotype"
+    },
+    {
+      "code": "XX",
+      "display": "XX",
+      "definition": "XX"
+    },
+    {
+      "code": "XY",
+      "display": "XY",
+      "definition": "XY"
+    },
+    {
+      "code": "XO",
+      "display": "XO",
+      "definition": "XO"
+    },
+    {
+      "code": "XXY",
+      "display": "XXY",
+      "definition": "XXY"
+    },
+    {
+      "code": "XXX",
+      "display": "XXX",
+      "definition": "XXX"
+    },
+    {
+      "code": "XXYY",
+      "display": "XXYY",
+      "definition": "XXYY"
+    },
+    {
+      "code": "XXXY",
+      "display": "XXXY",
+      "definition": "XXXY"
+    },
+    {
+      "code": "XXXX",
+      "display": "XXXX",
+      "definition": "XXXX"
+    },
+    {
+      "code": "XYY",
+      "display": "XYY",
+      "definition": "XYY"
+    }
+  ]
+}

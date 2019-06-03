@@ -36,6 +36,12 @@
                 <display value="Phenotype Modifier"/>
             </reference>
         </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/karyotypic-sex"/>
+                <display value="Karyotypic Sex Code System"/>
+            </reference>
+        </resource>
         <page>
             <nameUrl value="toc.md"/>
             <title value="Table of Contents"/>

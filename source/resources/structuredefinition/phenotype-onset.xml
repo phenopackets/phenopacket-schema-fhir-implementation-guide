@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="phenotype-modifier" />
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype-modifier" />
+  <id value="phenotype-onset" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype-onset" />
   <version value="1.0.0" />
-  <name value="PhenotypeModifier" />
-  <title value="Phenotype Modifier" />
+  <name value="PhenotypeOnset" />
+  <title value="Phenotype Onset" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
@@ -19,19 +19,39 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <mustSupport value="true" />
-      <isModifier value="true" />
-      <isModifierReason value="Modifies a phenotype." />
+      <mustSupport value="false" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="Age" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="Coding" />
+      </type>
     </element>
     <element id="Extension.value[x]:valueCoding">
-      <path value="Extension.valueCoding" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueCoding" />
       <type>
         <code value="Coding" />
       </type>
       <binding>
         <strength value="preferred" />
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-modifier" />
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/onset" />
       </binding>
     </element>
   </differential>
