@@ -1,0 +1,23 @@
+{
+		"resourceType": "ValueSet",
+		"id": "onset",
+		"url": "http://ga4gh.org/fhir/phenopackets/ValueSet/onset",
+		"version": "1.0.0",
+		"name": "Onset",
+		"status": "active",
+		"description": "Onset terms from the Human Phenotype Ontology.",
+		"compose": {
+				"include": [
+						{
+								"system": "http://purl.obolibrary.org/obo/hp.owl",
+								"filter": [
+										{
+												"property": "concept",
+												"op": "descendent-of",
+												"value": "HP:0003674"
+										}
+								]
+						}
+				]
+		}
+}
