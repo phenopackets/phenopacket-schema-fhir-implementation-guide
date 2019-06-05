@@ -112,6 +112,10 @@
       <path value="Observation.encounter" />
       <max value="0" />
     </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <max value="0" />
+    </element>
     <element id="Observation.issued">
       <path value="Observation.issued" />
       <max value="0" />
