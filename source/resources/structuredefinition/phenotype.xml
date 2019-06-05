@@ -29,8 +29,8 @@
       <sliceName value="phenotype-severity" />
       <sliceIsConstraining value="false" />
       <label value="severity" />
-      <short value="This element is a list of ontology class elements that can be empty or contain one or more ontology terms that are intended to provide more expressive or precise descriptions of a phenotypic feature, including attributes such as positionality and external factors that tend to trigger or ameliorate the feature." />
-      <definition value="This element is a list of ontology class elements that can be empty or contain one or more ontology terms that are intended to provide more expressive or precise descriptions of a phenotypic feature, including attributes such as positionality and external factors that tend to trigger or ameliorate the feature. Terms can be taken from the hierarchy of Clinical modifier in the HPO (noting that severity should be coded in the severity element)." />
+      <short value="This element is an ontology class that describes the severity of the condition e.g. subclasses of Severity (HP:0012824) or SNOMED:272141005-Severities." />
+      <definition value="This element is an ontology class that describes the severity of the condition e.g. subclasses of Severity (HP:0012824) or SNOMED:272141005-Severities." />
       <max value="1" />
       <type>
         <code value="Extension" />
