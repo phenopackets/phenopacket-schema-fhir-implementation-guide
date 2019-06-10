@@ -1,24 +1,25 @@
 {
-		"resourceType": "ValueSet",
-		"id": "presence",
-		"url": "http://ga4gh.org/fhir/phenopackets/ValueSet/presence",
-		"version": "1.0.0",
-		"name": "Presence",
-		"status": "active",
-		"description": "Concepts to indicate presence or absence of a phenotypic feature.",
-		"compose": {
-				"include": [
-						{
-								"system": "http://snomed.info/sct",
-								"concept": [
+    "resourceType": "ValueSet",
+    "id": "presence",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/presence",
+    "version": "1.0.0",
+    "name": "Presence",
+    "title": "Presence",
+    "status": "active",
+    "description": "Concepts to indicate presence or absence of a phenotypic feature.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
                     {
                         "code": "2667000"
                     },
                     {
                         "code": "52101004"
                     }
-								]
-						}
-				]
-		}
+                ]
+            }
+        ]
+    }
 }

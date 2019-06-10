@@ -1,33 +1,34 @@
 {
-		"resourceType": "ValueSet",
-		"id": "phenotype-type",
-		"url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-type",
-		"version": "1.0.0",
-		"name": "Phenotype Type",
-		"status": "active",
-		"description": "The primary ontology class which describes the phenotype.",
-		"compose": {
-				"include": [
-						{
-								"system": "http://purl.obolibrary.org/obo/hp.owl",
-								"filter": [
-										{
-												"property": "concept",
-												"op": "descendent-of",
-												"value": "HP:0000118"
-										}
-								]
-						},
-						{
-							"system": "http://snomed.info/sct",
-							"filter": [
-									{
-											"property": "concept",
-											"op": "descendent-of",
-											"value": "404684003"
-									}
-							]
-					}
-				]
-		}
+    "resourceType": "ValueSet",
+    "id": "phenotype-type",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-type",
+    "version": "1.0.0",
+    "name": "PhenotypeType",
+    "title": "Phenotype Type",
+    "status": "active",
+    "description": "The primary ontology class which describes the phenotype.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/hp.owl",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "HP:0000118"
+                    }
+                ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "filter": [
+                  {
+                      "property": "concept",
+                      "op": "descendent-of",
+                      "value": "404684003"
+                  }
+              ]
+          }
+        ]
+    }
 }

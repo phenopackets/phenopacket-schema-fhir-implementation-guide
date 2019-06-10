@@ -1,33 +1,34 @@
 {
-		"resourceType": "ValueSet",
-		"id": "phenotype-severity",
-		"url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-severity",
-		"version": "1.0.0",
-		"name": "Phenotype Severity",
-		"status": "active",
-		"description": "Phenotype severity from the Human Phenotype Ontology and SNOMED CT.",
-		"compose": {
-				"include": [
-						{
-								"system": "http://purl.obolibrary.org/obo/hp.owl",
-								"filter": [
-										{
-												"property": "concept",
-												"op": "descendent-of",
-												"value": "HP:0012824"
-										}
-								]
-						},
-						{
-							"system": "http://snomed.info/sct",
-							"filter": [
-									{
-											"property": "concept",
-											"op": "descendent-of",
-											"value": "272141005"
-									}
-							]
-					}
-				]
-		}
+    "resourceType": "ValueSet",
+    "id": "phenotype-severity",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-severity",
+    "version": "1.0.0",
+    "name": "PhenotypeSeverity",
+    "title": "Phenotype Severity",
+    "status": "active",
+    "description": "Phenotype severity from the Human Phenotype Ontology and SNOMED CT.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/hp.owl",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "HP:0012824"
+                    }
+                ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "filter": [
+                  {
+                      "property": "concept",
+                      "op": "descendent-of",
+                      "value": "272141005"
+                  }
+              ]
+          }
+        ]
+    }
 }
