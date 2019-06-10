@@ -3,7 +3,7 @@
   "id": "document-type",
   "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type",
   "version": "1.0.0",
-  "name": "Document Type",
+  "name": "DocumentType",
   "status": "active",
   "experimental": false,
   "publisher": "GA4GH",
@@ -11,6 +11,7 @@
   "caseSensitive": false,
   "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type?vs",
   "title": "Document Type",
+  "content": "complete",
   "concept": [
     {
       "code": "phenopacket",

@@ -3,7 +3,7 @@
   "id": "karyotypic-sex",
   "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/karyotypic-sex",
   "version": "1.0.0",
-  "name": "Karyotypic Sex",
+  "name": "KaryotypicSex",
   "status": "active",
   "experimental": false,
   "publisher": "GA4GH",
@@ -11,6 +11,7 @@
   "caseSensitive": false,
   "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/karyotypic-sex?vs",
   "title": "Karyotypic Sex",
+  "content": "complete",
   "concept": [
     {
       "code": "UNKNOWN_KARYOTYPE",

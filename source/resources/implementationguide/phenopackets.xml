@@ -20,14 +20,32 @@
     <definition>
         <resource>
             <reference>
-                <reference value="StructureDefinition/coded-onset"/>
-                <display value="Coded Onset"/>
+                <reference value="StructureDefinition/disease-onset"/>
+                <display value="Disease Onset"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/phenotype"/>
-                <display value="Phenotype"/>
+                <reference value="StructureDefinition/Disease"/>
+                <display value="Disease"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Individual"/>
+                <display value="Individual"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/karyotypic-sex"/>
+                <display value="Karyotypic Sex"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Phenopacket"/>
+                <display value="Phenopacket"/>
             </reference>
         </resource>
         <resource>
@@ -38,8 +56,62 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/phenotype-onset"/>
+                <display value="Phenotype Onset"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/phenotype-severity"/>
+                <display value="Phenotype Severity"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Phenotype"/>
+                <display value="Phenotype"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/document-type"/>
+                <display value="Document Type Code System"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CodeSystem/karyotypic-sex"/>
                 <display value="Karyotypic Sex Code System"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/onset"/>
+                <display value="Onset Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/phenotype-modifier"/>
+                <display value="Phenotype Modifier Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/phenotype-severity"/>
+                <display value="Phenotype Severity Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/phenotype-type"/>
+                <display value="Phenotype Type Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/presence"/>
+                <display value="Presence Value Set"/>
             </reference>
         </resource>
         <page>

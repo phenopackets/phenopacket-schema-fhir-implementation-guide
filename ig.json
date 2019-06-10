@@ -23,42 +23,12 @@
 	"sct-edition": "http://snomed.info/sct/900000000000207008",
 	"canonicalBase": "http://ga4gh.org/fhir/phenopackets",
 	"defaults": {
-		"Location": {
-			"template-base": "ex.html"
-		},
-		"ProcedureRequest": {
-			"template-base": "ex.html"
-		},
-		"Organization": {
-			"template-base": "ex.html"
-		},
-		"MedicationStatement": {
-			"template-base": "ex.html"
-		},
-		"SearchParameter": {
-			"template-base": "base.html"
-		},
 		"StructureDefinition": {
 			"template-mappings": "sd-mappings.html",
 			"template-base": "sd.html",
 			"template-defns": "sd-definitions.html"
 		},
-		"Immunization": {
-			"template-base": "ex.html"
-		},
 		"Patient": {
-			"template-base": "ex.html"
-		},
-		"StructureMap": {
-			"content": false,
-			"script": false,
-			"template-base": "ex.html",
-			"profiles": false
-		},
-		"ConceptMap": {
-			"template-base": "base.html"
-		},
-		"Practitioner": {
 			"template-base": "ex.html"
 		},
 		"OperationDefinition": {
@@ -67,20 +37,11 @@
 		"CodeSystem": {
 			"template-base": "base.html"
 		},
-		"Communication": {
-			"template-base": "ex.html"
-		},
 		"Any": {
 			"template-format": "format.html",
 			"template-base": "base.html"
 		},
-		"PractitionerRole": {
-			"template-base": "ex.html"
-		},
 		"ValueSet": {
-			"template-base": "base.html"
-		},
-		"CapabilityStatement": {
 			"template-base": "base.html"
 		},
 		"Observation": {
@@ -88,18 +49,42 @@
 		}
 	},
 	"resources": {
-		"StructureDefinition/CodedOnset": {
-			"base": "codedOnset.html",
-			"defns": "codedOnset-definitions.html"
+		"StructureDefinition/disease-onset": {
+			"base": "StructureDefinition-disease-onset.html",
+			"defns": "StructureDefinition-disease-onset-definitions.html"
 		},
-		"StructureDefinition/Phenotype": {
-			"base": "phenotype.html",
-			"defns": "phenotype-definitions.html"
+		"StructureDefinition/Disease": {
+			"base": "StructureDefinition-Disease.html",
+			"defns": "StructureDefinition-Disease-definitions.html"
 		},
-		"StructureDefinition/PhenotypeModifier": {
-			"base": "phenotypeModifier.html",
-			"defns": "phenotypeModifier-definitions.html"
-		}
+		"StructureDefinition/Individual": {
+			"base": "StructureDefinition-Individual.html",
+			"defns": "StructureDefinition-Individual-definitions.html"
+		},
+    "StructureDefinition/karyotypic-sex": {
+      "base": "StructureDefinition-karyotypic-sex.html",
+      "defns": "StructureDefinition-karyotypic-sex-definitions.html"
+    },
+    "StructureDefinition/Phenopacket": {
+      "base": "StructureDefinition-Phenopacket.html",
+      "defns": "StructureDefinition-Phenopacket-definitions.html"
+    },
+    "StructureDefinition/phenotype-modifier": {
+      "base": "StructureDefinition-phenotype-modifier.html",
+      "defns": "StructureDefinition-phenotype-modifier-definitions.html"
+    },
+    "StructureDefinition/phenotype-onset": {
+      "base": "StructureDefinition-phenotype-onset.html",
+      "defns": "StructureDefinition-phenotype-onset-definitions.html"
+    },
+    "StructureDefinition/phenotype-severity": {
+      "base": "StructureDefinition-phenotype-severity.html",
+      "defns": "StructureDefinition-phenotype-severity-definitions.html"
+    },
+    "StructureDefinition/Phenotype": {
+      "base": "StructureDefinition-Phenotype.html",
+      "defns": "StructureDefinition-Phenotype-definitions.html"
+    }
 	},
 	"version": "4.0.0",
 	"fixed-business-version": "0.0.1"
