@@ -1,6 +1,5 @@
 {
     "resourceType": "ValueSet",
-    "id": "phenotype-severity",
     "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-severity",
     "version": "1.0.0",
     "name": "PhenotypeSeverity",

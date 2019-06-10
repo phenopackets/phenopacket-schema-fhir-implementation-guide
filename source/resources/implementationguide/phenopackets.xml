@@ -26,13 +26,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Disease"/>
+                <reference value="StructureDefinition/disease"/>
                 <display value="Disease"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Individual"/>
+                <reference value="StructureDefinition/individual"/>
                 <display value="Individual"/>
             </reference>
         </resource>
@@ -44,7 +44,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Phenopacket"/>
+                <reference value="StructureDefinition/phenopacket"/>
                 <display value="Phenopacket"/>
             </reference>
         </resource>
@@ -68,7 +68,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Phenotype"/>
+                <reference value="StructureDefinition/phenotype"/>
                 <display value="Phenotype"/>
             </reference>
         </resource>

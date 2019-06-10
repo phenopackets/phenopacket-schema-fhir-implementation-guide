@@ -1,12 +1,10 @@
 {
     "resourceType": "ValueSet",
-    "id": "phenotype-modifier",
-    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-modifier",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/onset",
     "version": "1.0.0",
-    "name": "PhenotypeModifier",
-    "title": "Phenotype Modifier",
+    "name": "Onset",
     "status": "active",
-    "description": "Clinical modifier terms from the Human Phenotype Ontology.",
+    "description": "Onset terms from the Human Phenotype Ontology.",
     "compose": {
         "include": [
             {
@@ -15,7 +13,7 @@
                     {
                         "property": "concept",
                         "op": "descendent-of",
-                        "value": "HP:0012823"
+                        "value": "HP:0003674"
                     }
                 ]
             }

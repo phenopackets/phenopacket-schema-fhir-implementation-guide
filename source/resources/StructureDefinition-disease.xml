@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Disease" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/disease" />
   <version value="1.0.0" />
   <name value="Disease" />
   <status value="draft" />

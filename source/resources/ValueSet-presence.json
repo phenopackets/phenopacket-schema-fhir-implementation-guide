@@ -1,6 +1,5 @@
 {
     "resourceType": "ValueSet",
-    "id": "presence",
     "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/presence",
     "version": "1.0.0",
     "name": "Presence",

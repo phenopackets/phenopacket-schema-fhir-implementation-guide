@@ -1,6 +1,5 @@
 {
     "resourceType": "ValueSet",
-    "id": "phenotype-type",
     "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-type",
     "version": "1.0.0",
     "name": "PhenotypeType",
