@@ -32,3 +32,4 @@ nb-configuration.xml
 
 # OS
 .DS_Store
+/org.hl7.fhir.publisher.cli-0.9.26-20190608.050437-1.jar
