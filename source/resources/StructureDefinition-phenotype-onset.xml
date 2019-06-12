@@ -18,8 +18,23 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <mustSupport value="false" />
+      <short value="The onset of the phenotype."/>
+      <definition value="The onset of the phenotype."/>
+      <min value="0"/>
+      <max value="1"/>
+      <mustSupport value="true" />
       <isModifier value="false" />
+    </element>
+     <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype-onset"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -42,6 +57,9 @@
         <code value="Coding" />
       </type>
       <binding>
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Onset"/>
+        </extension>
         <strength value="preferred" />
         <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/onset" />
       </binding>

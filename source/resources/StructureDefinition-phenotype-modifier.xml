@@ -5,6 +5,7 @@
   <name value="PhenotypeModifier" />
   <title value="Phenotype Modifier" />
   <status value="draft" />
+  <description value="A collection of ontology class elements that are intended to provide more expressive or precise descriptions of a phenotypic feature, including attributes such as positionality and external factors that tend to trigger or ameliorate the feature." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -18,19 +19,36 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+      <short value="Phenotype modifiers."/>
+      <definition value="Phenotype modifiers."/>
+      <min value="0"/>
+      <max value="*"/>
       <mustSupport value="true" />
       <isModifier value="true" />
       <isModifierReason value="Modifies a phenotype." />
     </element>
-    <element id="Extension.value[x]:valueCoding">
-      <path value="Extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
       <type>
-        <code value="Coding" />
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype-modifier"/>
+    </element>
+    <element id="Extension.valueCoding">
+      <path value="Extension.valueCoding"/>
+      <type>
+        <code value="Coding"/>
       </type>
       <binding>
-        <strength value="preferred" />
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-modifier" />
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Phenotype Modifier"/>
+        </extension>
+        <strength value="preferred"/>
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-modifier"/>
       </binding>
     </element>
   </differential>
