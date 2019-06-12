@@ -1,6 +1,5 @@
 {
   "resourceType": "CodeSystem",
-  "id": "document-type",
   "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type",
   "version": "1.0.0",
   "name": "DocumentType",

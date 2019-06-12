@@ -1,6 +1,5 @@
 {
   "resourceType": "CodeSystem",
-  "id": "karyotypic-sex",
   "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/karyotypic-sex",
   "version": "1.0.0",
   "name": "KaryotypicSex",
