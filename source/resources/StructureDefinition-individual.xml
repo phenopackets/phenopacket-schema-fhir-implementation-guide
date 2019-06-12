@@ -26,7 +26,7 @@
       <sliceName value="karyotypic-sex" />
       <sliceIsConstraining value="false" />
       <label value="karyotypicSex" />
-      <short value=" This element represents the chromosomal sex of an individual." />
+      <short value="This element represents the chromosomal sex of an individual." />
       <definition value=" This element represents the chromosomal sex of an individual." />
       <min value="0" />
 	    <max value="1" />
