@@ -45,12 +45,24 @@ active: profiles
 </thead>
 <tbody>
 <tr>
-<td><a href="StructureDefinition-coded-onset.html">CodedOnset</a></td>
+<td><a href="StructureDefinition-disease-onset.html">DiseaseOnset</a></td>
 <td>The context for this extension is Condition. </td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-karyotypic-sex.html">KaryotypicSex</a></td>
+<td>The context for this extension is Patient.</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-phenotype-modifier.html">PhenotypeModifier</a></td>
-<td>The context for this extension is Condition.</td>
+<td>The context for this extension is Observation.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-phenotype-onset.html">PhenotypeOnset</a></td>
+<td>The context for this extension is Observation.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-phenotype-severity.html">PhenotypeSeverity</a></td>
+<td>The context for this extension is Observation.</td>
 </tr>
 </tbody>
 </table>
