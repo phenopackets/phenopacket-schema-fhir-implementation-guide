@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/hts-format",
+  "version": "1.0.0",
+  "name": "HtsFormat",
+  "status": "active",
+  "experimental": false,
+  "publisher": "GA4GH",
+  "description": "An enumeration used to represent different high-throughput sequencing file formats.",
+  "caseSensitive": false,
+  "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/hts-format?vs",
+  "title": "Hts Format",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "SAM",
+      "display": "SAM",
+      "definition": "Sequence Alignment Map (SAM) file"
+    },
+    {
+      "code": "BAM",
+      "display": "BAM",
+      "definition": "Binary Alignment Map (BAM) file"
+    },
+    {
+      "code": "CRAM",
+      "display": "CRAM",
+      "definition": "CRAM file"
+    },
+    {
+      "code": "VCF",
+      "display": "VCF",
+      "definition": "Variant Call Format (VCF) file"
+    },
+    {
+      "code": "BCF",
+      "display": "BCF",
+      "definition": "Binary Variant Call Format (BCF) file"
+    },
+    {
+      "code": "GVCF",
+      "display": "GVCF",
+      "definition": "Genomic Variant Call Format (GVCF) file"
+    }
+  ]
+}

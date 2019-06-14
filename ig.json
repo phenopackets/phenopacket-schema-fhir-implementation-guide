@@ -85,6 +85,18 @@
       "base": "StructureDefinition-phenotype.html",
       "defns": "StructureDefinition-phenotype-definitions.html"
     },
+    "StructureDefinition/evidence": {
+      "base": "StructureDefinition-evidence.html",
+      "defns": "StructureDefinition-evidence-definitions.html"
+    },
+    "StructureDefinition/hts-file-genome-assembly": {
+      "base": "StructureDefinition-hts-file-genome-assembly.html",
+      "defns": "StructureDefinition-hts-file-genome-assembly-definitions.html"
+    },
+    "StructureDefinition/hts-file-individual-to-sample-identifiers": {
+      "base": "StructureDefinition-hts-file-individual-to-sample-identifiers.html",
+      "defns": "StructureDefinition-hts-file-individual-to-sample-identifiers-definitions.html"
+    },
     "ValueSet/onset": {
       "base": "ValueSet-onset.html",
       "defns": "ValueSet-onset-definitions.html"

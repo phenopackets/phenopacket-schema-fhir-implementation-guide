@@ -74,6 +74,24 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/evidence"/>
+                <display value="Evidence"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/hts-file-genome-assembly"/>
+                <display value="HTS File Genome Assembly"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/hts-file-individual-to-sample-identifiers"/>
+                <display value="HTS File Individual to Sample Identifiers"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CodeSystem/document-type"/>
                 <display value="Document Type Code System"/>
             </reference>

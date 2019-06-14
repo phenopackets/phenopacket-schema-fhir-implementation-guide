@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/evidence" />
+  <version value="1.0.0" />
+  <name value="Evidence" />
+  <title value="Evidence" />
+  <status value="draft" />
+  <description value="This element intends to represent the evidence for an assertion such as an observation of a PhenotypicFeature element. We recommend the use of terms from the Evidence and Conclusion Ontology (ECO)." />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element"/>
+    <expression value="Observation"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Evidence"/>
+      <definition value="Evidence for an assertion such as an observation of a PhenotypicFeature element."/>
+      <min value="0"/>
+      <max value="*"/>
+    </element>
+    <element id="Extension.extension:evidenceCode">
+      <path value="Extension.extension"/>
+      <sliceName value="evidenceCode"/>
+      <short value="Evidence Code"/>
+      <definition value="Code representing the type of evidence."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:evidenceCode.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:evidenceCode.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="evidenceCode"/>
+    </element>
+    <element id="Extension.extension:evidenceCode.valueCoding">
+      <path value="Extension.extension.valueCoding"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Evidence"/>
+        </extension>
+        <strength value="preferred"/>
+        <valueSet value="http://purl.obolibrary.org/obo/eco.owl?vs"/>
+      </binding>
+    </element>
+    <element id="Extension.extension:reference">
+      <path value="Extension.extension"/>
+      <sliceName value="reference"/>
+      <short value="Reference"/>
+      <definition value="Reference to the publication that supports the evidence."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="Extension.extension:reference.extension">
+      <path value="Extension.extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.extension:reference.url">
+      <path value="Extension.extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="reference"/>
+    </element>
+    <element id="Extension.extension:reference.valueReference">
+      <path value="Extension.extension.valueReference"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/evidence"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>
