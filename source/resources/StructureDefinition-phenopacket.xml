@@ -23,36 +23,9 @@
       <path value="Composition.subject" />
       <type>
         <code value="Reference" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Individual" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual" />
         <aggregation value="bundled" />
       </type>
-    </element>
-    <element id="Composition.subject.extension">
-      <path value="Composition.subject.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Composition.subject.extension:karyotypic-sex">
-      <path value="Composition.subject.extension" />
-      <sliceName value="karyotypic-sex" />
-      <sliceIsConstraining value="false" />
-      <label value="karyotypicSex" />
-      <short value="This element represents the chromosomal sex of an individual." />
-      <definition value="This element represents the chromosomal sex of an individual." />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/karyotypic-sex" />
-      </type>
-    </element>
-    <element id="Composition.subject.extension:karyotypic-sex.value[x]:valueCoding">
-      <path value="Composition.subject.extension.value[x]" />
-      <sliceName value="valueCoding" />
     </element>
     <element id="Composition.encounter">
       <path value="Composition.encounter" />
@@ -116,40 +89,9 @@
       <short value="This is a list of phenotypic findings observed in the subject." />
       <type>
         <code value="Reference" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenotype" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype" />
         <aggregation value="bundled" />
       </type>
-    </element>
-    <element id="Composition.section:phenotypes.entry.extension">
-      <path value="Composition.section.entry.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Composition.section:phenotypes.entry.extension:onset">
-      <path value="Composition.section.entry.extension" />
-      <sliceName value="onset" />
-      <sliceIsConstraining value="false" />
-      <label value="onset" />
-      <short value="This element can be used to describe the age at which a phenotypic feature was first noticed or diagnosed." />
-      <definition value="This element can be used to describe the age at which a phenotypic feature was first noticed or diagnosed. For many medical use cases, either the Age subelement or an ontology class (e.g., from the HPO Onset (HP:0003674) terms) will be used." />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype-onset" />
-      </type>
-    </element>
-    <element id="Composition.section:phenotypes.entry.extension:phenotype-modifier.value[x]:valueCoding:valueCoding">
-      <path value="Composition.section.entry.extension.value[x]" />
-      <sliceName value="valueCoding" />
-    </element>
-    <element id="Composition.section:phenotypes.entry.extension:phenotype-severity.value[x]:valueCoding:valueCoding">
-      <path value="Composition.section.entry.extension.value[x]" />
-      <sliceName value="valueCoding" />
     </element>
     <element id="Composition.section:phenotypes.section">
       <path value="Composition.section.section" />
@@ -165,7 +107,7 @@
       <short value="This is a field for disease identifiers and can be used for listing either diagnosed or suspected conditions." />
       <type>
         <code value="Reference" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Disease" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/disease" />
         <aggregation value="bundled" />
       </type>
     </element>
