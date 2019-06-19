@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/affected-status" />
+  <name value="AffectedStatus" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="FamilyMemberHistory" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="The affected status of a person in a pedigree."/>
+      <definition value="The affected status of a person in a pedigree."/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+	<element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/affected-status"/>
+    </element>
+    <element id="Extension.valueCoding">
+      <path value="Extension.valueCoding"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Affected Status"/>
+        </extension>
+        <strength value="required"/>
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/CodeSystem/affected-status?vs"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

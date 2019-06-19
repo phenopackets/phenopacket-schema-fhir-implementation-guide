@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "affected-status",
+  "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/affected-status",
+  "version": "1.0.0",
+  "name": "AffectedStatus",
+  "status": "active",
+  "experimental": false,
+  "publisher": "GA4GH",
+  "description": "An enumeration used to represent whether a person is affected by a condition of interest in the context of a pedigree (PED) file.",
+  "caseSensitive": false,
+  "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/affected-status?vs",
+  "title": "Affected Status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "MISSING",
+      "display": "MISSING",
+      "definition": "It is unknown whether the person is affected by the condition"
+    },
+    {
+      "code": "UNAFFECTED",
+      "display": "UNAFFECTED",
+      "definition": "Person is unaffected by the condition"
+    },
+    {
+      "code": "AFFECTED",
+      "display": "AFFECTED",
+      "definition": "Person is affected by the condition"
+    }
+  ]
+} 
