@@ -46,6 +46,15 @@
     },
     "Observation": {
       "template-base": "ex.html"
+    },
+    "DocumentReference": {
+      "template-base": "ex.html"
+    },
+    "FamilyHistory": {
+      "template-base": "ex.html"
+    },
+    "Composition": {
+      "template-base": "ex.html"
     }
   },
   "resources": {
@@ -96,6 +105,26 @@
     "StructureDefinition/hts-file-individual-to-sample-identifiers": {
       "base": "StructureDefinition-hts-file-individual-to-sample-identifiers.html",
       "defns": "StructureDefinition-hts-file-individual-to-sample-identifiers-definitions.html"
+    },
+    "StructureDefinition/hts-file": {
+      "base": "StructureDefinition-hts-file.html",
+      "defns": "StructureDefinition-hts-file-definitions.html"
+    },
+    "StructureDefinition/affected-status": {
+      "base": "StructureDefinition-affected-status.html",
+      "defns": "StructureDefinition-affected-status-definitions.html"
+    },
+    "StructureDefinition/family-identifier": {
+      "base": "StructureDefinition-family-identifier.html",
+      "defns": "StructureDefinition-family-identifier-definitions.html"
+    },
+    "StructureDefinition/pedigree-node-individual": {
+      "base": "StructureDefinition-pedigree-node-individual.html",
+      "defns": "StructureDefinition-pedigree-node-individual-definitions.html"
+    },
+    "StructureDefinition/pedigree-node": {
+      "base": "StructureDefinition-pedigree-node.html",
+      "defns": "StructureDefinition-pedigree-node-definitions.html"
     },
     "ValueSet/onset": {
       "base": "ValueSet-onset.html",

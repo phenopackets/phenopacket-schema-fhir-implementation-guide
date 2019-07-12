@@ -27,7 +27,6 @@
       <path value="Extension.url" />
       <type>
         <code value="uri" />
-		<targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual" />
       </type>
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node-individual" />
     </element>
@@ -37,6 +36,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual" />
       </type>
     </element>
   </differential>

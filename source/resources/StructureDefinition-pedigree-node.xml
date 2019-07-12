@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/person" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node" />
   <name value="PedigreeNode" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
@@ -30,34 +30,6 @@
       </type>
       <mustSupport value="false" />
     </element>
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-parent.value[x]:valueCodeableConcept">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="FamilyMemberHistory.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-parent.value[x]:no name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="FamilyMemberHistory.extension.value[x]" />
-      <sliceName value="no name" />
-    </element>
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-parent.extension:type.value[x]:valueCodeableConcept">
-      <path value="FamilyMemberHistory.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-parent.extension:reference.value[x]:valueReference">
-      <path value="FamilyMemberHistory.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-    </element>
     <element id="FamilyMemberHistory.extension:family-member-history-genetics-sibling">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="family-member-history-genetics-sibling" />
@@ -67,34 +39,6 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-sibling" />
       </type>
       <mustSupport value="false" />
-    </element>
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-sibling.value[x]:valueCodeableConcept">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="FamilyMemberHistory.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-sibling.value[x]:no name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="FamilyMemberHistory.extension.value[x]" />
-      <sliceName value="no name" />
-    </element>
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-sibling.extension:type.value[x]:valueCodeableConcept">
-      <path value="FamilyMemberHistory.extension.extension.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-sibling.extension:reference.value[x]:valueReference">
-      <path value="FamilyMemberHistory.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
     </element>
     <element id="FamilyMemberHistory.extension:affected-status">
       <path value="FamilyMemberHistory.extension" />
@@ -111,10 +55,6 @@
       </type>
       <mustSupport value="false" />
     </element>
-    <element id="FamilyMemberHistory.extension:affected-status.value[x]:valueCoding">
-      <path value="FamilyMemberHistory.extension.value[x]" />
-      <sliceName value="valueCoding" />
-    </element>
     <element id="FamilyMemberHistory.extension:family-identifier">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="family-identifier" />
@@ -129,10 +69,6 @@
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/family-identifier" />
       </type>
       <mustSupport value="false" />
-    </element>
-    <element id="FamilyMemberHistory.extension:family-identifier.value[x]:valueIdentifier">
-      <path value="FamilyMemberHistory.extension.value[x]" />
-      <sliceName value="valueIdentifier" />
     </element>
     <element id="FamilyMemberHistory.extension:individual">
       <path value="FamilyMemberHistory.extension" />

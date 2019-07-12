@@ -21,73 +21,103 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/disease-onset"/>
-                <display value="Disease Onset"/>
+                <display value="Disease Onset Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/disease"/>
-                <display value="Disease"/>
+                <display value="Disease Profile"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/individual"/>
-                <display value="Individual"/>
+                <display value="Individual Profile"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/karyotypic-sex"/>
-                <display value="Karyotypic Sex"/>
+                <display value="Karyotypic Sex Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/phenopacket"/>
-                <display value="Phenopacket"/>
+                <display value="Phenopacket Profile"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/phenotype-modifier"/>
-                <display value="Phenotype Modifier"/>
+                <display value="Phenotype Modifier Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/phenotype-onset"/>
-                <display value="Phenotype Onset"/>
+                <display value="Phenotype Onset Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/phenotype-severity"/>
-                <display value="Phenotype Severity"/>
+                <display value="Phenotype Severity Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/phenotype"/>
-                <display value="Phenotype"/>
+                <display value="Phenotype Profile"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/evidence"/>
-                <display value="Evidence"/>
+                <display value="Evidence Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/hts-file-genome-assembly"/>
-                <display value="HTS File Genome Assembly"/>
+                <display value="HTS File Genome Assembly Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/hts-file-individual-to-sample-identifiers"/>
-                <display value="HTS File Individual to Sample Identifiers"/>
+                <display value="HTS File Individual to Sample Identifiers Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/hts-file"/>
+                <display value="HTS File Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/affected-status"/>
+                <display value="Affected Status Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/family-identifier"/>
+                <display value="Family Identifier Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/pedigree-node-individual"/>
+                <display value="Pedigree Node Individual Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/pedigree-node"/>
+                <display value="Pedigree Node Profile"/>
             </reference>
         </resource>
         <resource>
@@ -100,6 +130,18 @@
             <reference>
                 <reference value="CodeSystem/karyotypic-sex"/>
                 <display value="Karyotypic Sex Code System"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/hts-format"/>
+                <display value="HTS Format Code System"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/affected-status"/>
+                <display value="Affected Status Code System"/>
             </reference>
         </resource>
         <resource>

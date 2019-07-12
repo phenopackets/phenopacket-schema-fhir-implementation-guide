@@ -42,6 +42,14 @@ active: profiles
 <td><a href="StructureDefinition-phenopacket.html">Phenopacket</a></td>
 <td></td>
 </tr>
+<tr>
+<td><a href="StructureDefinition-hts-file.html">HTS File</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-pedigree-node.html">Pedigree Node</a></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 
@@ -87,6 +95,18 @@ active: profiles
 <tr>
 <td><a href="StructureDefinition-hts-file-individual-to-sample-identifiers.html">HTS File Individual to Sample Identifiers</a></td>
 <td>The context for this extension is DocumentReference.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-affected-status.html">Affected Status</a></td>
+<td>The context for this extension is FamilyMemberHistory.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-family-identifier.html">FamilyIdentifier</a></td>
+<td>The context for this extension is FamilyMemberHistory.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-pedigree-node-individual.html">Pedigree Node Individual</a></td>
+<td>The context for this extension is FamilyMemberHistory.</td>
 </tr>
 </tbody>
 </table>
