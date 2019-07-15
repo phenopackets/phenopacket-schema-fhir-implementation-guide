@@ -106,9 +106,9 @@
       "base": "StructureDefinition-hts-file-individual-to-sample-identifiers.html",
       "defns": "StructureDefinition-hts-file-individual-to-sample-identifiers-definitions.html"
     },
-    "StructureDefinition/hts-file": {
-      "base": "StructureDefinition-hts-file.html",
-      "defns": "StructureDefinition-hts-file-definitions.html"
+    "StructureDefinition/htsfile": {
+      "base": "StructureDefinition-htsfile.html",
+      "defns": "StructureDefinition-htsfile-definitions.html"
     },
     "StructureDefinition/affected-status": {
       "base": "StructureDefinition-affected-status.html",
