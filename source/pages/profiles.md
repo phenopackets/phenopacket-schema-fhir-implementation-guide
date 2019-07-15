@@ -50,6 +50,10 @@ active: profiles
 <td><a href="StructureDefinition-pedigree-node.html">Pedigree Node</a></td>
 <td></td>
 </tr>
+<tr>
+<td><a href="StructureDefinition-variant.html">Variant</a></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 
@@ -107,6 +111,10 @@ active: profiles
 <tr>
 <td><a href="StructureDefinition-pedigree-node-individual.html">Pedigree Node Individual</a></td>
 <td>The context for this extension is FamilyMemberHistory.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-variant-zygosity.html">Variant Zygosity</a></td>
+<td>The context for this extension is MolecularSequence.</td>
 </tr>
 </tbody>
 </table>

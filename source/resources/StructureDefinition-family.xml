@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenopacket" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Family" />
   <version value="1.0.0" />
-  <name value="Phenopacket" />
+  <name value="Family" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -17,15 +17,11 @@
     </element>
     <element id="Composition.type.coding.code">
       <path value="Composition.type.coding.code" />
-      <fixedCode value="phenopacket" />
+      <fixedCode value="family" />
     </element>
     <element id="Composition.subject">
       <path value="Composition.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Individual" />
-        <aggregation value="bundled" />
-      </type>
+      <max value="0" />
     </element>
     <element id="Composition.encounter">
       <path value="Composition.encounter" />
@@ -33,7 +29,7 @@
     </element>
     <element id="Composition.title">
       <path value="Composition.title" />
-      <fixedString value="Phenopacket" />
+      <fixedString value="Family" />
     </element>
     <element id="Composition.confidentiality">
       <path value="Composition.confidentiality" />
@@ -65,45 +61,50 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Composition.section:phenotypes">
+    <element id="Composition.section:proband">
       <path value="Composition.section" />
-      <sliceName value="phenotypes" />
+      <sliceName value="proband" />
       <sliceIsConstraining value="false" />
     </element>
-    <element id="Composition.section:phenotypes.title">
+    <element id="Composition.section:proband.title">
       <path value="Composition.section.title" />
-      <short value="Phenotypes" />
-      <definition value="This is a list of phenotypic findings observed in the subject." />
-      <fixedString value="Phenotypes" />
+      <short value="Proband" />
+      <definition value="The individual representing the focus of this packet - e.g. the proband in rare disease cases or cancer patient." />
+      <fixedString value="Proband" />
     </element>
-    <element id="Composition.section:phenotypes.author">
+    <element id="Composition.section:proband.author">
       <path value="Composition.section.author" />
       <max value="0" />
     </element>
-    <element id="Composition.section:phenotypes.focus">
+    <element id="Composition.section:proband.focus">
       <path value="Composition.section.focus" />
       <max value="0" />
     </element>
-    <element id="Composition.section:phenotypes.text">
+    <element id="Composition.section:proband.text">
       <path value="Composition.section.text" />
       <max value="0" />
     </element>
-    <element id="Composition.section:phenotypes.mode">
+    <element id="Composition.section:proband.mode">
       <path value="Composition.section.mode" />
       <fixedCode value="snapshot" />
     </element>
-    <element id="Composition.section:phenotypes.orderedBy">
+    <element id="Composition.section:proband.orderedBy">
       <path value="Composition.section.orderedBy" />
       <max value="0" />
     </element>
-    <element id="Composition.section:phenotypes.entry">
+    <element id="Composition.section:proband.entry">
       <path value="Composition.section.entry" />
-      <short value="This is a list of phenotypic findings observed in the subject." />
+      <short value="The individual representing the focus of this packet." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenotype" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Individual" />
         <aggregation value="bundled" />
       </type>
+      <max value="1" />
+    </element>
+    <element id="Composition.section:proband.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
     </element>
     <element id="Composition.section:phenotypes.section">
       <path value="Composition.section.section" />

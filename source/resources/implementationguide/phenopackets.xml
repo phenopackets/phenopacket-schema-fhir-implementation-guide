@@ -26,13 +26,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/disease"/>
+                <reference value="StructureDefinition/Disease"/>
                 <display value="Disease Profile"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/individual"/>
+                <reference value="StructureDefinition/Individual"/>
                 <display value="Individual Profile"/>
             </reference>
         </resource>
@@ -44,7 +44,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/phenopacket"/>
+                <reference value="StructureDefinition/Phenopacket"/>
                 <display value="Phenopacket Profile"/>
             </reference>
         </resource>
@@ -68,7 +68,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/phenotype"/>
+                <reference value="StructureDefinition/Phenotype"/>
                 <display value="Phenotype Profile"/>
             </reference>
         </resource>
@@ -92,7 +92,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/htsfile"/>
+                <reference value="StructureDefinition/Htsfile"/>
                 <display value="HTS File Profile"/>
             </reference>
         </resource>
@@ -116,8 +116,20 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/pedigree-node"/>
+                <reference value="StructureDefinition/Pedigree-node"/>
                 <display value="Pedigree Node Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/variant-zygosity"/>
+                <display value="Variant Zygosity Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Variant"/>
+                <display value="Variant Profile"/>
             </reference>
         </resource>
         <resource>

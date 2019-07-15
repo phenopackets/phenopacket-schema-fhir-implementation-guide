@@ -90,7 +90,7 @@
       "base": "StructureDefinition-phenotype-severity.html",
       "defns": "StructureDefinition-phenotype-severity-definitions.html"
     },
-    "StructureDefinition/phenotype": {
+    "StructureDefinition/Phenotype": {
       "base": "StructureDefinition-phenotype.html",
       "defns": "StructureDefinition-phenotype-definitions.html"
     },
@@ -106,7 +106,7 @@
       "base": "StructureDefinition-hts-file-individual-to-sample-identifiers.html",
       "defns": "StructureDefinition-hts-file-individual-to-sample-identifiers-definitions.html"
     },
-    "StructureDefinition/htsfile": {
+    "StructureDefinition/HtsFile": {
       "base": "StructureDefinition-htsfile.html",
       "defns": "StructureDefinition-htsfile-definitions.html"
     },
@@ -122,9 +122,17 @@
       "base": "StructureDefinition-pedigree-node-individual.html",
       "defns": "StructureDefinition-pedigree-node-individual-definitions.html"
     },
-    "StructureDefinition/pedigree-node": {
+    "StructureDefinition/PedigreeNode": {
       "base": "StructureDefinition-pedigree-node.html",
       "defns": "StructureDefinition-pedigree-node-definitions.html"
+    },
+    "StructureDefinition/Variant": {
+      "base": "StructureDefinition-variant.html",
+      "defns": "StructureDefinition-variant-definitions.html"
+    },
+    "StructureDefinition/variant-zygosity": {
+      "base": "StructureDefinition-variant-zygosity.html",
+      "defns": "StructureDefinition-variant-zygosity-definitions.html"
     },
     "ValueSet/onset": {
       "base": "ValueSet-onset.html",
