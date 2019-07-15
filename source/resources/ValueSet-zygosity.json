@@ -1,0 +1,22 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/zygosity",
+    "version": "1.0.0",
+    "name": "Zygosity",
+    "status": "active",
+    "description": "Zygosity terms from the Genotype Ontology (GENO).",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/geno.owl",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "GENO:0000133"
+                    }
+                ]
+            }
+        ]
+    }
+}

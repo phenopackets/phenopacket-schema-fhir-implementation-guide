@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/variant-zygosity" />
+  <version value="1.0.0" />
+  <name value="VariantZygosity" />
+  <title value="Variant Zygosity" />
+  <status value="draft" />
+  <description value="Extension to represent the zygosity of a variant." />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MolecularSequence" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Zygosity."/>
+      <definition value="Zygosity."/>
+      <min value="0"/>
+      <max value="1"/>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/variant-zygosity"/>
+    </element>
+    <element id="Extension.valueCoding">
+      <path value="Extension.valueCoding"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Zygosity"/>
+        </extension>
+        <strength value="preferred"/>
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/zygosity"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
