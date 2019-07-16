@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenopacket" />
+  <version value="1.0.0" />
+  <name value="Phenopacket" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition.type.coding.system">
+      <path value="Composition.type.coding.system" />
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type" />
+    </element>
+    <element id="Composition.type.coding.code">
+      <path value="Composition.type.coding.code" />
+      <fixedCode value="biosample" />
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Individual" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Composition.title">
+      <path value="Composition.title" />
+      <fixedString value="Phenopacket" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo">
+      <path value="Composition.relatesTo" />
+      <max value="0" />
+    </element>
+    <element id="Composition.event">
+      <path value="Composition.event" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.section:sample">
+      <path value="Composition.section" />
+      <sliceName value="sample" />
+      <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:sample.title">
+      <path value="Composition.section.title" />
+      <short value="Sample" />
+      <definition value="Sample details in the Biosample." />
+      <fixedString value="Sample" />
+    </element>
+    <element id="Composition.section:sample.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sample.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sample.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sample.mode">
+      <path value="Composition.section.mode" />
+      <fixedCode value="snapshot" />
+    </element>
+    <element id="Composition.section:sample.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sample.entry">
+      <path value="Composition.section.entry" />
+      <short value="Sample details in the Biosample." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Sample" />
+        <aggregation value="bundled" />
+      </type>
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sample.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
