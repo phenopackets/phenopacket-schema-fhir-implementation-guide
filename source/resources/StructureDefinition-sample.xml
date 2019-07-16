@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Sample" />
+  <name value="Sample" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Specimen" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Specimen.receivedTime">
+      <path value="Specimen.receivedTime" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.parent">
+      <path value="Specimen.parent" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.request">
+      <path value="Specimen.request" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.collector">
+      <path value="Specimen.collection.collector" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.collected[x]">
+      <path value="Specimen.collection.collected[x]" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.duration">
+      <path value="Specimen.collection.duration" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.quantity">
+      <path value="Specimen.collection.quantity" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.collection.fastingStatus[x]">
+      <path value="Specimen.collection.fastingStatus[x]" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.processing">
+      <path value="Specimen.processing" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.container">
+      <path value="Specimen.container" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.condition">
+      <path value="Specimen.condition" />
+      <max value="0" />
+    </element>
+    <element id="Specimen.note">
+      <path value="Specimen.note" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
