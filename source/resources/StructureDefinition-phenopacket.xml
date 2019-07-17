@@ -76,6 +76,17 @@
       <definition value="This is a list of phenotypic findings observed in the subject." />
       <fixedString value="Phenotypes" />
     </element>
+    <element id="Composition.section:phenotypes.code">
+      <path value="Composition.section.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
+          <version value="1.0.0" />
+          <code value="phenotypes" />
+          <display value="Phenotypes" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
     <element id="Composition.section:phenotypes.author">
       <path value="Composition.section.author" />
       <max value="0" />

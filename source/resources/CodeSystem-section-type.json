@@ -1,0 +1,31 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type",
+  "version": "1.0.0",
+  "name": "SectionType",
+  "status": "active",
+  "experimental": false,
+  "publisher": "GA4GH",
+  "description": "Represents the different types of sections in the objects that are built as compositions in the Phenopackets standard.",
+  "caseSensitive": false,
+  "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type?vs",
+  "title": "Section Type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "phenotypes",
+      "display": "Phenotypes",
+      "definition": "Phenotypes"
+    },
+    {
+      "code": "sample",
+      "display": "Sample",
+      "definition": "Sample"
+    },
+    {
+      "code": "tumour",
+      "display": "Tumour",
+      "definition": "Tumour"
+    }
+  ]
+}
