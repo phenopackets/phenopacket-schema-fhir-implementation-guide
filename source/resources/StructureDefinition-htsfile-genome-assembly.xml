@@ -35,7 +35,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/hts-file-genome-assembly"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-genome-assembly"/>
     </element>
     <element id="Extension.valueString">
       <path value="Extension.valueString"/>

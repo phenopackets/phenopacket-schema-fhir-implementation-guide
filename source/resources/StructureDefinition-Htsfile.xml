@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Htsfile" />
   <name value="HtsFile" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
@@ -31,7 +31,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/hts-file-genome-assembly" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-genome-assembly" />
       </type>
     </element>
     <element id="DocumentReference.extension:genomeAssembly.value[x]:valueString">
@@ -49,7 +49,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/hts-file-individual-to-sample-identifiers" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-individual-to-sample-identifiers" />
       </type>
     </element>
     <element id="DocumentReference.extension:individualToSampleIdentifiers.extension:patientIdentifier.value[x]:valueIdentifier">

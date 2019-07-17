@@ -80,13 +80,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/hts-file-genome-assembly"/>
+                <reference value="StructureDefinition/htsfile-genome-assembly"/>
                 <display value="HTS File Genome Assembly Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/hts-file-individual-to-sample-identifiers"/>
+                <reference value="StructureDefinition/htsfile-individual-to-sample-identifiers"/>
                 <display value="HTS File Individual to Sample Identifiers Extension"/>
             </reference>
         </resource>
@@ -116,7 +116,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Pedigree-node"/>
+                <reference value="StructureDefinition/PedigreeNode"/>
                 <display value="Pedigree Node Profile"/>
             </reference>
         </resource>

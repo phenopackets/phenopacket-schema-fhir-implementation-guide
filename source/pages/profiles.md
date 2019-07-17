@@ -27,31 +27,35 @@ active: profiles
 </thead>
 <tbody>
 <tr>
-<td><a href="StructureDefinition-disease.html">Disease</a></td>
+<td><a href="StructureDefinition-Disease.html">Disease</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-individual.html">Individual</a></td>
+<td><a href="StructureDefinition-Individual.html">Individual</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-phenotype.html">Phenotype</a></td>
+<td><a href="StructureDefinition-Phenotype.html">Phenotype</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-phenopacket.html">Phenopacket</a></td>
+<td><a href="StructureDefinition-Phenopacket.html">Phenopacket</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-hts-file.html">HTS File</a></td>
+<td><a href="StructureDefinition-Htsfile.html">HTS File</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-pedigree-node.html">Pedigree Node</a></td>
+<td><a href="StructureDefinition-PedigreeNode.html">Pedigree Node</a></td>
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-variant.html">Variant</a></td>
+<td><a href="StructureDefinition-Variant.html">Variant</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-Biosample.html">Biosample</a></td>
 <td></td>
 </tr>
 </tbody>
@@ -93,11 +97,11 @@ active: profiles
 <td>The context for this extension is Observation.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-hts-file-genome-assembly.html">HTS File Genome Assembly</a></td>
+<td><a href="StructureDefinition-htsfile-genome-assembly.html">HTS File Genome Assembly</a></td>
 <td>The context for this extension is DocumentReference.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-hts-file-individual-to-sample-identifiers.html">HTS File Individual to Sample Identifiers</a></td>
+<td><a href="StructureDefinition-htsfile-individual-to-sample-identifiers.html">HTS File Individual to Sample Identifiers</a></td>
 <td>The context for this extension is DocumentReference.</td>
 </tr>
 <tr>

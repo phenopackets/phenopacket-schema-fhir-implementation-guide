@@ -63,20 +63,20 @@
       "defns": "StructureDefinition-disease-onset-definitions.html"
     },
     "StructureDefinition/Disease": {
-      "base": "StructureDefinition-disease.html",
-      "defns": "StructureDefinition-disease-definitions.html"
+      "base": "StructureDefinition-Disease.html",
+      "defns": "StructureDefinition-Disease-definitions.html"
     },
     "StructureDefinition/Individual": {
-      "base": "StructureDefinition-individual.html",
-      "defns": "StructureDefinition-individual-definitions.html"
+      "base": "StructureDefinition-Individual.html",
+      "defns": "StructureDefinition-Individual-definitions.html"
     },
     "StructureDefinition/karyotypic-sex": {
       "base": "StructureDefinition-karyotypic-sex.html",
       "defns": "StructureDefinition-karyotypic-sex-definitions.html"
     },
     "StructureDefinition/Phenopacket": {
-      "base": "StructureDefinition-phenopacket.html",
-      "defns": "StructureDefinition-phenopacket-definitions.html"
+      "base": "StructureDefinition-Phenopacket.html",
+      "defns": "StructureDefinition-Phenopacket-definitions.html"
     },
     "StructureDefinition/phenotype-modifier": {
       "base": "StructureDefinition-phenotype-modifier.html",
@@ -91,24 +91,24 @@
       "defns": "StructureDefinition-phenotype-severity-definitions.html"
     },
     "StructureDefinition/Phenotype": {
-      "base": "StructureDefinition-phenotype.html",
-      "defns": "StructureDefinition-phenotype-definitions.html"
+      "base": "StructureDefinition-Phenotype.html",
+      "defns": "StructureDefinition-Phenotype-definitions.html"
     },
     "StructureDefinition/evidence": {
       "base": "StructureDefinition-evidence.html",
       "defns": "StructureDefinition-evidence-definitions.html"
     },
-    "StructureDefinition/hts-file-genome-assembly": {
-      "base": "StructureDefinition-hts-file-genome-assembly.html",
-      "defns": "StructureDefinition-hts-file-genome-assembly-definitions.html"
+    "StructureDefinition/htsfile-genome-assembly": {
+      "base": "StructureDefinition-htsfile-genome-assembly.html",
+      "defns": "StructureDefinition-htsfile-genome-assembly-definitions.html"
     },
-    "StructureDefinition/hts-file-individual-to-sample-identifiers": {
-      "base": "StructureDefinition-hts-file-individual-to-sample-identifiers.html",
-      "defns": "StructureDefinition-hts-file-individual-to-sample-identifiers-definitions.html"
+    "StructureDefinition/htsfile-individual-to-sample-identifiers": {
+      "base": "StructureDefinition-htsfile-individual-to-sample-identifiers.html",
+      "defns": "StructureDefinition-htsfile-individual-to-sample-identifiers-definitions.html"
     },
-    "StructureDefinition/HtsFile": {
-      "base": "StructureDefinition-htsfile.html",
-      "defns": "StructureDefinition-htsfile-definitions.html"
+    "StructureDefinition/Htsfile": {
+      "base": "StructureDefinition-Htsfile.html",
+      "defns": "StructureDefinition-Htsfile-definitions.html"
     },
     "StructureDefinition/affected-status": {
       "base": "StructureDefinition-affected-status.html",
@@ -123,12 +123,16 @@
       "defns": "StructureDefinition-pedigree-node-individual-definitions.html"
     },
     "StructureDefinition/PedigreeNode": {
-      "base": "StructureDefinition-pedigree-node.html",
-      "defns": "StructureDefinition-pedigree-node-definitions.html"
+      "base": "StructureDefinition-PedigreeNode.html",
+      "defns": "StructureDefinition-PedigreeNode-definitions.html"
     },
     "StructureDefinition/Variant": {
-      "base": "StructureDefinition-variant.html",
-      "defns": "StructureDefinition-variant-definitions.html"
+      "base": "StructureDefinition-Variant.html",
+      "defns": "StructureDefinition-Variant-definitions.html"
+    },
+    "StructureDefinition/Biosample": {
+      "base": "StructureDefinition-Biosample.html",
+      "defns": "StructureDefinition-Biosample-definitions.html"
     },
     "StructureDefinition/variant-zygosity": {
       "base": "StructureDefinition-variant-zygosity.html",

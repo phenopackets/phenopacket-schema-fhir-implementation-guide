@@ -87,7 +87,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/hts-file-individual-to-sample-identifiers"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-individual-to-sample-identifiers"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
