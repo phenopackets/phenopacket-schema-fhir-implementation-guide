@@ -20,12 +20,12 @@
 *****no empty lines****
 
 -->
-- [Home](index.html){: .active}
-- [Table of Contents](toc.html)
-- [Profiles, Extensions & Transactions](profiles.html)
+- [Home](index.html)
+- [General Guidance](guidance.html)
+- [Mapping](mapping.html)
+- [Extensions](extensions.html)
 - [Terminology](terminology.html)
-- [Capability Statements](capstatements.html)
-- [Other](other.html)
+- [Examples](examples.html)
 - [Downloads](downloads.html)
 
 <!-- ******* how to create a dropdown menu in md ********

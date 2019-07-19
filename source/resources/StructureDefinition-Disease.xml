@@ -11,6 +11,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition">
+      <path value="Condition" />
+    </element>
     <element id="Condition.extension">
       <path value="Condition.extension" />
       <slicing>

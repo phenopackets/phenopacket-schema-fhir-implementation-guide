@@ -1,7 +1,7 @@
 ---
-title: CapabilityStatements defined for this Guide
+title: Examples
 layout: default
-active: capstatements
+active: examples
 ---
 
 <!-- { :.no_toc } -->
@@ -13,3 +13,20 @@ active: capstatements
 
 <!-- end TOC -->
 
+### Examples
+
+<!--
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+</tbody>
+</table>
+
+-->
