@@ -4,7 +4,7 @@ layout: default
 active: mapping
 ---
 
-This page describes the mapping between the original Phenopackets and this FHIR implementation guide.
+This page describes the mapping between the original Phenopackets and this FHIR implementation guide. The general approach followed was to constrain the FHIR elements to closely match the corresponding Phenopacket elements. This, combined with a profile-aware API generator, can be used to create an API that is simple to use and compliant with the profile. The main drawback is that existign FHIR data will need to be modified so that the values in any constrained fields are removed.
 
 | Phenopackets element        | Comment |
 | --------------------------- | --------|
