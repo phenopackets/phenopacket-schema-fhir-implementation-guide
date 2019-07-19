@@ -66,6 +66,14 @@
       "base": "StructureDefinition-Disease.html",
       "defns": "StructureDefinition-Disease-definitions.html"
     },
+    "StructureDefinition/external-referencee": {
+      "base": "StructureDefinition-external-reference.html",
+      "defns": "StructureDefinition-external-reference-definitions.html"
+    },
+    "StructureDefinition/evidence": {
+      "base": "StructureDefinition-evidence.html",
+      "defns": "StructureDefinition-evidence-definitions.html"
+    },
     "StructureDefinition/Individual": {
       "base": "StructureDefinition-Individual.html",
       "defns": "StructureDefinition-Individual-definitions.html"
@@ -93,10 +101,6 @@
     "StructureDefinition/Phenotype": {
       "base": "StructureDefinition-Phenotype.html",
       "defns": "StructureDefinition-Phenotype-definitions.html"
-    },
-    "StructureDefinition/evidence": {
-      "base": "StructureDefinition-evidence.html",
-      "defns": "StructureDefinition-evidence-definitions.html"
     },
     "StructureDefinition/htsfile-genome-assembly": {
       "base": "StructureDefinition-htsfile-genome-assembly.html",

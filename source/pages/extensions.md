@@ -31,6 +31,10 @@ active: profiles
 <td>The context for this extension is Condition. </td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-external-reference.html">External Reference</a></td>
+<td>The context for this extension is Observation and the Evidence extension. </td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-karyotypic-sex.html">Karyotypic Sex</a></td>
 <td>The context for this extension is Patient.</td>
 </tr>

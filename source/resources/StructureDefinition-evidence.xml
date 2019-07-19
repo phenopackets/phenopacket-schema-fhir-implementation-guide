@@ -24,30 +24,43 @@
       <min value="0"/>
       <max value="*"/>
     </element>
+    
+    <!-- set up the slicing -->
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="true"/>
+        <rules value="openAtEnd"/>
+      </slicing>
+    </element>
+    
+    <!-- first slice, evidenceCode -->
     <element id="Extension.extension:evidenceCode">
       <path value="Extension.extension"/>
       <sliceName value="evidenceCode"/>
-      <short value="Evidence Code"/>
-      <definition value="Code representing the type of evidence."/>
+      <short value="For example, in order to describe the evidence for a phenotypic observation that is derived from a publication, one might use the ECO term author statement from published clinical study used in manual assertion (ECO:0006017) and record a PubMed id in the reference field."/>
       <min value="1"/>
       <max value="1"/>
-      <type>
-        <code value="Extension"/>
-      </type>
     </element>
     <element id="Extension.extension:evidenceCode.extension">
       <path value="Extension.extension.extension"/>
-      <max value="0"/>
+      <min value="0"/>
+      <max value="0"/> <!-- not allowed to be used -->
     </element>
     <element id="Extension.extension:evidenceCode.url">
       <path value="Extension.extension.url"/>
-      <type>
-        <code value="uri"/>
-      </type>
+      <min value="1"/>
+      <max value="1"/>
       <fixedUri value="evidenceCode"/>
     </element>
     <element id="Extension.extension:evidenceCode.valueCoding">
       <path value="Extension.extension.valueCoding"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="Coding"/>
       </type>
@@ -59,46 +72,33 @@
         <valueSet value="http://purl.obolibrary.org/obo/eco.owl?vs"/>
       </binding>
     </element>
+    
+    <!-- second slice, reference -->
     <element id="Extension.extension:reference">
       <path value="Extension.extension"/>
       <sliceName value="reference"/>
-      <short value="Reference"/>
-      <definition value="Reference to the publication that supports the evidence."/>
+      <short value="An External Reference element is used to store a reference to the publication that supports the evidence. Not all types of evidence will have an external reference, and therefore this field is optional."/>
       <min value="0"/>
       <max value="1"/>
-      <type>
-        <code value="Extension"/>
-      </type>
-    </element>
-    <element id="Extension.extension:reference.extension">
-      <path value="Extension.extension.extension"/>
-      <max value="0"/>
     </element>
     <element id="Extension.extension:reference.url">
       <path value="Extension.extension.url"/>
-      <type>
-        <code value="uri"/>
-      </type>
-      <fixedUri value="reference"/>
+      <min value="1"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/external-reference"/>
     </element>
-    <element id="Extension.extension:reference.valueReference">
-      <path value="Extension.extension.valueReference"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
-      </type>
-    </element>
+    
+    <!-- last (for order reasons): the fixed URI -->
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <type>
-        <code value="uri"/>
-      </type>
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/evidence"/>
     </element>
+    
+    <!-- and no value in the root -->
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="0"/>
       <max value="0"/>
     </element>
+    
   </differential>
 </StructureDefinition>

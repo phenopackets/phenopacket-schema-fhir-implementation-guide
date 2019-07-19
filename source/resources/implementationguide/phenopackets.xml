@@ -32,6 +32,19 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/external-reference"/>
+                <display value="External Reference Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/evidence"/>
+                <display value="Evidence Extension"/>
+            </reference>
+        </resource>
+        <!-- TODO: reviewed until here -->
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Individual"/>
                 <display value="Individual Profile"/>
             </reference>
@@ -70,12 +83,6 @@
             <reference>
                 <reference value="StructureDefinition/Phenotype"/>
                 <display value="Phenotype Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/evidence"/>
-                <display value="Evidence Extension"/>
             </reference>
         </resource>
         <resource>
