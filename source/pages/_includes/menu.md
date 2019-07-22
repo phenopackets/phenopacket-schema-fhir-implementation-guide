@@ -23,6 +23,7 @@
 - [Home](index.html)
 - [General Guidance](guidance.html)
 - [Mapping](mapping.html)
+- [Profiles](profiles.html)
 - [Extensions](extensions.html)
 - [Terminology](terminology.html)
 - [Examples](examples.html)
