@@ -78,9 +78,17 @@
       "base": "StructureDefinition-Individual.html",
       "defns": "StructureDefinition-Individual-definitions.html"
     },
-    "StructureDefinition/karyotypic-sex": {
-      "base": "StructureDefinition-karyotypic-sex.html",
-      "defns": "StructureDefinition-karyotypic-sex-definitions.html"
+    "StructureDefinition/individual-karyotypic-sex": {
+      "base": "StructureDefinition-individual-karyotypic-sex.html",
+      "defns": "StructureDefinition-individual-karyotypic-sex-definitions.html"
+    },
+    "StructureDefinition/individual-taxonomy": {
+      "base": "StructureDefinition-individual-taxonomy.html",
+      "defns": "StructureDefinition-individual-taxonomy-definitions.html"
+    },
+    "StructureDefinition/individual-age": {
+      "base": "StructureDefinition-individual-age.html",
+      "defns": "StructureDefinition-individual-age-definitions.html"
     },
     "StructureDefinition/Phenopacket": {
       "base": "StructureDefinition-Phenopacket.html",

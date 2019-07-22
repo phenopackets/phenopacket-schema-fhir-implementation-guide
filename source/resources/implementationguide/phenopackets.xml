@@ -42,7 +42,6 @@
                 <display value="Evidence Extension"/>
             </reference>
         </resource>
-        <!-- TODO: reviewed until here -->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Individual"/>
@@ -51,10 +50,23 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/karyotypic-sex"/>
-                <display value="Karyotypic Sex Extension"/>
+                <reference value="StructureDefinition/individual-taxonomy"/>
+                <display value="Individual Taxonomy Extension"/>
             </reference>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/individual-karyotypic-sex"/>
+                <display value="Individual Karyotypic Sex Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/individual-age"/>
+                <display value="Individual Age Extension"/>
+            </reference>
+        </resource>
+        <!-- TODO: reviewed until here -->
         <resource>
             <reference>
                 <reference value="StructureDefinition/Phenopacket"/>

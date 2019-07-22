@@ -15,17 +15,17 @@ This page describes the mapping between the original Phenopackets and this FHIR 
 | [Disease](https://phenopackets-schema.readthedocs.io/en/latest/disease.html) | Corresponds to the [Disease profile](StructureDefinition-Disease.html). |
 | [Evidence](https://phenopackets-schema.readthedocs.io/en/latest/evidence.html) | Corresponds to the [evidence extension](StructureDefinition-evidence.html). |
 | [External Reference](https://phenopackets-schema.readthedocs.io/en/latest/externalreference.html) | Corresponds to the [external reference extension](StructureDefinition-external-reference.html). |
-| [File and HtsFile](https://phenopackets-schema.readthedocs.io/en/latest/file.html)| Corresponds to the [Hts File extension](StructureDefinition-HtsFile.html). |
+| [File and HtsFile](https://phenopackets-schema.readthedocs.io/en/latest/file.html)| Corresponds to the [Hts File profile](StructureDefinition-HtsFile.html). |
 | [Gene](https://phenopackets-schema.readthedocs.io/en/latest/gene.html)| TODO |
-| [Individual](https://phenopackets-schema.readthedocs.io/en/latest/individual.html)|  |
-| [Karyotypic sex](https://phenopackets-schema.readthedocs.io/en/latest/karyotypicsex.html)|  |
-| [Metadata](https://phenopackets-schema.readthedocs.io/en/latest/metadata.html)| |
-| [Ontology Class](https://phenopackets-schema.readthedocs.io/en/latest/ontologyclass.html)| |
+| [Individual](https://phenopackets-schema.readthedocs.io/en/latest/individual.html)| Corresponds to the [Individual profile](StructureDefinition-Individual.html). |
+| [Karyotypic sex](https://phenopackets-schema.readthedocs.io/en/latest/karyotypicsex.html)| Corresponds to the [individual karyotypic sex extension](StructureDefinition-individual-karyotypic-sex.html). |
+| [Metadata](https://phenopackets-schema.readthedocs.io/en/latest/metadata.html)| Not needed because FHIR already has its own metadata infrastructure. |
+| [Ontology Class](https://phenopackets-schema.readthedocs.io/en/latest/ontologyclass.html)| Not needed because FHIR already has comprehensive support for terminologies. |
 | [Pedigree](https://phenopackets-schema.readthedocs.io/en/latest/pedigree.html) | |
 | [PhenotypicFeature](https://phenopackets-schema.readthedocs.io/en/latest/phenotype.html) | |
 | [Procedure](https://phenopackets-schema.readthedocs.io/en/latest/procedure.html) | |
-| [Resource](https://phenopackets-schema.readthedocs.io/en/latest/resource.html) | |
-| [Sex](https://phenopackets-schema.readthedocs.io/en/latest/sex.html) | |
+| [Resource](https://phenopackets-schema.readthedocs.io/en/latest/resource.html) | Not needed because FHIR already has comprehensive support for terminologies. |
+| [Sex](https://phenopackets-schema.readthedocs.io/en/latest/sex.html) | Not needed because FHIR already has the _gender_ attribute in the Patient resource.|
 | [Variant](https://phenopackets-schema.readthedocs.io/en/latest/variant.html) | |
 
 #### Top-level Elements

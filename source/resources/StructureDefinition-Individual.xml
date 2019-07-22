@@ -11,16 +11,44 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
   <derivation value="constraint" />
   <differential>
+    
+    <!-- Root node - required for differential. -->
+    <element id="Patient">
+      <path value="Patient" />
+    </element>
+    
+    <!-- Set up slicing -->
     <element id="Patient.extension">
       <path value="Patient.extension" />
+      <!-- Slice the extension element -->
       <slicing>
         <discriminator>
           <type value="value" />
           <path value="url" />
         </discriminator>
+        <!-- We don't care what the order of any extensions is -->
+        <ordered value="false"/>
         <rules value="open" />
       </slicing>
     </element>
+    
+    <!-- The slice that contains the age -->
+    <element id="Patient.extension:age">
+      <path value="Patient.extension" />
+      <sliceName value="age" />
+      <sliceIsConstraining value="false" />
+      <label value="age" />
+      <short value="An age object describing the age of the individual at the time of collection of biospecimens or phenotypic observations reported in the current Phenopacket." />
+      <definition value="An age object describing the age of the individual at the time of collection of biospecimens or phenotypic observations reported in the current Phenopacket." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual-age" />
+      </type>
+    </element>
+    
+    <!-- The slice that contains the karyotipic sex extension -->
     <element id="Patient.extension:karyotypic-sex">
       <path value="Patient.extension" />
       <sliceName value="karyotypic-sex" />
@@ -32,9 +60,27 @@
 	    <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/karyotypic-sex" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual-karyotypic-sex" />
       </type>
     </element>
+    
+    <!-- The slice that contains the taxonomy extension -->
+    <element id="Patient.extension:taxonomy">
+      <path value="Patient.extension" />
+      <sliceName value="taxonomy" />
+      <sliceIsConstraining value="false" />
+      <label value="taxonomy" />
+      <short value="The taxonomy of an individual." />
+      <definition value=" The taxonomy of an individual." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual-taxonomy" />
+      </type>
+    </element>
+    
+    <!-- Constrained elements. -->
     <element id="Patient.active">
       <path value="Patient.active" />
       <max value="0" />
@@ -47,12 +93,20 @@
       <path value="Patient.telecom" />
       <max value="0" />
     </element>
+    <element id="Patient.deceased[x]">
+      <path value="Patient.deceased[x]" />
+      <max value="0" />
+    </element>
     <element id="Patient.address">
       <path value="Patient.address" />
       <max value="0" />
     </element>
     <element id="Patient.maritalStatus">
       <path value="Patient.maritalStatus" />
+      <max value="0" />
+    </element>
+    <element id="Patient.multipleBirth[x]">
+      <path value="Patient.multipleBirth[x]" />
       <max value="0" />
     </element>
     <element id="Patient.photo">
@@ -69,6 +123,10 @@
     </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner" />
+      <max value="0" />
+    </element>
+    <element id="Patient.managingOrganization">
+      <path value="Patient.managingOrganization" />
       <max value="0" />
     </element>
     <element id="Patient.link">

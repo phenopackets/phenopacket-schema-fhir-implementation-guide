@@ -6,16 +6,6 @@ active: profiles
 
 <!-- { :.no_toc } -->
 
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-
-<!-- end TOC -->
-
----
-<br />
-
 ### Extensions
 
 <table>
@@ -35,7 +25,15 @@ active: profiles
 <td>The context for this extension is Observation and the Evidence extension. </td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-karyotypic-sex.html">Karyotypic Sex</a></td>
+<td><a href="StructureDefinition-individual-karyotypic-sex.html">Individual Karyotypic Sex</a></td>
+<td>The context for this extension is Patient.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-individual-taxonomy.html">Individual Taxonomy</a></td>
+<td>The context for this extension is Patient.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-individual-age.html">Individual Age</a></td>
 <td>The context for this extension is Patient.</td>
 </tr>
 <tr>

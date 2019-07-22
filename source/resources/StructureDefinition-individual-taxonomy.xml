@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/karyotypic-sex" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual-taxonomy" />
   <version value="1.0.0" />
-  <name value="KaryotypicSex" />
-  <title value="Karyotypic Sex" />
+  <name value="IndividualTaxonomy" />
+  <title value="Individual Taxonomy" />
   <status value="draft" />
-  <description value="The chromosomal sex of an individual." />
+  <description value="For resources where there may be more than one organism being studied it is advisable to indicate the taxonomic identifier of that organism, to its most specific level." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -19,8 +19,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="The chromosomal sex of an individual."/>
-      <definition value="The chromosomal sex of an individual."/>
+      <short value="The taxonomy an individual."/>
+      <definition value="The taxonomy of an individual."/>
       <min value="0"/>
       <max value="1"/>
       <mustSupport value="true" />
@@ -35,7 +35,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/karyotypic-sex"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual-taxonomy"/>
     </element>
     <element id="Extension.valueCoding">
       <path value="Extension.valueCoding"/>
@@ -44,10 +44,10 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Karyotypic Sex"/>
+          <valueString value="Taxonomy"/>
         </extension>
-        <strength value="required"/>
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/CodeSystem/karyotypic-sex?vs"/>
+        <strength value="preferred"/>
+        <valueSet value="http://purl.obolibrary.org/obo/ncbitaxon.owl?vs"/>
       </binding>
     </element>
   </differential>
