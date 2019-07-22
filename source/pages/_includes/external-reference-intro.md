@@ -1,4 +1,4 @@
-This element encodes the evidence type using, for example the Evidence & Conclusion Ontology (ECO).
+This element encodes the evidence type using, for example, the Evidence & Conclusion Ontology (ECO).
 
 #### Mapping Notes
 
