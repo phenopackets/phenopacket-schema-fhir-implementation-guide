@@ -22,6 +22,13 @@
   ],
   "sct-edition": "http://snomed.info/sct/900000000000207008",
   "canonicalBase": "http://ga4gh.org/fhir/phenopackets",
+  "dependencyList": [
+     {
+        "name" : "GenomicsReporting",
+        "package" : "hl7.fhir.uv.genomics-reporting",
+        "version" : "dev"
+     }
+   ],
   "defaults": {
     "StructureDefinition": {
       "template-mappings": "sd-mappings.html",
@@ -95,20 +102,20 @@
       "defns": "StructureDefinition-Phenopacket-definitions.html"
     },
     "StructureDefinition/phenotype-modifier": {
-      "base": "StructureDefinition-phenotype-modifier.html",
-      "defns": "StructureDefinition-phenotype-modifier-definitions.html"
+      "base": "StructureDefinition-phenotypic-feature-modifier.html",
+      "defns": "StructureDefinition-phenotypic-feature-modifier-definitions.html"
     },
-    "StructureDefinition/phenotype-onset": {
-      "base": "StructureDefinition-phenotype-onset.html",
-      "defns": "StructureDefinition-phenotype-onset-definitions.html"
+    "StructureDefinition/phenotypic-feature-onset": {
+      "base": "StructureDefinition-phenotypic-feature-onset.html",
+      "defns": "StructureDefinition-phenotypic-feature-onset-definitions.html"
     },
-    "StructureDefinition/phenotype-severity": {
-      "base": "StructureDefinition-phenotype-severity.html",
-      "defns": "StructureDefinition-phenotype-severity-definitions.html"
+    "StructureDefinition/phenotypic-feature-severity": {
+      "base": "StructureDefinition-phenotypic-feature-severity.html",
+      "defns": "StructureDefinition-phenotypic-feature-severity-definitions.html"
     },
-    "StructureDefinition/Phenotype": {
-      "base": "StructureDefinition-Phenotype.html",
-      "defns": "StructureDefinition-Phenotype-definitions.html"
+    "StructureDefinition/PhenotypicFeature": {
+      "base": "StructureDefinition-PhenotypicFeature.html",
+      "defns": "StructureDefinition-PhenotypicFeature-definitions.html"
     },
     "StructureDefinition/htsfile-genome-assembly": {
       "base": "StructureDefinition-htsfile-genome-assembly.html",
@@ -138,29 +145,21 @@
       "base": "StructureDefinition-PedigreeNode.html",
       "defns": "StructureDefinition-PedigreeNode-definitions.html"
     },
-    "StructureDefinition/Variant": {
-      "base": "StructureDefinition-Variant.html",
-      "defns": "StructureDefinition-Variant-definitions.html"
-    },
     "StructureDefinition/Biosample": {
       "base": "StructureDefinition-Biosample.html",
       "defns": "StructureDefinition-Biosample-definitions.html"
-    },
-    "StructureDefinition/variant-zygosity": {
-      "base": "StructureDefinition-variant-zygosity.html",
-      "defns": "StructureDefinition-variant-zygosity-definitions.html"
     },
     "ValueSet/onset": {
       "base": "ValueSet-onset.html",
       "defns": "ValueSet-onset-definitions.html"
     },
     "ValueSet/phenotype-modifier": {
-      "base": "ValueSet-phenotype-modifier.html",
-      "defns": "ValueSet-phenotype-modifier-definitions.html"
+      "base": "ValueSet-phenotypic-feature-modifier.html",
+      "defns": "ValueSet-phenotypic-feature-modifier-definitions.html"
     },
-    "ValueSet/phenotype-severity": {
-      "base": "ValueSet-phenotype-severity.html",
-      "defns": "ValueSet-phenotype-severity-definitions.html"
+    "ValueSet/phenotypic-feature-severity": {
+      "base": "ValueSet-phenotypic-feature-severity.html",
+      "defns": "ValueSet-phenotypic-feature-severity-definitions.html"
     },
     "ValueSet/phenotype-type": {
       "base": "ValueSet-phenotype-type.html",

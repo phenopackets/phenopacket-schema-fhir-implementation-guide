@@ -37,15 +37,15 @@ active: profiles
 <td>The context for this extension is Patient.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-phenotype-modifier.html">Phenotype Modifier</a></td>
+<td><a href="StructureDefinition-phenotypic-feature-modifier.html">Phenotype Modifier</a></td>
 <td>The context for this extension is Observation.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-phenotype-onset.html">Phenotype Onset</a></td>
+<td><a href="StructureDefinition-phenotypic-feature-onset.html">Phenotype Onset</a></td>
 <td>The context for this extension is Observation.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-phenotype-severity.html">Phenotype Severity</a></td>
+<td><a href="StructureDefinition-phenotypic-feature-severity.html">Phenotype Severity</a></td>
 <td>The context for this extension is Observation.</td>
 </tr>
 <tr>
@@ -71,10 +71,6 @@ active: profiles
 <tr>
 <td><a href="StructureDefinition-pedigree-node-individual.html">Pedigree Node Individual</a></td>
 <td>The context for this extension is FamilyMemberHistory.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-variant-zygosity.html">Variant Zygosity</a></td>
-<td>The context for this extension is MolecularSequence.</td>
 </tr>
 </tbody>
 </table>

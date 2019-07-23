@@ -10,6 +10,13 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
   <derivation value="constraint" />
   <differential>
+  
+    <!-- Root node - required for differential -->
+    <element id="FamilyMemberHistory">
+      <path value="FamilyMemberHistory" />
+    </element>
+    
+    <!-- Set up slicing -->
     <element id="FamilyMemberHistory.extension">
       <path value="FamilyMemberHistory.extension" />
       <slicing>
@@ -17,29 +24,44 @@
           <type value="value" />
           <path value="url" />
         </discriminator>
+        <!-- We don't care what the order of any extensions is -->
+        <ordered value="false"/>
         <rules value="open" />
       </slicing>
     </element>
+    
+    <!-- The slice that contains the parents -->
     <element id="FamilyMemberHistory.extension:family-member-history-genetics-parent">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="family-member-history-genetics-parent" />
       <sliceIsConstraining value="false" />
+      <label value="parent" />
+      <short value="Identifies a parent of the relative." />
+      <definition value="Identifies a parent of the relative." />
+      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent" />
       </type>
       <mustSupport value="false" />
     </element>
+    
+    <!-- The slice that contains the siblings -->
     <element id="FamilyMemberHistory.extension:family-member-history-genetics-sibling">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="family-member-history-genetics-sibling" />
       <sliceIsConstraining value="false" />
+      <label value="sibling" />
+      <short value="Identifies a sibling of the relative." />
+      <definition value="Identifies a sibling of the relative." />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-sibling" />
       </type>
       <mustSupport value="false" />
     </element>
+    
+    <!-- The slice that contains the affected status -->
     <element id="FamilyMemberHistory.extension:affected-status">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="affected-status" />
@@ -55,6 +77,8 @@
       </type>
       <mustSupport value="false" />
     </element>
+    
+    <!-- The slice that contains the family identifier -->
     <element id="FamilyMemberHistory.extension:family-identifier">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="family-identifier" />
@@ -70,6 +94,8 @@
       </type>
       <mustSupport value="false" />
     </element>
+    
+    <!-- The slice that contains the reference to the individual -->
     <element id="FamilyMemberHistory.extension:individual">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="individual" />
@@ -84,113 +110,51 @@
       </type>
       <mustSupport value="false" />
     </element>
+    
+    <!-- Mandatory elements. -->
+    <element id="FamilyMemberHistory.sex">
+      <path value="FamilyMemberHistory.sex" />
+      <min value="1" />
+    </element>
+    
+    <!-- Forbidden elements. -->
     <element id="FamilyMemberHistory.instantiatesCanonical">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.instantiatesCanonical" />
       <max value="0" />
     </element>
     <element id="FamilyMemberHistory.instantiatesUri">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.instantiatesUri" />
       <max value="0" />
     </element>
     <element id="FamilyMemberHistory.dataAbsentReason">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.dataAbsentReason" />
       <max value="0" />
     </element>
     <element id="FamilyMemberHistory.date">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.date" />
       <max value="0" />
     </element>
     <element id="FamilyMemberHistory.name">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.name" />
       <max value="0" />
     </element>
-    <element id="FamilyMemberHistory.sex">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="FamilyMemberHistory.sex" />
-      <min value="1" />
-    </element>
     <element id="FamilyMemberHistory.born[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.born[x]" />
       <max value="0" />
     </element>
     <element id="FamilyMemberHistory.age[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="trial-use" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.age[x]" />
       <max value="0" />
     </element>
     <element id="FamilyMemberHistory.estimatedAge">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.estimatedAge" />
       <max value="0" />
     </element>
     <element id="FamilyMemberHistory.reasonCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.reasonCode" />
       <max value="0" />
     </element>
     <element id="FamilyMemberHistory.reasonReference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="FamilyMemberHistory.reasonReference" />
       <max value="0" />
     </element>

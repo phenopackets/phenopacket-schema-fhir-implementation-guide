@@ -112,7 +112,7 @@
       <short value="This is a list of phenotypic findings observed in the subject." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenotype" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/PhenotypicFeature" />
         <aggregation value="bundled" />
       </type>
     </element>

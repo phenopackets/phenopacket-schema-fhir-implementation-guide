@@ -66,35 +66,28 @@
                 <display value="Individual Age Extension"/>
             </reference>
         </resource>
-        <!-- TODO: reviewed until here -->
         <resource>
             <reference>
-                <reference value="StructureDefinition/Phenopacket"/>
-                <display value="Phenopacket Profile"/>
+                <reference value="StructureDefinition/phenotypic-feature-modifier"/>
+                <display value="Phenotypic Feature Modifier Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/phenotype-modifier"/>
-                <display value="Phenotype Modifier Extension"/>
+                <reference value="StructureDefinition/phenotypic-feature-onset"/>
+                <display value="Phenotypci Feature Onset Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/phenotype-onset"/>
-                <display value="Phenotype Onset Extension"/>
+                <reference value="StructureDefinition/phenotypic-feature-severity"/>
+                <display value="Phenotypic Feature Severity Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/phenotype-severity"/>
-                <display value="Phenotype Severity Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Phenotype"/>
-                <display value="Phenotype Profile"/>
+                <reference value="StructureDefinition/PhenotypicFeature"/>
+                <display value="Phenotypic Feature Profile"/>
             </reference>
         </resource>
         <resource>
@@ -141,14 +134,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/variant-zygosity"/>
-                <display value="Variant Zygosity Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Variant"/>
-                <display value="Variant Profile"/>
+                <reference value="StructureDefinition/Phenopacket"/>
+                <display value="Phenopacket Profile"/>
             </reference>
         </resource>
         <resource>
@@ -183,14 +170,14 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/phenotype-modifier"/>
-                <display value="Phenotype Modifier Value Set"/>
+                <reference value="ValueSet/phenotypic-feature-modifier"/>
+                <display value="Phenotypic Feature Modifier Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/phenotype-severity"/>
-                <display value="Phenotype Severity Value Set"/>
+                <reference value="ValueSet/phenotypic-feature-severity"/>
+                <display value="Phenotypic Feature Severity Value Set"/>
             </reference>
         </resource>
         <resource>

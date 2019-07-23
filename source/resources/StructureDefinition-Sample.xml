@@ -10,6 +10,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen" />
   <derivation value="constraint" />
   <differential>
+    <element id="Specimen">
+      <path value="Specimen" />
+    </element>
     <element id="Specimen.receivedTime">
       <path value="Specimen.receivedTime" />
       <max value="0" />

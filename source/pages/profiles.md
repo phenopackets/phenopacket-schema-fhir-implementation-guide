@@ -25,7 +25,7 @@ active: profiles
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-Phenotype.html">Phenotype</a></td>
+<td><a href="StructureDefinition-PhenotypicFeature.html">PhenotypicFeature</a></td>
 <td></td>
 </tr>
 <tr>

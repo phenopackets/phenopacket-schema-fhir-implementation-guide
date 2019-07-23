@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Individual" />
   <name value="Individual" />
+  <title value="Individual" />
   <status value="draft" />
   <description value="The subject of the Phenopacket is represented by an Individual element. This element intends to represent an individual human or other organism." />
   <fhirVersion value="4.0.0" />
