@@ -11,6 +11,8 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
   <derivation value="constraint" />
   <differential>
+    
+     <!-- Root node - required for differential. -->
     <element id="DocumentReference">
       <path value="DocumentReference" />
     </element>

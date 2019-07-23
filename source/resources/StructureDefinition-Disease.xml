@@ -11,6 +11,13 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
   <derivation value="constraint" />
   <differential>
+  
+     <!-- Root node - required for differential. -->
+    <element id="Condition">
+      <path value="Condition" />
+    </element>
+    
+    <!-- Set up slicing -->
     <element id="Condition.extension">
       <path value="Condition.extension" />
       <slicing>
@@ -18,9 +25,13 @@
           <type value="value" />
           <path value="url" />
         </discriminator>
+        <!-- We don't care what the order of any extensions is -->
+        <ordered value="false"/>
         <rules value="open" />
       </slicing>
     </element>
+    
+    <!-- The slice that contains the coded onset -->
     <element id="Condition.extension:codedOnset">
       <path value="Condition.extension" />
       <sliceName value="codedOnset" />
@@ -31,10 +42,8 @@
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/disease-onset" />
       </type>
     </element>
-    <element id="Condition.extension:codedOnset.value[x]:valueCoding">
-      <path value="Condition.extension.valueCoding" />
-      <sliceName value="valueCoding" />
-    </element>
+    
+    <!-- Forbidden elements. -->
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus" />
       <max value="0" />
