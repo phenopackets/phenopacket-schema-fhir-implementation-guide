@@ -1,11 +1,11 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-severity",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotypic-feature-severity",
     "version": "1.0.0",
-    "name": "PhenotypeSeverity",
-    "title": "Phenotype Severity",
+    "name": "PhenotypicFeatureSeverity",
+    "title": "Phenotypic Feature Severity",
     "status": "active",
-    "description": "Phenotype severity from the Human Phenotype Ontology and SNOMED CT.",
+    "description": "Phenotypic feature severity from the Human Phenotype Ontology and SNOMED CT.",
     "compose": {
         "include": [
             {

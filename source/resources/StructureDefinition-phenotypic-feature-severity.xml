@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype-modifier" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotypic-feature-severity" />
   <version value="1.0.0" />
-  <name value="PhenotypeModifier" />
-  <title value="Phenotype Modifier" />
+  <name value="PhenotypeSeverity" />
+  <title value="Phenotype Severity" />
   <status value="draft" />
-  <description value="A collection of ontology class elements that are intended to provide more expressive or precise descriptions of a phenotypic feature, including attributes such as positionality and external factors that tend to trigger or ameliorate the feature." />
+  <description value="The severity of a phenotype." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -19,13 +19,12 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Phenotype modifiers."/>
-      <definition value="Phenotype modifiers."/>
+      <short value="The severity of a phenotype."/>
+      <definition value="The severity of a phenotype."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <mustSupport value="true" />
-      <isModifier value="true" />
-      <isModifierReason value="Modifies a phenotype." />
+      <isModifier value="false" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -36,7 +35,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotype-modifier"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotypic-feature-severity"/>
     </element>
     <element id="Extension.valueCoding">
       <path value="Extension.valueCoding"/>
@@ -45,10 +44,10 @@
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Phenotype Modifier"/>
+          <valueString value="Severity"/>
         </extension>
         <strength value="preferred"/>
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-modifier"/>
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotypic-feature-severity"/>
       </binding>
     </element>
   </differential>

@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-modifier",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/phenotypic-feature-modifier",
     "version": "1.0.0",
     "name": "PhenotypeModifier",
     "title": "Phenotype Modifier",
