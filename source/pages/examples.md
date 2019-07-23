@@ -13,8 +13,6 @@ active: examples
 
 <!-- end TOC -->
 
-### Examples
-
 <!--
 <table>
 <thead>
