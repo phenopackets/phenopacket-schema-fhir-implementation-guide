@@ -60,7 +60,7 @@
         <!-- We do care what the order of the sections is -->
         <ordered value="true"/>
         <!-- We don't want any additional content -->
-        <rules value="close" />
+        <rules value="closed" />
       </slicing>
     </element>
     
