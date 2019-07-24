@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Tumour" />
-  <name value="Tumour" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Tumor" />
+  <name value="Tumor" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -10,6 +10,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/BodyStructure" />
   <derivation value="constraint" />
   <differential>
+    <element id="BodyStructure">
+      <path value="BodyStructure" />
+    </element>
     <element id="BodyStructure.active">
       <path value="BodyStructure.active" />
       <max value="0" />

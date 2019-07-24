@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotypic-feature-onset" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/sample-individual-age-at-collection" />
   <version value="1.0.0" />
-  <name value="PhenotypicFeatureOnset" />
-  <title value="Phenotypic Feature Onset" />
+  <name value="SampleIndividualAgeAtCollection" />
+  <title value="Sample Individual Age at Collection" />
   <status value="draft" />
+  <description value="Age of the proband at the time the sample was taken." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Observation" />
+    <expression value="Specimen" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -18,14 +19,14 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="The onset of the phenotype."/>
-      <definition value="The onset of the phenotype."/>
+      <short value="Age of the proband at the time the sample was taken."/>
+      <definition value="Age of the proband at the time the sample was taken."/>
       <min value="0"/>
       <max value="1"/>
       <mustSupport value="true" />
       <isModifier value="false" />
     </element>
-     <element id="Extension.extension">
+    <element id="Extension.extension">
       <path value="Extension.extension"/>
       <max value="0"/>
     </element>
@@ -34,35 +35,16 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotypic-feature-onset"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/sample-individual-age-at-collection"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="dateTime" />
-      </type>
-      <type>
         <code value="Age" />
-      </type>
-      <type>
-        <code value="Period" />
       </type>
       <type>
         <code value="Range" />
       </type>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="Coding" />
-      </type>
-      <binding>
-         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Onset"/>
-        </extension>
-        <strength value="preferred" />
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/onset" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/family-identifier" />
-  <name value="FamilyIdentifier" />
-  <title value="Family Identifier" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/sample-control" />
+  <version value="1.0.0" />
+  <name value="SampleControl" />
+  <title value="Sample Control" />
   <status value="draft" />
+  <description value="Is this a control sample?" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="FamilyMemberHistory" />
+    <expression value="Specimen" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-	<element id="Extension">
+    <element id="Extension">
       <path value="Extension" />
-      <short value="An identifier for the family that is referred to by this pedigree."/>
-      <definition value="An identifier for the family that is referred to by this pedigree."/>
-      <min value="1"/>
+      <short value="Is this a control sample?"/>
+      <definition value="Is this a control sample?"/>
+      <min value="0"/>
       <max value="1"/>
       <mustSupport value="true" />
       <isModifier value="false" />
     </element>
-	<element id="Extension.extension">
+    <element id="Extension.extension">
       <path value="Extension.extension"/>
       <max value="0"/>
     </element>
@@ -33,12 +35,12 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/family-identifier"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/sample-control"/>
     </element>
-    <element id="Extension.valueIdentifier">
-      <path value="Extension.valueIdentifier"/>
+    <element id="Extension.valueBoolean">
+      <path value="Extension.valueBoolean"/>
       <type>
-        <code value="Identifier"/>
+        <code value="boolean"/>
       </type>
     </element>
   </differential>

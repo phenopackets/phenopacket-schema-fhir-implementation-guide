@@ -140,6 +140,30 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/Sample"/>
+                <display value="Sample Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/sample-control"/>
+                <display value="Sample Control Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/BiosampleResults"/>
+                <display value="Biosample Results Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/sample-individual-age-at-collection"/>
+                <display value="Sample Individual Age at Collection Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CodeSystem/document-type"/>
                 <display value="Document Type Code System"/>
             </reference>

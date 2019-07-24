@@ -12,7 +12,7 @@
   <derivation value="constraint" />
   <differential>
   
-     <!-- Root node - required for differential. -->
+    <!-- Root node - required for differential. -->
     <element id="Condition">
       <path value="Condition" />
     </element>

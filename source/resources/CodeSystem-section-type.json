@@ -23,6 +23,11 @@
       "definition": "Sample"
     },
     {
+      "code": "results",
+      "display": "Results",
+      "definition": "Results"
+    },
+    {
       "code": "tumour",
       "display": "Tumour",
       "definition": "Tumour"

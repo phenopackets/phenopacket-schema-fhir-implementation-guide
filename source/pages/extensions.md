@@ -72,6 +72,14 @@ active: profiles
 <td><a href="StructureDefinition-pedigree-node-individual.html">Pedigree Node Individual</a></td>
 <td>The context for this extension is FamilyMemberHistory.</td>
 </tr>
+<tr>
+<td><a href="StructureDefinition-sample-control.html">Sample Control</a></td>
+<td>The context for this extension is Specimen.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-sample-individual-age-at-collection.html">Sample Individual Age at Collection</a></td>
+<td>The context for this extension is Specimen.</td>
+</tr>
 </tbody>
 </table>
 

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-genome-assembly" />
   <version value="1.0.0" />
-  <name value="GenomeAssembly" />
+  <name value="FileGenomeAssembly" />
   <title value="Genome Assembly" />
   <status value="draft" />
   <description value="The genome assembly the contents of this file was called against. We recommend using the Genome Reference Consortium nomenclature e.g. GRCh37, GRCh38." />

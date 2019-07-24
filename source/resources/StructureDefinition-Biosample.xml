@@ -11,6 +11,19 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
+    
+    <!-- Missing nodes - required for differential. -->
+    <element id="Composition">
+      <path value="Composition" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+    </element>
+    <element id="Composition.type.coding">
+      <path value="Composition.type.coding" />
+    </element>
+    
+    <!-- Fixed value for the composition type. -->
     <element id="Composition.type.coding.system">
       <path value="Composition.type.coding.system" />
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type" />
@@ -19,6 +32,8 @@
       <path value="Composition.type.coding.code" />
       <fixedCode value="biosample" />
     </element>
+    
+    <!-- Restrict the subject type to be the Individual profile. -->
     <element id="Composition.subject">
       <path value="Composition.subject" />
       <type>
@@ -27,34 +42,14 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="Composition.encounter">
-      <path value="Composition.encounter" />
-      <max value="0" />
-    </element>
+    
+    <!-- Fixed value for title. -->
     <element id="Composition.title">
       <path value="Composition.title" />
       <fixedString value="Phenopacket" />
     </element>
-    <element id="Composition.confidentiality">
-      <path value="Composition.confidentiality" />
-      <max value="0" />
-    </element>
-    <element id="Composition.attester">
-      <path value="Composition.attester" />
-      <max value="0" />
-    </element>
-    <element id="Composition.custodian">
-      <path value="Composition.custodian" />
-      <max value="0" />
-    </element>
-    <element id="Composition.relatesTo">
-      <path value="Composition.relatesTo" />
-      <max value="0" />
-    </element>
-    <element id="Composition.event">
-      <path value="Composition.event" />
-      <max value="0" />
-    </element>
+    
+    <!-- Slice on sections. -->
     <element id="Composition.section">
       <path value="Composition.section" />
       <slicing>
@@ -62,9 +57,14 @@
           <type value="value" />
           <path value="code" />
         </discriminator>
-        <rules value="open" />
+        <!-- We do care what the order of the sections is -->
+        <ordered value="true"/>
+        <!-- We don't want any additional content -->
+        <rules value="close" />
       </slicing>
     </element>
+    
+    <!-- Sample section. -->
     <element id="Composition.section:sample">
       <path value="Composition.section" />
       <sliceName value="sample" />
@@ -86,6 +86,9 @@
           <display value="Sample" />
         </coding>
       </fixedCodeableConcept>
+    </element>
+    <element id="Composition.section:sample.code.coding">
+      <path value="Composition.section.code.coding" />
     </element>
     <element id="Composition.section:sample.code.coding.system">
       <path value="Composition.section.code.coding.system" />
@@ -134,6 +137,8 @@
       <path value="Composition.section.section" />
       <max value="0" />
     </element>
+    
+    <!-- Phenotypic features section. -->
     <element id="Composition.section:phenotypes">
       <path value="Composition.section" />
       <sliceName value="phenotypes" />
@@ -142,6 +147,12 @@
     <element id="Composition.section:phenotypes.title">
       <path value="Composition.section.title" />
       <fixedString value="Phenotypes" />
+    </element>
+    <element id="Composition.section:phenotypes.code">
+      <path value="Composition.section.code" />
+    </element>
+    <element id="Composition.section:phenotypes.code.coding">
+      <path value="Composition.section.code.coding" />
     </element>
     <element id="Composition.section:phenotypes.code.coding.system">
       <path value="Composition.section.code.coding.system" />
@@ -187,59 +198,94 @@
       <path value="Composition.section.section" />
       <max value="0" />
     </element>
-    <element id="Composition.section:tumour">
+    
+    <!-- Results section -->
+    <element id="Composition.section:results">
       <path value="Composition.section" />
-      <sliceName value="tumour" />
-      <sliceIsConstraining value="false" />
+      <sliceName value="results" />
       <max value="1" />
     </element>
-    <element id="Composition.section:tumour.title">
+    <element id="Composition.section:results.title">
       <path value="Composition.section.title" />
-      <fixedString value="Tumour" />
+      <fixedString value="Results" />
     </element>
-    <element id="Composition.section:tumour.code.coding.system">
+    <element id="Composition.section:results.code">
+      <path value="Composition.section.code" />
+    </element>
+    <element id="Composition.section:results.code.coding">
+      <path value="Composition.section.code.coding" />
+    </element>
+    <element id="Composition.section:results.code.coding.system">
       <path value="Composition.section.code.coding.system" />
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
     </element>
-    <element id="Composition.section:tumour.code.coding.code">
+    <element id="Composition.section:results.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <fixedCode value="tumour" />
+      <fixedCode value="results" />
     </element>
-    <element id="Composition.section:tumour.author">
+    <element id="Composition.section:results.author">
       <path value="Composition.section.author" />
       <max value="0" />
     </element>
-    <element id="Composition.section:tumour.focus">
+    <element id="Composition.section:results.focus">
       <path value="Composition.section.focus" />
       <max value="0" />
     </element>
-    <element id="Composition.section:tumour.text">
+    <element id="Composition.section:results.text">
       <path value="Composition.section.text" />
       <max value="0" />
     </element>
-    <element id="Composition.section:tumour.mode">
+    <element id="Composition.section:results.mode">
       <path value="Composition.section.mode" />
       <fixedCode value="snapshot" />
     </element>
-    <element id="Composition.section:tumour.orderedBy">
+    <element id="Composition.section:results.orderedBy">
       <path value="Composition.section.orderedBy" />
       <max value="0" />
     </element>
-    <element id="Composition.section:tumour.entry">
+    <element id="Composition.section:results.entry">
       <path value="Composition.section.entry" />
-      <min value="1" />
-      <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Tumour" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/BiosampleResults" />
+        <aggregation value="bundled" />
       </type>
+      <min value="1" />
+      <max value="1" />
     </element>
-    <element id="Composition.section:tumour.emptyReason">
+    <element id="Composition.section:results.emptyReason">
       <path value="Composition.section.emptyReason" />
       <max value="0" />
     </element>
-    <element id="Composition.section:tumour.section">
+    <element id="Composition.section:results.section">
       <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    
+    
+    <!-- Forbidden elements -->
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo">
+      <path value="Composition.relatesTo" />
+      <max value="0" />
+    </element>
+    <element id="Composition.event">
+      <path value="Composition.event" />
       <max value="0" />
     </element>
   </differential>

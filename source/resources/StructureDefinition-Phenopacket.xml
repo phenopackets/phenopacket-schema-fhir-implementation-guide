@@ -11,6 +11,19 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
+    
+    <!-- Missing nodes - required for differential. -->
+    <element id="Composition">
+      <path value="Composition" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+    </element>
+    <element id="Composition.type.coding">
+      <path value="Composition.type.coding" />
+    </element>
+    
+    <!-- Fixed value for the composition type. -->
     <element id="Composition.type.coding.system">
       <path value="Composition.type.coding.system" />
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type" />
@@ -19,6 +32,8 @@
       <path value="Composition.type.coding.code" />
       <fixedCode value="phenopacket" />
     </element>
+    
+    <!-- Restrict the subject type to be the Individual profile. -->
     <element id="Composition.subject">
       <path value="Composition.subject" />
       <type>
@@ -27,34 +42,14 @@
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="Composition.encounter">
-      <path value="Composition.encounter" />
-      <max value="0" />
-    </element>
+    
+    <!-- Fixed value for title. -->
     <element id="Composition.title">
       <path value="Composition.title" />
       <fixedString value="Phenopacket" />
     </element>
-    <element id="Composition.confidentiality">
-      <path value="Composition.confidentiality" />
-      <max value="0" />
-    </element>
-    <element id="Composition.attester">
-      <path value="Composition.attester" />
-      <max value="0" />
-    </element>
-    <element id="Composition.custodian">
-      <path value="Composition.custodian" />
-      <max value="0" />
-    </element>
-    <element id="Composition.relatesTo">
-      <path value="Composition.relatesTo" />
-      <max value="0" />
-    </element>
-    <element id="Composition.event">
-      <path value="Composition.event" />
-      <max value="0" />
-    </element>
+    
+    <!-- Slice on sections. -->
     <element id="Composition.section">
       <path value="Composition.section" />
       <slicing>
@@ -62,9 +57,14 @@
           <type value="value" />
           <path value="code" />
         </discriminator>
-        <rules value="open" />
+        <!-- We do care what the order of the sections is -->
+        <ordered value="true"/>
+        <!-- We don't want any additional content -->
+        <rules value="close" />
       </slicing>
     </element>
+    
+    <!-- Phenotypic features section -->
     <element id="Composition.section:phenotypes">
       <path value="Composition.section" />
       <sliceName value="phenotypes" />
@@ -116,8 +116,35 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <!-- Disallow subsections -->
     <element id="Composition.section:phenotypes.section">
       <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    
+    <!-- Forbidden elements -->
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo">
+      <path value="Composition.relatesTo" />
+      <max value="0" />
+    </element>
+    <element id="Composition.event">
+      <path value="Composition.event" />
       <max value="0" />
     </element>
   </differential>

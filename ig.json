@@ -149,6 +149,22 @@
       "base": "StructureDefinition-Biosample.html",
       "defns": "StructureDefinition-Biosample-definitions.html"
     },
+    "StructureDefinition/Sample": {
+      "base": "StructureDefinition-Sample.html",
+      "defns": "StructureDefinition-Sample-definitions.html"
+    },
+    "StructureDefinition/sample-individual-age-at-collection": {
+      "base": "StructureDefinition-sample-individual-age-at-collection.html",
+      "defns": "StructureDefinition-sample-individual-age-at-collection-definitions.html"
+    },
+    "StructureDefinition/sample-control": {
+      "base": "StructureDefinition-sample-control.html",
+      "defns": "StructureDefinition-sample-control-definitions.html"
+    },
+    "StructureDefinition/BiosampleResults": {
+      "base": "StructureDefinition-BiosampleResults.html",
+      "defns": "StructureDefinition-BiosampleResults-definitions.html"
+    },
     "ValueSet/onset": {
       "base": "ValueSet-onset.html",
       "defns": "ValueSet-onset-definitions.html"

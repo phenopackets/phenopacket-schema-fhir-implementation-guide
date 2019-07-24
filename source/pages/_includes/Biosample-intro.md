@@ -1,28 +1,28 @@
 This profile represents a [Biosample](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html) in the original Phenopackets implementation. It is meant to capture information about a unit of biological material used for molecular analyses along with additional patient information.
 
-#### FHIR Implementation
+#### Mapping Notes
 
 The main FHIR resource that corresponds to a Biosample is Sample, a profile on the Specimen resource. The additional patient information can be captured using the Observation, DiagnosticReport and BodyStructure resources, wrapped in a Composition resource. The following sections describe the mappings for each field in detail.
 
 ##### [id](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#id)
 
-All resources in FHIR have logical and business identifiers. This appears to correspond to a logical identifier and therefore will map to the id attribute of the main Composition.
+All resources in FHIR have logical and business identifiers. This id corresponds to the logical identifier of the main Composition.
 
 ##### [dataset_id](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#dataset-id)
 
-This element maps to the _accessionIdentifier_ atribute of the Specimen resource.
+This element maps to the _accessionIdentifier_ atribute of the [Sample](StructureDefinition-Sample.html) profile.
 
 ##### [individual_id](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#string-individual-id)
 
-Both the parent Composition resource and the Specimen resource have a _subject_ attribute that can reference an Individual.
+Both the parent Composition resource and the Sample profile have a _subject_ attribute that can reference an Individual.
 
 ##### [description](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#description)
 
-TODO
+This element maps to _Sample.annotation_.
 
 ##### [sampled_tissue](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#sampled-tissue)
 
-This element maps to the _type_ attribute of the Specimen resource.
+This element maps to the _type_ attribute of the [Sample](StructureDefinition-Sample.html) profile.
 
 ##### [phenotypic_features](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#phenotypic-features)
 
@@ -30,11 +30,11 @@ The phenotypic characteristics of the Biosample will be represented using Observ
 
 ##### [taxonomy](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#taxonomy)
 
-TODO
+This attribute is unnecessary because it is already part of Individual.
 
 ##### [individual_age_at_collection](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#individual-age-at-collection)
 
-TODO
+This attribute is represented by the [sample-individual-age-at-collection](StructureDefinition-sample-individual-age-at-collection.html) extension in the [Sample](StructureDefinition-Sample.html) profile.
 
 ##### [histological_diagnosis](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#histological-diagnosis)
 
@@ -57,5 +57,3 @@ One of the limitations of the current Phenopackets specification is that it does
 ##### [variants](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#variants)
 
 ##### [is_control_sample](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#is-control-sample)
-
-
