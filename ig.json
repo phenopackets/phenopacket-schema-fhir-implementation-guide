@@ -121,13 +121,13 @@
       "base": "StructureDefinition-htsfile-genome-assembly.html",
       "defns": "StructureDefinition-htsfile-genome-assembly-definitions.html"
     },
-    "StructureDefinition/htsfile-individual-to-sample-identifiers": {
-      "base": "StructureDefinition-htsfile-individual-to-sample-identifiers.html",
-      "defns": "StructureDefinition-htsfile-individual-to-sample-identifiers-definitions.html"
+    "StructureDefinition/htsfile-individual-to-specimen-identifiers": {
+      "base": "StructureDefinition-htsfile-individual-to-specimen-identifiers.html",
+      "defns": "StructureDefinition-htsfile-individual-to-specimen-identifiers-definitions.html"
     },
-    "StructureDefinition/Htsfile": {
-      "base": "StructureDefinition-Htsfile.html",
-      "defns": "StructureDefinition-Htsfile-definitions.html"
+    "StructureDefinition/HtsFile": {
+      "base": "StructureDefinition-HtsFile.html",
+      "defns": "StructureDefinition-HtsFile-definitions.html"
     },
     "StructureDefinition/affected-status": {
       "base": "StructureDefinition-affected-status.html",
@@ -149,27 +149,75 @@
       "base": "StructureDefinition-Biosample.html",
       "defns": "StructureDefinition-Biosample-definitions.html"
     },
-    "StructureDefinition/Sample": {
-      "base": "StructureDefinition-Sample.html",
-      "defns": "StructureDefinition-Sample-definitions.html"
+    "StructureDefinition/Specimen-Phenopackets": {
+      "base": "StructureDefinition-Specimen-Phenopackets.html",
+      "defns": "StructureDefinition-Specimen-Phenopackets-definitions.html"
     },
-    "StructureDefinition/sample-individual-age-at-collection": {
-      "base": "StructureDefinition-sample-individual-age-at-collection.html",
-      "defns": "StructureDefinition-sample-individual-age-at-collection-definitions.html"
+    "StructureDefinition/specimen-individual-age-at-collection": {
+      "base": "StructureDefinition-specimen-individual-age-at-collection.html",
+      "defns": "StructureDefinition-specimen-individual-age-at-collection-definitions.html"
     },
-    "StructureDefinition/sample-control": {
-      "base": "StructureDefinition-sample-control.html",
-      "defns": "StructureDefinition-sample-control-definitions.html"
+    "StructureDefinition/specimen-control": {
+      "base": "StructureDefinition-specimen-control.html",
+      "defns": "StructureDefinition-specimen-control-definitions.html"
     },
-    "StructureDefinition/BiosampleResults": {
-      "base": "StructureDefinition-BiosampleResults.html",
-      "defns": "StructureDefinition-BiosampleResults-definitions.html"
+    "StructureDefinition/DiagnosticReport-Phenopackets": {
+      "base": "StructureDefinition-DiagnosticReport-Phenopackets.html",
+      "defns": "StructureDefinition-DiagnosticReport-Phenopackets-definitions.html"
+    },
+    "StructureDefinition/Tumor": {
+      "base": "StructureDefinition-Tumor.html",
+      "defns": "StructureDefinition-Tumor-definitions.html"
+    },
+    "StructureDefinition/Cancer": {
+      "base": "StructureDefinition-Cancer.html",
+      "defns": "StructureDefinition-Cancer-definitions.html"
+    },
+    "StructureDefinition/CancerStage": {
+      "base": "StructureDefinition-CancerStage.html",
+      "defns": "StructureDefinition-CancerStage-definitions.html"
+    },
+    "StructureDefinition/TumorGrade": {
+      "base": "StructureDefinition-TumorGrade.html",
+      "defns": "StructureDefinition-TumorGrade-definitions.html"
+    },
+    "StructureDefinition/tumor-related-condition": {
+      "base": "StructureDefinition-tumor-related-condition.html",
+      "defns": "StructureDefinition-tumor-related-condition-definitions.html"
+    },
+    "StructureDefinition/TumorProperties": {
+      "base": "StructureDefinition-TumorProperties.html",
+      "defns": "StructureDefinition-TumorProperties-definitions.html"
+    },
+    "ValueSet/cancer-stage-code": {
+      "base": "ValueSet-cancer-stage-code.html",
+      "defns": "ValueSet-cancer-stage-code-definitions.html"
+    },
+    "ValueSet/cancer-stages": {
+      "base": "ValueSet-cancer-stages.html",
+      "defns": "ValueSet-cancer-stages-definitions.html"
+    },
+    "ValueSet/tumor-grade-code": {
+      "base": "ValueSet-tumor-grade-code.html",
+      "defns": "ValueSet-tumor-grade-code-definitions.html"
+    },
+    "ValueSet/tumor-grades": {
+      "base": "ValueSet-tumor-grades.html",
+      "defns": "ValueSet-tumor-grades-definitions.html"
+    },
+    "ValueSet/tumor-morphology": {
+      "base": "ValueSet-tumor-morphology.html",
+      "defns": "ValueSet-tumor-morphology-definitions.html"
+    },
+    "ValueSet/cancer": {
+      "base": "ValueSet-cancer.html",
+      "defns": "ValueSet-cancer-definitions.html"
     },
     "ValueSet/onset": {
       "base": "ValueSet-onset.html",
       "defns": "ValueSet-onset-definitions.html"
     },
-    "ValueSet/phenotype-modifier": {
+    "ValueSet/phenotypic-feature-modifier": {
       "base": "ValueSet-phenotypic-feature-modifier.html",
       "defns": "ValueSet-phenotypic-feature-modifier-definitions.html"
     },

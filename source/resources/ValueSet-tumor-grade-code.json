@@ -1,0 +1,29 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/tumor-grade-code",
+    "version": "1.0.0",
+    "name": "TumorGradeCode",
+    "title": "Tumor Grade Code",
+    "status": "active",
+    "description": "Tumor grade codes from NCIt and SNOMED CT.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/ncit/ncit-plus.owl",
+                "concept": [
+                    {
+                      "code": "NCIT:C28076"
+                    }
+                ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "concept": [
+                    {
+                      "code": "373372005"
+                    }
+                ]
+          }
+        ]
+    }
+}

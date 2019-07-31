@@ -12,7 +12,7 @@
   <derivation value="constraint" />
   <differential>
     
-    <!-- Missing nodes - required for differential. -->
+    <!-- Missing nodes - required for differential -->
     <element id="Composition">
       <path value="Composition" />
     </element>
@@ -23,7 +23,7 @@
       <path value="Composition.type.coding" />
     </element>
     
-    <!-- Fixed value for the composition type. -->
+    <!-- Fixed value for the composition type -->
     <element id="Composition.type.coding.system">
       <path value="Composition.type.coding.system" />
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type" />
@@ -33,7 +33,7 @@
       <fixedCode value="biosample" />
     </element>
     
-    <!-- Restrict the subject type to be the Individual profile. -->
+    <!-- Restrict the subject type to be the Individual profile -->
     <element id="Composition.subject">
       <path value="Composition.subject" />
       <type>
@@ -43,13 +43,13 @@
       </type>
     </element>
     
-    <!-- Fixed value for title. -->
+    <!-- Fixed value for title -->
     <element id="Composition.title">
       <path value="Composition.title" />
       <fixedString value="Phenopacket" />
     </element>
     
-    <!-- Slice on sections. -->
+    <!-- Slice on sections -->
     <element id="Composition.section">
       <path value="Composition.section" />
       <slicing>
@@ -64,76 +64,76 @@
       </slicing>
     </element>
     
-    <!-- Sample section. -->
-    <element id="Composition.section:sample">
+    <!-- Specimen-Phenopackets section -->
+    <element id="Composition.section:specimen">
       <path value="Composition.section" />
-      <sliceName value="sample" />
+      <sliceName value="specimen" />
       <sliceIsConstraining value="false" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Composition.section:sample.title">
+    <element id="Composition.section:specimen.title">
       <path value="Composition.section.title" />
-      <fixedString value="Sample" />
+      <fixedString value="Specimen" />
     </element>
-    <element id="Composition.section:sample.code">
+    <element id="Composition.section:specimen.code">
       <path value="Composition.section.code" />
       <fixedCodeableConcept>
         <coding>
           <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
           <version value="1.0.0" />
-          <code value="sample" />
-          <display value="Sample" />
+          <code value="specimen" />
+          <display value="Specimen" />
         </coding>
       </fixedCodeableConcept>
     </element>
-    <element id="Composition.section:sample.code.coding">
+    <element id="Composition.section:specimen.code.coding">
       <path value="Composition.section.code.coding" />
     </element>
-    <element id="Composition.section:sample.code.coding.system">
+    <element id="Composition.section:specimen.code.coding.system">
       <path value="Composition.section.code.coding.system" />
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
     </element>
-    <element id="Composition.section:sample.code.coding.code">
+    <element id="Composition.section:specimen.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <fixedCode value="sample" />
+      <fixedCode value="specimen" />
     </element>
-    <element id="Composition.section:sample.author">
+    <element id="Composition.section:specimen.author">
       <path value="Composition.section.author" />
       <max value="0" />
     </element>
-    <element id="Composition.section:sample.focus">
+    <element id="Composition.section:specimen.focus">
       <path value="Composition.section.focus" />
       <max value="0" />
     </element>
-    <element id="Composition.section:sample.text">
+    <element id="Composition.section:specimen.text">
       <path value="Composition.section.text" />
       <max value="0" />
     </element>
-    <element id="Composition.section:sample.mode">
+    <element id="Composition.section:specimen.mode">
       <path value="Composition.section.mode" />
       <fixedCode value="snapshot" />
     </element>
-    <element id="Composition.section:sample.orderedBy">
+    <element id="Composition.section:specimen.orderedBy">
       <path value="Composition.section.orderedBy" />
       <max value="0" />
     </element>
-    <element id="Composition.section:sample.entry">
+    <element id="Composition.section:specimen.entry">
       <path value="Composition.section.entry" />
-      <short value="Sample details in the Biosample." />
+      <short value="Specimen details in the Biosample." />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Sample" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Specimen-Phenopackets" />
         <aggregation value="bundled" />
       </type>
     </element>
-    <element id="Composition.section:sample.emptyReason">
+    <element id="Composition.section:specimen.emptyReason">
       <path value="Composition.section.emptyReason" />
       <max value="0" />
     </element>
-    <element id="Composition.section:sample.section">
+    <element id="Composition.section:specimen.section">
       <path value="Composition.section.section" />
       <max value="0" />
     </element>
@@ -247,7 +247,7 @@
       <path value="Composition.section.entry" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/BiosampleResults" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/DiagnosticReport-Phenopackets" />
         <aggregation value="bundled" />
       </type>
       <min value="1" />
@@ -262,7 +262,132 @@
       <max value="0" />
     </element>
     
+    <!-- HTS files section -->
+    <element id="Composition.section:htsFiles">
+      <path value="Composition.section" />
+      <sliceName value="results" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:htsFiles.title">
+      <path value="Composition.section.title" />
+      <fixedString value="HTS Files" />
+    </element>
+    <element id="Composition.section:htsFiles.code">
+      <path value="Composition.section.code" />
+    </element>
+    <element id="Composition.section:htsFiles.code.coding">
+      <path value="Composition.section.code.coding" />
+    </element>
+    <element id="Composition.section:htsFiles.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
+    </element>
+    <element id="Composition.section:htsFiles.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="results" />
+    </element>
+    <element id="Composition.section:htsFiles.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:htsFiles.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:htsFiles.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:htsFiles.mode">
+      <path value="Composition.section.mode" />
+      <fixedCode value="snapshot" />
+    </element>
+    <element id="Composition.section:htsFiles.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:htsFiles.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
+        <aggregation value="bundled" />
+      </type>
+      <min value="0" />
+      <max value="*" />
+    </element>
+    <element id="Composition.section:htsFiles.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:htsFiles.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
     
+    <!-- Tumor properties section -->
+    <element id="Composition.section:tumorProperties">
+      <path value="Composition.section" />
+      <sliceName value="results" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:tumorProperties.title">
+      <path value="Composition.section.title" />
+      <fixedString value="Tumor Properties" />
+    </element>
+    <element id="Composition.section:tumorProperties.code">
+      <path value="Composition.section.code" />
+    </element>
+    <element id="Composition.section:tumorProperties.code.coding">
+      <path value="Composition.section.code.coding" />
+    </element>
+    <element id="Composition.section:tumorProperties.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
+    </element>
+    <element id="Composition.section:tumorProperties.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="tumor-properties" />
+    </element>
+    <element id="Composition.section:tumorProperties.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumorProperties.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumorProperties.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumorProperties.mode">
+      <path value="Composition.section.mode" />
+      <fixedCode value="snapshot" />
+    </element>
+    <element id="Composition.section:tumorProperties.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumorProperties.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/TumorProperties" />
+        <aggregation value="bundled" />
+      </type>
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:tumorProperties.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumorProperties.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+
     <!-- Forbidden elements -->
     <element id="Composition.encounter">
       <path value="Composition.encounter" />

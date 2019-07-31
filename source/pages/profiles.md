@@ -33,7 +33,7 @@ active: profiles
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-Htsfile.html">HTS File</a></td>
+<td><a href="StructureDefinition-HtsFile.html">HTS File</a></td>
 <td></td>
 </tr>
 <tr>
@@ -49,7 +49,27 @@ active: profiles
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-Sample.html">Sample</a></td>
+<td><a href="StructureDefinition-Specimen-Phenopackets.html">Specimen-Phenopackets</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-Tumor.html">Tumor</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-Cancer.html">Cancer</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-CancerStage.html">Cancer Stage</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-TumorGrade.html">Tumor Grade</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-TumorProperties.html">Tumor Properties</a></td>
 <td></td>
 </tr>
 </tbody>

@@ -57,7 +57,7 @@ active: profiles
 <td>The context for this extension is DocumentReference.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-htsfile-individual-to-sample-identifiers.html">HTS File Individual to Sample Identifiers</a></td>
+<td><a href="StructureDefinition-htsfile-individual-to-specimen-identifiers.html">HTS File Individual to Specimen Identifiers</a></td>
 <td>The context for this extension is DocumentReference.</td>
 </tr>
 <tr>
@@ -73,12 +73,16 @@ active: profiles
 <td>The context for this extension is FamilyMemberHistory.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-sample-control.html">Sample Control</a></td>
+<td><a href="StructureDefinition-specimen-control.html">Specimen Control</a></td>
 <td>The context for this extension is Specimen.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-sample-individual-age-at-collection.html">Sample Individual Age at Collection</a></td>
+<td><a href="StructureDefinition-specimen-individual-age-at-collection.html">Specimen Individual Age at Collection</a></td>
 <td>The context for this extension is Specimen.</td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-tumor-related-condition.html">Tumor Related Condition</a></td>
+<td>The context for this extension is BodyStructure.</td>
 </tr>
 </tbody>
 </table>

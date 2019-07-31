@@ -12,7 +12,7 @@
   <derivation value="constraint" />
   <differential>
   
-    <!-- Root node - required for differential. -->
+    <!-- Root node - required for differential -->
     <element id="Condition">
       <path value="Condition" />
     </element>
@@ -43,7 +43,7 @@
       </type>
     </element>
     
-    <!-- Forbidden elements. -->
+    <!-- Forbidden elements -->
     <element id="Condition.clinicalStatus">
       <path value="Condition.clinicalStatus" />
       <max value="0" />

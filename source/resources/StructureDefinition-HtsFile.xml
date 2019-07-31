@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Htsfile" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
   <name value="HtsFile" />
   <title value="Hts File" />
   <status value="draft" />
@@ -53,19 +53,19 @@
       <isModifier value="false"/>
     </element>
     
-    <!-- The slice that contains the individual to sample identifiers map -->
-    <element id="DocumentReference.extension:individualToSampleIdentifiers">
+    <!-- The slice that contains the individual to specimen identifiers map -->
+    <element id="DocumentReference.extension:individualToSpecimenIdentifiers">
       <path value="DocumentReference.extension" />
-      <sliceName value="individualToSampleIdentifiers" />
+      <sliceName value="individualToSpecimenIdentifiers" />
       <sliceIsConstraining value="false" />
-      <label value="individualToSampleIdentifiers" />
-      <short value="A map of identifiers mapping an individual refered to in the Phenopacket to a sample in the file." />
-      <definition value="A map of identifiers mapping an individual refered to in the Phenopacket to a sample in the file. The key values must correspond to the Individual::id for the individuals in the message, the values must map to the samples in the file." />
+      <label value="individualToSpecimenIdentifiers" />
+      <short value="A map of identifiers mapping an individual refered to in the Phenopacket to a specimen in the file." />
+      <definition value="A map of identifiers mapping an individual refered to in the Phenopacket to a specimen in the file. The key values must correspond to the Individual::id for the individuals in the message, the values must map to the specimens in the file." />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-individual-to-sample-identifiers" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-individual-to-specimen-identifiers" />
       </type>
     </element>
     

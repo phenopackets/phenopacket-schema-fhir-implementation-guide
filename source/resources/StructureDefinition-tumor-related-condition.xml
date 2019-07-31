@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/sample-individual-age-at-collection" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/tumor-related-condition" />
   <version value="1.0.0" />
-  <name value="SampleIndividualAgeAtCollection" />
-  <title value="Sample Individual Age at Collection" />
+  <name value="TumorRelatedCondition" />
+  <title value="Tumor Related Condition" />
   <status value="draft" />
-  <description value="Age of the proband at the time the sample was taken." />
+  <description value="A cancer condition related to this tumor." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Specimen" />
+    <expression value="BodyStructure" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -19,8 +19,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Age of the proband at the time the sample was taken."/>
-      <definition value="Age of the proband at the time the sample was taken."/>
+      <short value="A condition related to this tumor."/>
+      <definition value="A condition related to this tumor."/>
       <min value="0"/>
       <max value="1"/>
       <mustSupport value="true" />
@@ -35,15 +35,13 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/sample-individual-age-at-collection"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/tumor-related-condition"/>
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
+    <element id="Extension.valueReference">
+      <path value="Extension.valueReference" />
       <type>
-        <code value="Age" />
-      </type>
-      <type>
-        <code value="Range" />
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Cancer" />
       </type>
     </element>
   </differential>

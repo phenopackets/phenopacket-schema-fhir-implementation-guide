@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Sample" />
-  <name value="Sample" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Specimen-Phenopackets" />
+  <name value="Specimen-Phenopackets" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -42,29 +42,29 @@
       <sliceName value="individualAgeAtCollection" />
       <sliceIsConstraining value="false" />
       <label value="individualAgeAtCollection" />
-      <short value="Age of the proband at the time the sample was taken." />
-      <definition value="Age of the proband at the time the sample was taken." />
+      <short value="Age of the proband at the time the specimen was taken." />
+      <definition value="Age of the proband at the time the specimen was taken." />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/sample-individual-age-at-collection" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/specimen-individual-age-at-collection" />
       </type>
     </element>
     
     <!-- The slice that contains the control flag -->
-    <element id="Specimen.extension:isControlSample">
+    <element id="Specimen.extension:isControlSpecimen">
       <path value="Specimen.extension" />
-      <sliceName value="isControlSample" />
+      <sliceName value="isControlSpecimen" />
       <sliceIsConstraining value="false" />
-      <label value="isControlSample" />
-      <short value="Whether the sample is being used as a normal control." />
-      <definition value="Whether the sample is being used as a normal control." />
+      <label value="isControlSpecimen" />
+      <short value="Whether the specimen is being used as a normal control." />
+      <definition value="Whether the specimen is being used as a normal control." />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/sample-control" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/specimen-control" />
       </type>
     </element>
     

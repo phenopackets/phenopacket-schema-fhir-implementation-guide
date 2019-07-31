@@ -1,0 +1,33 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/cancer",
+    "version": "1.0.0",
+    "name": "Cancer",
+    "title": "Cancer",
+    "status": "active",
+    "description": "Cancer conditions from NCIt and SNOMED CT.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/ncit/ncit-plus.owl",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "NCIT:C9305"
+                    }
+                ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "filter": [
+                  {
+                      "property": "concept",
+                      "op": "descendent-of",
+                      "value": "363346000"
+                  }
+              ]
+          }
+        ]
+    }
+}

@@ -1,4 +1,4 @@
-The Phenopackets Pedigree element represents a PED file (“pedigree file”), which describes the family relationships of each sample along with their gender and phenotype. PED files are typically used by software for genetic linkage analysis. PED files have six mandatory columns, and additional optional columns (that are typically not used in the context of genomic analysis).
+The Phenopackets Pedigree element represents a PED file (“pedigree file”), which describes the family relationships of each specimen along with their gender and phenotype. PED files are typically used by software for genetic linkage analysis. PED files have six mandatory columns, and additional optional columns (that are typically not used in the context of genomic analysis).
 
 FHIR already has resources and extensions that represent a pedigree. A pedigree node extends FamilyMemberHistory using some of the existing extensions from the genetic verison of the pedigree. 
 

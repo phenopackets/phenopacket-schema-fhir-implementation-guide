@@ -31,6 +31,11 @@
       "code": "biosample",
       "display": "Biosample",
       "definition": "Biosample"
+    },
+    {
+      "code": "tumor-properties",
+      "display": "Tumor Properties",
+      "definition": "Tumor Properties"
     }
   ]
 }

@@ -1,4 +1,4 @@
-This profile represents the results in a [Biosample](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html).
+This profile represents the test results of an Individual.
 
 #### Mapping Notes
 
@@ -6,4 +6,4 @@ The [DiagnosticReport)[http://hl7.org/fhir/diagnosticreport.html] resource inclu
 
 #### Extensions
 
-An extensions was required to represent [variants](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/obs-variant).
+An [extension](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/obs-variant) was required to represent variants.

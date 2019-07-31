@@ -1,0 +1,29 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/cancer-stage-code",
+    "version": "1.0.0",
+    "name": "CancerStageCode",
+    "title": "Cancer Stage Code",
+    "status": "active",
+    "description": "Cancer stage codes from NCIt and SNOMED CT.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/ncit/ncit-plus.owl",
+                "concept": [
+                    {
+                      "code": "NCIT:C48232"
+                    }
+                ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "concept": [
+                    {
+                      "code": "385356007"
+                    }
+                ]
+          }
+        ]
+    }
+}

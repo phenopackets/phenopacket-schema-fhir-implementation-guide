@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/TumorProperties" />
+  <version value="1.0.0" />
+  <name value="TumorProperties" />
+  <title value="Tumor Properties" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    
+    <!-- Missing nodes - required for differential -->
+    <element id="Composition">
+      <path value="Composition" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+    </element>
+    <element id="Composition.type.coding">
+      <path value="Composition.type.coding" />
+    </element>
+    
+    <!-- Fixed value for the composition type -->
+    <element id="Composition.type.coding.system">
+      <path value="Composition.type.coding.system" />
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type" />
+    </element>
+    <element id="Composition.type.coding.code">
+      <path value="Composition.type.coding.code" />
+      <fixedCode value="tumor-properties" />
+    </element>
+    
+    <!-- Restrict the subject type to be the Individual profile. -->
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Individual" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    
+    <!-- Fixed value for title. -->
+    <element id="Composition.title">
+      <path value="Composition.title" />
+      <fixedString value="Tumor Properties" />
+    </element>
+    
+    <!-- Slice on sections. -->
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <!-- We do care what the order of the sections is -->
+        <ordered value="true"/>
+        <!-- We don't want any additional content -->
+        <rules value="closed" />
+      </slicing>
+    </element>
+    
+    <!-- Cancer section -->
+    <element id="Composition.section:cancer">
+      <path value="Composition.section" />
+      <sliceName value="cancer" />
+      <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:cancer.title">
+      <path value="Composition.section.title" />
+      <short value="Cancer" />
+      <definition value="The individual's cancer condition." />
+      <fixedString value="Cancer" />
+    </element>
+    <element id="Composition.section:cancer.code">
+      <path value="Composition.section.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
+          <version value="1.0.0" />
+          <code value="cancer" />
+          <display value="Cancer" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Composition.section:cancer.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancer.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancer.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancer.mode">
+      <path value="Composition.section.mode" />
+      <fixedCode value="snapshot" />
+    </element>
+    <element id="Composition.section:cancer.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancer.entry">
+      <path value="Composition.section.entry" />
+      <short value="This is a Condition resource that describes the individual's cancer." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Cancer" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <!-- Disallow subsections -->
+    <element id="Composition.section:cancer.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    
+    <!-- Cancer stage section -->
+    <element id="Composition.section:cancerStage">
+      <path value="Composition.section" />
+      <sliceName value="cancerStage" />
+      <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:cancerStage.title">
+      <path value="Composition.section.title" />
+      <short value="Cancer Stage" />
+      <definition value="The stage of the cancer." />
+      <fixedString value="Cancer Stage" />
+    </element>
+    <element id="Composition.section:cancerStage.code">
+      <path value="Composition.section.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
+          <version value="1.0.0" />
+          <code value="cancer-stage" />
+          <display value="Cancer Stage" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Composition.section:cancerStage.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancerStage.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancerStage.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancerStage.mode">
+      <path value="Composition.section.mode" />
+      <fixedCode value="snapshot" />
+    </element>
+    <element id="Composition.section:cancerStage.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancerStage.entry">
+      <path value="Composition.section.entry" />
+      <short value="This is an Observation resource used to indicate the stage of the cancer." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/CancerStage" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <!-- Disallow subsections -->
+    <element id="Composition.section:cancerStage.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    
+    <!-- Tumor section -->
+    <element id="Composition.section:tumor">
+      <path value="Composition.section" />
+      <sliceName value="tumor" />
+      <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:tumor.title">
+      <path value="Composition.section.title" />
+      <short value="Tumor" />
+      <definition value="An individual's tumor." />
+      <fixedString value="Tumor" />
+    </element>
+    <element id="Composition.section:tumor.code">
+      <path value="Composition.section.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
+          <version value="1.0.0" />
+          <code value="tumor" />
+          <display value="Tumor" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Composition.section:tumor.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumor.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumor.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumor.mode">
+      <path value="Composition.section.mode" />
+      <fixedCode value="snapshot" />
+    </element>
+    <element id="Composition.section:tumor.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumor.entry">
+      <path value="Composition.section.entry" />
+      <max value="*" />
+      <short value="This is a BodyStructure resource that represents a tumor." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Tumor" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <!-- Disallow subsections -->
+    <element id="Composition.section:tumor.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    
+        <!-- Tumor grade section -->
+    <element id="Composition.section:tumorGrade">
+      <path value="Composition.section" />
+      <sliceName value="tumorGrade" />
+      <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:tumorGrade.title">
+      <path value="Composition.section.title" />
+      <short value="Tumor Grade" />
+      <definition value="List of terms representing the tumor grade." />
+      <fixedString value="Tumor Grade" />
+    </element>
+    <element id="Composition.section:tumorGrade.code">
+      <path value="Composition.section.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
+          <version value="1.0.0" />
+          <code value="tumor-grade" />
+          <display value="Tumor Grade" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Composition.section:tumorGrade.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumorGrade.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumorGrade.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumorGrade.mode">
+      <path value="Composition.section.mode" />
+      <fixedCode value="snapshot" />
+    </element>
+    <element id="Composition.section:tumorGrade.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:tumorGrade.entry">
+      <path value="Composition.section.entry" />
+      <max value="*" />
+      <short value="This is an Observation used to indicate the grade of a tumor." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/TumorGrade" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <!-- Disallow subsections -->
+    <element id="Composition.section:tumorGrade.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    
+    <!-- Forbidden elements -->
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo">
+      <path value="Composition.relatesTo" />
+      <max value="0" />
+    </element>
+    <element id="Composition.event">
+      <path value="Composition.event" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

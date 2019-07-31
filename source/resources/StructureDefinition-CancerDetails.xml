@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenopacket" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/CancerDetails" />
   <version value="1.0.0" />
-  <name value="Phenopacket" />
-  <title value="Phenopacket" />
+  <name value="CancerFeatures" />
+  <title value="Cancer Features" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -31,7 +31,7 @@
     </element>
     <element id="Composition.type.coding.code">
       <path value="Composition.type.coding.code" />
-      <fixedCode value="phenopacket" />
+      <fixedCode value="cancer-details" />
     </element>
     
     <!-- Restrict the subject type to be the Individual profile. -->
@@ -47,7 +47,7 @@
     <!-- Fixed value for title. -->
     <element id="Composition.title">
       <path value="Composition.title" />
-      <fixedString value="Phenopacket" />
+      <fixedString value="Cancer Details" />
     </element>
     
     <!-- Slice on sections. -->
@@ -65,126 +65,67 @@
       </slicing>
     </element>
     
-    <!-- Phenotypic features section -->
-    <element id="Composition.section:phenotypes">
+    <!-- Tumor section -->
+    <element id="Composition.section:tumor">
       <path value="Composition.section" />
-      <sliceName value="phenotypes" />
+      <sliceName value="tumor" />
       <sliceIsConstraining value="false" />
     </element>
-    <element id="Composition.section:phenotypes.title">
+    <element id="Composition.section:tumor.title">
       <path value="Composition.section.title" />
-      <short value="Phenotypes" />
-      <definition value="This is a list of phenotypic findings observed in the subject." />
-      <fixedString value="Phenotypes" />
+      <short value="Tumor" />
+      <definition value="A resource that represents a tumor." />
+      <fixedString value="Tumor" />
     </element>
-    <element id="Composition.section:phenotypes.code">
+    <element id="Composition.section:tumor.code">
       <path value="Composition.section.code" />
       <fixedCodeableConcept>
         <coding>
           <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
           <version value="1.0.0" />
-          <code value="phenotypes" />
-          <display value="Phenotypes" />
+          <code value="tumor" />
+          <display value="Tumor" />
         </coding>
       </fixedCodeableConcept>
     </element>
-    <element id="Composition.section:phenotypes.author">
+    <element id="Composition.section:tumor.author">
       <path value="Composition.section.author" />
       <max value="0" />
     </element>
-    <element id="Composition.section:phenotypes.focus">
+    <element id="Composition.section:tumor.focus">
       <path value="Composition.section.focus" />
       <max value="0" />
     </element>
-    <element id="Composition.section:phenotypes.text">
+    <element id="Composition.section:tumor.text">
       <path value="Composition.section.text" />
       <max value="0" />
     </element>
-    <element id="Composition.section:phenotypes.mode">
+    <element id="Composition.section:tumor.mode">
       <path value="Composition.section.mode" />
       <fixedCode value="snapshot" />
     </element>
-    <element id="Composition.section:phenotypes.orderedBy">
+    <element id="Composition.section:tumor.orderedBy">
       <path value="Composition.section.orderedBy" />
       <max value="0" />
     </element>
-    <element id="Composition.section:phenotypes.entry">
+    <element id="Composition.section:tumor.entry">
       <path value="Composition.section.entry" />
-      <short value="This is a list of phenotypic findings observed in the subject." />
+      <short value="A resource that represents a tumor." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/PhenotypicFeature" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Tumor" />
         <aggregation value="bundled" />
       </type>
     </element>
     <!-- Disallow subsections -->
-    <element id="Composition.section:phenotypes.section">
+    <element id="Composition.section:tumor.section">
       <path value="Composition.section.section" />
       <max value="0" />
     </element>
     
+    <!-- Condition section: TODO -->
     
-    
-    <!-- Biosamples section -->
-    <element id="Composition.section:biosamples">
-      <path value="Composition.section" />
-      <sliceName value="biosamples" />
-      <sliceIsConstraining value="false" />
-    </element>
-    <element id="Composition.section:biosamples.title">
-      <path value="Composition.section.title" />
-      <short value="Biosamples" />
-      <definition value="Samples, if any." />
-      <fixedString value="Biosamples" />
-    </element>
-    <element id="Composition.section:biosamples.code">
-      <path value="Composition.section.code" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
-          <version value="1.0.0" />
-          <code value="biosamples" />
-          <display value="Biosamples" />
-        </coding>
-      </fixedCodeableConcept>
-    </element>
-    <element id="Composition.section:biosamples.author">
-      <path value="Composition.section.author" />
-      <max value="0" />
-    </element>
-    <element id="Composition.section:biosamples.focus">
-      <path value="Composition.section.focus" />
-      <max value="0" />
-    </element>
-    <element id="Composition.section:biosamples.text">
-      <path value="Composition.section.text" />
-      <max value="0" />
-    </element>
-    <element id="Composition.section:biosamples.mode">
-      <path value="Composition.section.mode" />
-      <fixedCode value="snapshot" />
-    </element>
-    <element id="Composition.section:biosamples.orderedBy">
-      <path value="Composition.section.orderedBy" />
-      <max value="0" />
-    </element>
-    <element id="Composition.section:biosamples.entry">
-      <path value="Composition.section.entry" />
-      <short value="List of biosamples." />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Biosample" />
-        <aggregation value="bundled" />
-      </type>
-    </element>
-    <!-- Disallow subsections -->
-    <element id="Composition.section:biosamples.section">
-      <path value="Composition.section.section" />
-      <max value="0" />
-    </element>
-    
-    
-    
+    <!-- Observations on tumor section: TODO -->
     
     <!-- Forbidden elements -->
     <element id="Composition.encounter">

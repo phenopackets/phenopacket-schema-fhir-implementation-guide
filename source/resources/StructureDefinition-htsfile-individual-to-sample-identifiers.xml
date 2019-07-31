@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-individual-to-sample-identifiers" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-individual-to-specimen-identifiers" />
   <version value="1.0.0" />
-  <name value="IndividualToSampleIdentifiers" />
-  <title value="Individual To Sample Identifiers" />
+  <name value="IndividualToSpecimenIdentifiers" />
+  <title value="Individual To Specimen Identifiers" />
   <status value="draft" />
   <description value="" />
   <fhirVersion value="4.0.0" />
@@ -19,8 +19,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Individual To Sample Identifiers"/>
-      <definition value="A map of identifiers mapping an individual refered to in the Phenopacket to a sample in the file. The key values must correspond to the Individual::id for the individuals in the message, the values must map to the samples in the file."/>
+      <short value="Individual To Specimen Identifiers"/>
+      <definition value="A map of identifiers mapping an individual refered to in the Phenopacket to a specimen in the file. The key values must correspond to the Individual::id for the individuals in the message, the values must map to the specimens in the file."/>
       <min value="0"/>
       <max value="*"/>
     </element>
@@ -53,30 +53,30 @@
         <code value="Identifier"/>
       </type>
     </element>
-    <!-- Sample identifier  -->
-    <element id="Extension.extension:sampleIdentifier">
+    <!-- Specimen identifier  -->
+    <element id="Extension.extension:specimenIdentifier">
       <path value="Extension.extension"/>
-      <sliceName value="sampleIdentifier"/>
-      <short value="Sample identifier."/>
-      <definition value="Sample identifier."/>
+      <sliceName value="specimenIdentifier"/>
+      <short value="Specimen identifier."/>
+      <definition value="Specimen identifier."/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
     </element>
-    <element id="Extension.extension:sampleIdentifier.extension">
+    <element id="Extension.extension:specimenIdentifier.extension">
       <path value="Extension.extension.extension"/>
       <max value="0"/>
     </element>
-    <element id="Extension.extension:sampleIdentifier.url">
+    <element id="Extension.extension:specimenIdentifier.url">
       <path value="Extension.extension.url"/>
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="sampleIdentifier"/>
+      <fixedUri value="specimenIdentifier"/>
     </element>
-    <element id="Extension.extension:sampleIdentifier.valueString">
+    <element id="Extension.extension:specimenIdentifier.valueString">
       <path value="Extension.extension.valueString"/>
       <type>
         <code value="string"/>
@@ -87,7 +87,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-individual-to-sample-identifiers"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-individual-to-specimen-identifiers"/>
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>

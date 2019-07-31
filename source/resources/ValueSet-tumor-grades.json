@@ -1,0 +1,33 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/tumor-grades",
+    "version": "1.0.0",
+    "name": "TumorGrades",
+    "title": "Tumor Grades",
+    "status": "active",
+    "description": "Tumor grades from NCIt and SNOMED CT.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/ncit/ncit-plus.owl",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "NCIT:C28076"
+                    }
+                ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "373372005"
+                    }
+                ]
+            }
+        ]
+    }
+}

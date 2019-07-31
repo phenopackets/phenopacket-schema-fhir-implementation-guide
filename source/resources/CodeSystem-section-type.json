@@ -18,9 +18,9 @@
       "definition": "Phenotypes"
     },
     {
-      "code": "sample",
-      "display": "Sample",
-      "definition": "Sample"
+      "code": "specimen",
+      "display": "Specimen",
+      "definition": "Specimen"
     },
     {
       "code": "results",
@@ -28,9 +28,39 @@
       "definition": "Results"
     },
     {
-      "code": "tumour",
-      "display": "Tumour",
-      "definition": "Tumour"
+      "code": "tumor",
+      "display": "Tumor",
+      "definition": "Tumor"
+    },
+    {
+      "code": "cancer",
+      "display": "Cancer",
+      "definition": "Cancer"
+    },
+    {
+      "code": "cancer-stage",
+      "display": "Cancer Stage",
+      "definition": "Cancer Stage"
+    },
+    {
+      "code": "tumor-grade",
+      "display": "Tumor Grade",
+      "definition": "Tumor Grade"
+    },
+    {
+      "code": "hts-files",
+      "display": "HTS Files",
+      "definition": "HTS Files"
+    },
+    {
+      "code": "tumor-properties",
+      "display": "Tumor Properties",
+      "definition": "Tumor Properties"
+    },
+    {
+      "code": "biosamples",
+      "display": "Biosamples",
+      "definition": "Biosamples"
     }
   ]
 }

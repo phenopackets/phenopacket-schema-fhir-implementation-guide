@@ -98,13 +98,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/htsfile-individual-to-sample-identifiers"/>
-                <display value="HTS File Individual to Sample Identifiers Extension"/>
+                <reference value="StructureDefinition/htsfile-individual-to-specimen-identifiers"/>
+                <display value="HTS File Individual to Specimen Identifiers Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Htsfile"/>
+                <reference value="StructureDefinition/HtsFile"/>
                 <display value="HTS File Profile"/>
             </reference>
         </resource>
@@ -140,26 +140,98 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Sample"/>
-                <display value="Sample Profile"/>
+                <reference value="StructureDefinition/Specimen-Phenopackets"/>
+                <display value="Specimen-Phenopackets Profile"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/sample-control"/>
-                <display value="Sample Control Extension"/>
+                <reference value="StructureDefinition/specimen-control"/>
+                <display value="Specimen Control Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/BiosampleResults"/>
-                <display value="Biosample Results Profile"/>
+                <reference value="StructureDefinition/DiagnosticReport-Phenopackets"/>
+                <display value="DiagnosticReport-Phenopackets Profile"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/sample-individual-age-at-collection"/>
-                <display value="Sample Individual Age at Collection Extension"/>
+                <reference value="StructureDefinition/Tumor"/>
+                <display value="Tumor Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/specimen-individual-age-at-collection"/>
+                <display value="Specimen Individual Age at Collection Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Cancer"/>
+                <display value="Cancer Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/CancerStage"/>
+                <display value="Cancer Stage Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/TumorGrade"/>
+                <display value="Tumor Grade Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/tumor-related-condition"/>
+                <display value="Tumor Related Condition Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/TumorProperties"/>
+                <display value="Tumor Properties Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/cancer-stage-code"/>
+                <display value="Cancer Stage Code Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/cancer-stages"/>
+                <display value="Cancer Stages Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/tumor-grade-code"/>
+                <display value="Tumor Grade Code Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/tumor-grades"/>
+                <display value="Tumor Grades Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/tumor-morphology"/>
+                <display value="Tumor Morphology Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/cancer"/>
+                <display value="Cancer Value Set"/>
             </reference>
         </resource>
         <resource>

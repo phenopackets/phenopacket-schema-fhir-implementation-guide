@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/BiosampleResults" />
-  <name value="BiosampleResults" />
-  <title value="Biosample Results" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/DiagnosticReport-Phenopackets" />
+  <name value="DiagnosticReport-Phenopackets" />
+  <title value="Diagnostic Report - Phenopackets" />
   <status value="draft" />
-  <description value="Represents the results in a Biosample." />
+  <description value="Represents the test results of an individual." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
-  <type value="Patient" />
+  <type value="DiagnosticReport" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>

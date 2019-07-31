@@ -2,7 +2,7 @@ This profile represents a [Biosample](https://phenopackets-schema.readthedocs.io
 
 #### Mapping Notes
 
-The main FHIR resource that corresponds to a Biosample is Sample, a profile on the Specimen resource. The additional patient information can be captured using the Observation, DiagnosticReport and BodyStructure resources, wrapped in a Composition resource. The following sections describe the mappings for each field in detail.
+The main FHIR resource that corresponds to a Biosample is Specimen-Phenopackets, a profile on the Specimen resource. The additional patient information can be captured using the Observation, DiagnosticReport and BodyStructure resources, wrapped in a Composition resource. The following sections describe the mappings for each field in detail.
 
 ##### [id](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#id)
 
@@ -10,19 +10,19 @@ All resources in FHIR have logical and business identifiers. This id corresponds
 
 ##### [dataset_id](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#dataset-id)
 
-This element maps to the _accessionIdentifier_ atribute of the [Sample](StructureDefinition-Sample.html) profile.
+This element maps to the _accessionIdentifier_ atribute of the [Specimen-Phenopackets](StructureDefinition-Specimen-Phenopackets.html) profile.
 
 ##### [individual_id](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#string-individual-id)
 
-Both the parent Composition resource and the Sample profile have a _subject_ attribute that can reference an Individual.
+Both the parent Composition resource and the Specimen-Phenopackets profile have a _subject_ attribute that can reference an Individual.
 
 ##### [description](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#description)
 
-This element maps to _Sample.annotation_.
+This element maps to _Specimen-Phenopackets.annotation_.
 
 ##### [sampled_tissue](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#sampled-tissue)
 
-This element maps to the _type_ attribute of the [Sample](StructureDefinition-Sample.html) profile.
+This element maps to the _type_ attribute of the [Specimen-Phenopackets](StructureDefinition-Specimen-Phenopackets.html) profile.
 
 ##### [phenotypic_features](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#phenotypic-features)
 
@@ -34,21 +34,27 @@ This attribute is unnecessary because it is already part of Individual.
 
 ##### [individual_age_at_collection](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#individual-age-at-collection)
 
-This attribute is represented by the [sample-individual-age-at-collection](StructureDefinition-sample-individual-age-at-collection.html) extension in the [Sample](StructureDefinition-Sample.html) profile.
+This attribute is represented by the [sample-individual-age-at-collection](StructureDefinition-sample-individual-age-at-collection.html) extension in the [Specimen-Phenopackets](StructureDefinition-Specimen-Phenopackets.html) profile.
 
 ##### [histological_diagnosis](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#histological-diagnosis)
 
-TODO
+This attributes maps to the _conclusionCode_ attribute of a [DiagnosticReport](http://hl7.org/fhir/diagnosticreport.html), which is profiled as [DiagnosticReport-Phenopackets](StructureDefinition-DiagnosticReport-Phenopackets.html).
 
 ##### [tumor_progression](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#tumor-progression)
 
-One of the limitations of the current Phenopackets specification is that it does not allow representing tumours as first class entities. This complicates tracking tumours at different points in time. In the FHIR implementation, a tumour associated with the Biosample is represented using a profile on a BodyStructure resource. The _tumor progession_ attribute maps to the _morphology_ attribute in this FHIR resouce. The values of the _morphology_ attribute are constrained to a value set that repesents tumour progression.
+One of the limitations of the current Phenopackets specification is that it does not allow representing tumours as first class entities. This complicates tracking tumours at different points in time. In the FHIR implementation, a tumour associated with the Biosample is represented using [Tumor](StructureDefinition-Tumor.html), a profile on the [BodyStructure](http://hl7.org/fhir/bodystructure.html) resource. The _tumor progession_ roughly corresponds to the _morphology_ attribute in this FHIR resouce.
 
 ##### [tumor_grade](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#tumor-grade)
 
+This attribute is represented as [TumorGrade](StructureDefinition-TumorGrade.html), a profile on [Observation](http://hl7.org/fhir/observation.html).
+
 ##### [tumor_stage](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#tumor-stage)
 
+This attribute is represented as [TumorStage](StructureDefinition-TumorStage.html), a profile on [Observation](http://hl7.org/fhir/observation.html).
+
 ##### [diagnostic_markers](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#diagnostic-markers)
+
+
 
 ##### [procedure](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html#procedure)
 
