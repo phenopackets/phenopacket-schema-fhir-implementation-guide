@@ -41,14 +41,6 @@ active: profiles
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-Variant.html">Variant</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-Biosample.html">Biosample</a></td>
-<td></td>
-</tr>
-<tr>
 <td><a href="StructureDefinition-Specimen-Phenopackets.html">Specimen-Phenopackets</a></td>
 <td></td>
 </tr>

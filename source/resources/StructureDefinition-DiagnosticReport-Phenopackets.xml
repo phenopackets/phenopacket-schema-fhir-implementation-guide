@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/DiagnosticReport-Phenopackets" />
-  <name value="DiagnosticReport-Phenopackets" />
+  <name value="DiagnosticReport_Phenopackets" />
   <title value="Diagnostic Report - Phenopackets" />
   <status value="draft" />
   <description value="Represents the test results of an individual." />

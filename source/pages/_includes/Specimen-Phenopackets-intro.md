@@ -1,4 +1,4 @@
-This profile represents a subset of the attributes found in the original Phenopackets [Biosample](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html) object. For more details see the [Biosample page](StructureDefinition-Biosample.html) in this guide.
+This profile represents a subset of the attributes found in the original Phenopackets [Biosample](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html) object.
 
 #### Mapping Notes
 

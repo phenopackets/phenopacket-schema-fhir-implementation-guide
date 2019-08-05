@@ -42,10 +42,10 @@
     </element>
     
     <!-- Make value required and constrain value to value set -->
-    <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.value[x]" />
-      <sliceName value="valueCodeableConcept" />
+    <element id="Observation.valueCodeableConcept">
+      <path value="Observation.valueCodeableConcept" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -56,11 +56,12 @@
       </binding>
     </element>
     
-    <!-- TODO: Restrict the focus to be a Cancer Condition and make mandatory -->
+    <!-- Restrict the focus to be a Cancer Condition and make mandatory -->
     <!-- 
     <element id="Observation.focus">
       <path value="Observation.focus" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Cancer" />

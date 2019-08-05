@@ -28,11 +28,6 @@
       "definition": "Cohort"
     },
     {
-      "code": "biosample",
-      "display": "Biosample",
-      "definition": "Biosample"
-    },
-    {
       "code": "cancer-condition",
       "display": "Cancer condition",
       "definition": "Cancer condition"

@@ -6,4 +6,4 @@ The [DiagnosticReport)[http://hl7.org/fhir/diagnosticreport.html] resource inclu
 
 #### Extensions
 
-An [extension](http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/obs-variant) was required to represent variants.
+An [extension](https://build.fhir.org/ig/HL7/genomics-reporting/obs-variant.html) was required to represent variants.

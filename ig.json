@@ -26,7 +26,7 @@
      {
         "name" : "GenomicsReporting",
         "package" : "hl7.fhir.uv.genomics-reporting",
-        "version" : "dev"
+        "version" : "current"
      }
    ],
   "defaults": {
@@ -101,7 +101,7 @@
       "base": "StructureDefinition-Phenopacket.html",
       "defns": "StructureDefinition-Phenopacket-definitions.html"
     },
-    "StructureDefinition/phenotype-modifier": {
+    "StructureDefinition/phenotypic-feature-modifier": {
       "base": "StructureDefinition-phenotypic-feature-modifier.html",
       "defns": "StructureDefinition-phenotypic-feature-modifier-definitions.html"
     },
