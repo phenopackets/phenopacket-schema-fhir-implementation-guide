@@ -18,35 +18,76 @@
       <path value="DiagnosticReport" />
     </element>
     
-    <!-- Set up slicing -->
-    <element id="DiagnosticReport.extension">
-      <path value="DiagnosticReport.extension" />
-      <!-- Slice the extension element -->
+    <!-- Set up slicing for results -->
+    <element id="DiagnosticReport.result">
+      <path value="DiagnosticReport.result"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="pattern"/>
+          <path value="resolve().code"/>
         </discriminator>
-        <!-- We don't care what the order of any extensions is -->
-        <ordered value="false"/>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
     </element>
     
-    <!-- The slice that contains the variants -->
-    <element id="DiagnosticReport.extension:variants">
-      <path value="DiagnosticReport.extension" />
-      <sliceName value="variants" />
-      <sliceIsConstraining value="false" />
-      <label value="variants" />
-      <short value="List of variants determined to be present in the biosample." />
-      <definition value="List of variants determined to be present in the biosample." />
-      <min value="0" />
-      <max value="*" />
+    <!-- Candidate variants-->
+    <element id="DiagnosticReport.result:candidateVariants">
+      <path value="DiagnosticReport.result"/>
+      <sliceName value="candidateVariants"/>
+      <short value="Candidate Variants"/>
+      <min value="0"/>
+      <max value="*"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/obs-variant" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/obs-variant"/>
       </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
+    
+    <!-- Diagnosed variants-->
+    <element id="DiagnosticReport.result:diagnosedVariants">
+      <path value="DiagnosticReport.result"/>
+      <sliceName value="diagnosedVariants"/>
+      <short value="Diagnosed Variants"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/obs-variant"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
+    
+    <!-- Candidate genes -->
+    <element id="DiagnosticReport.result:candidateGenes">
+      <path value="DiagnosticReport.result"/>
+      <sliceName value="candidateGenes"/>
+      <short value="Candidate Genes"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/obs-region-studied"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
+    
+    <!-- Diagnosed genes -->
+    <element id="DiagnosticReport.result:diagnosedGenes">
+      <path value="DiagnosticReport.result"/>
+      <sliceName value="diagnosedGenes"/>
+      <short value="Diagnosed Genes"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/obs-region-studied"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
     </element>
     
     <!-- Constrain subject to be Indivdual -->

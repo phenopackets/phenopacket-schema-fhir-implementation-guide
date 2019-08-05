@@ -121,10 +121,6 @@
       "base": "StructureDefinition-htsfile-genome-assembly.html",
       "defns": "StructureDefinition-htsfile-genome-assembly-definitions.html"
     },
-    "StructureDefinition/htsfile-individual-to-specimen-identifiers": {
-      "base": "StructureDefinition-htsfile-individual-to-specimen-identifiers.html",
-      "defns": "StructureDefinition-htsfile-individual-to-specimen-identifiers-definitions.html"
-    },
     "StructureDefinition/HtsFile": {
       "base": "StructureDefinition-HtsFile.html",
       "defns": "StructureDefinition-HtsFile-definitions.html"
@@ -185,9 +181,9 @@
       "base": "StructureDefinition-tumor-related-condition.html",
       "defns": "StructureDefinition-tumor-related-condition-definitions.html"
     },
-    "StructureDefinition/TumorProperties": {
-      "base": "StructureDefinition-TumorProperties.html",
-      "defns": "StructureDefinition-TumorProperties-definitions.html"
+    "StructureDefinition/CancerCondition": {
+      "base": "StructureDefinition-CancerCondition.html",
+      "defns": "StructureDefinition-CancerCondition-definitions.html"
     },
     "ValueSet/cancer-stage-code": {
       "base": "ValueSet-cancer-stage-code.html",

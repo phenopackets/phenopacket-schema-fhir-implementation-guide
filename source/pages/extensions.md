@@ -57,10 +57,6 @@ active: profiles
 <td>The context for this extension is DocumentReference.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-htsfile-individual-to-specimen-identifiers.html">HTS File Individual to Specimen Identifiers</a></td>
-<td>The context for this extension is DocumentReference.</td>
-</tr>
-<tr>
 <td><a href="StructureDefinition-affected-status.html">Affected Status</a></td>
 <td>The context for this extension is FamilyMemberHistory.</td>
 </tr>

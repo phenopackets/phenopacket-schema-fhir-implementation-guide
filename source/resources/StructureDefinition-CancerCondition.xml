@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/TumorProperties" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/CancerCondition" />
   <version value="1.0.0" />
-  <name value="TumorProperties" />
-  <title value="Tumor Properties" />
+  <name value="CancerCondition" />
+  <title value="Cancer Condition" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -31,7 +31,7 @@
     </element>
     <element id="Composition.type.coding.code">
       <path value="Composition.type.coding.code" />
-      <fixedCode value="tumor-properties" />
+      <fixedCode value="cancer-condition" />
     </element>
     
     <!-- Restrict the subject type to be the Individual profile. -->
@@ -47,7 +47,7 @@
     <!-- Fixed value for title. -->
     <element id="Composition.title">
       <path value="Composition.title" />
-      <fixedString value="Tumor Properties" />
+      <fixedString value="Cancer Condition" />
     </element>
     
     <!-- Slice on sections. -->
@@ -110,6 +110,7 @@
     </element>
     <element id="Composition.section:cancer.entry">
       <path value="Composition.section.entry" />
+      <max value="1" />
       <short value="This is a Condition resource that describes the individual's cancer." />
       <type>
         <code value="Reference" />
@@ -168,6 +169,7 @@
     </element>
     <element id="Composition.section:cancerStage.entry">
       <path value="Composition.section.entry" />
+      <max value="1" />
       <short value="This is an Observation resource used to indicate the stage of the cancer." />
       <type>
         <code value="Reference" />
@@ -190,7 +192,7 @@
     <element id="Composition.section:tumor.title">
       <path value="Composition.section.title" />
       <short value="Tumor" />
-      <definition value="An individual's tumor." />
+      <definition value="A tumor." />
       <fixedString value="Tumor" />
     </element>
     <element id="Composition.section:tumor.code">
@@ -249,7 +251,7 @@
     <element id="Composition.section:tumorGrade.title">
       <path value="Composition.section.title" />
       <short value="Tumor Grade" />
-      <definition value="List of terms representing the tumor grade." />
+      <definition value="List of observations representing the tumor grade." />
       <fixedString value="Tumor Grade" />
     </element>
     <element id="Composition.section:tumorGrade.code">

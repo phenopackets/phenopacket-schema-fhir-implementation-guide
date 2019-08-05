@@ -69,7 +69,7 @@ active: profiles
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-TumorProperties.html">Tumor Properties</a></td>
+<td><a href="StructureDefinition-CancerCondition.html">Cancer Condition</a></td>
 <td></td>
 </tr>
 </tbody>

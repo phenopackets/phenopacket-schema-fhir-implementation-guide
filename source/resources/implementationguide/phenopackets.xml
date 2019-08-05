@@ -98,12 +98,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/htsfile-individual-to-specimen-identifiers"/>
-                <display value="HTS File Individual to Specimen Identifiers Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/HtsFile"/>
                 <display value="HTS File Profile"/>
             </reference>
@@ -194,8 +188,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/TumorProperties"/>
-                <display value="Tumor Properties Profile"/>
+                <reference value="StructureDefinition/CancerCondition"/>
+                <display value="Cancer Condition Profile"/>
             </reference>
         </resource>
         <resource>

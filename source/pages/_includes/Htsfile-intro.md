@@ -6,4 +6,4 @@ The closest resource in FHIR to an HtsFile is a [DocumentReference](https://www.
 
 #### Extensions
 
-Two extensions, [genome assembly](StructureDefinition-htsfile-genome-assembly.html) and [individual to specimen identifiers map](StructureDefinition-htsfile-individual-to-specimen-identifiers.html), were required. 
+An extension to represent the [genome assembly](StructureDefinition-htsfile-genome-assembly.html) was required. 

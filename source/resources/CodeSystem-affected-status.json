@@ -14,18 +14,18 @@
   "content": "complete",
   "concept": [
     {
-      "code": "MISSING",
-      "display": "MISSING",
+      "code": "missing",
+      "display": "Missing",
       "definition": "It is unknown whether the person is affected by the condition"
     },
     {
-      "code": "UNAFFECTED",
-      "display": "UNAFFECTED",
+      "code": "unaffected",
+      "display": "Unaffected",
       "definition": "Person is unaffected by the condition"
     },
     {
-      "code": "AFFECTED",
-      "display": "AFFECTED",
+      "code": "Affected",
+      "display": "Affected",
       "definition": "Person is affected by the condition"
     }
   ]

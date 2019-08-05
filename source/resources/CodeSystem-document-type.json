@@ -33,9 +33,9 @@
       "definition": "Biosample"
     },
     {
-      "code": "tumor-properties",
-      "display": "Tumor Properties",
-      "definition": "Tumor Properties"
+      "code": "cancer-condition",
+      "display": "Cancer condition",
+      "definition": "Cancer condition"
     }
   ]
 }
