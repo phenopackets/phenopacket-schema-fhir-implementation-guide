@@ -165,9 +165,9 @@
       "base": "StructureDefinition-Tumor.html",
       "defns": "StructureDefinition-Tumor-definitions.html"
     },
-    "StructureDefinition/Cancer": {
-      "base": "StructureDefinition-Cancer.html",
-      "defns": "StructureDefinition-Cancer-definitions.html"
+    "StructureDefinition/CancerDisease": {
+      "base": "StructureDefinition-CancerDisease.html",
+      "defns": "StructureDefinition-CancerDisease-definitions.html"
     },
     "StructureDefinition/CancerStage": {
       "base": "StructureDefinition-CancerStage.html",
@@ -177,13 +177,13 @@
       "base": "StructureDefinition-TumorGrade.html",
       "defns": "StructureDefinition-TumorGrade-definitions.html"
     },
-    "StructureDefinition/tumor-related-condition": {
-      "base": "StructureDefinition-tumor-related-condition.html",
-      "defns": "StructureDefinition-tumor-related-condition-definitions.html"
+    "StructureDefinition/CancerPacket": {
+      "base": "StructureDefinition-CancerPacket.html",
+      "defns": "StructureDefinition-CancerPacket-definitions.html"
     },
-    "StructureDefinition/CancerCondition": {
-      "base": "StructureDefinition-CancerCondition.html",
-      "defns": "StructureDefinition-CancerCondition-definitions.html"
+    "StructureDefinition/tumor-site": {
+      "base": "StructureDefinition-tumor-site.html",
+      "defns": "StructureDefinition-tumor-site-definitions.html"
     },
     "ValueSet/cancer-stage-code": {
       "base": "ValueSet-cancer-stage-code.html",

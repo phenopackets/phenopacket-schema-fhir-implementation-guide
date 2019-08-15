@@ -181,61 +181,61 @@
       <max value="0" />
     </element>
 
-    <!-- Cancer conditions section -->
-    <element id="Composition.section:cancerConditions">
+    <!-- Cancer packets section -->
+    <element id="Composition.section:cancerPackets">
       <path value="Composition.section" />
-      <sliceName value="cancerConditions" />
+      <sliceName value="cancerPackets" />
       <sliceIsConstraining value="false" />
     </element>
-    <element id="Composition.section:cancerConditions.title">
+    <element id="Composition.section:cancerPackets.title">
       <path value="Composition.section.title" />
-      <short value="Cancer Conditions" />
+      <short value="Cancer Packets" />
       <definition value="Cancers diagnosed in the proband." />
-      <fixedString value="Cancer Conditions" />
+      <fixedString value="Cancer Packets" />
     </element>
-    <element id="Composition.section:cancerConditions.code">
+    <element id="Composition.section:cancerPackets.code">
       <path value="Composition.section.code" />
       <fixedCodeableConcept>
         <coding>
           <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
           <version value="1.0.0" />
-          <code value="cancer-conditions" />
-          <display value="Cancer conditions" />
+          <code value="cancer-packets" />
+          <display value="Cancer packets" />
         </coding>
       </fixedCodeableConcept>
     </element>
-    <element id="Composition.section:cancerConditions.author">
+    <element id="Composition.section:cancerPackets.author">
       <path value="Composition.section.author" />
       <max value="0" />
     </element>
-    <element id="Composition.section:cancerConditions.focus">
+    <element id="Composition.section:cancerPackets.focus">
       <path value="Composition.section.focus" />
       <max value="0" />
     </element>
-    <element id="Composition.section:cancerConditions.text">
+    <element id="Composition.section:cancerPackets.text">
       <path value="Composition.section.text" />
       <max value="0" />
     </element>
-    <element id="Composition.section:cancerConditions.mode">
+    <element id="Composition.section:cancerPackets.mode">
       <path value="Composition.section.mode" />
       <fixedCode value="snapshot" />
     </element>
-    <element id="Composition.section:cancerConditions.orderedBy">
+    <element id="Composition.section:cancerPackets.orderedBy">
       <path value="Composition.section.orderedBy" />
       <max value="0" />
     </element>
-    <element id="Composition.section:cancerConditions.entry">
+    <element id="Composition.section:cancerPackets.entry">
       <path value="Composition.section.entry" />
       <max value="*" />
       <short value="Cancers diagnosed in the proband." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/CancerCondition" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/CancerPacket" />
         <aggregation value="bundled" />
       </type>
     </element>
     <!-- Disallow subsections -->
-    <element id="Composition.section:cancerConditions.section">
+    <element id="Composition.section:cancerPackets.section">
       <path value="Composition.section.section" />
       <max value="0" />
     </element>

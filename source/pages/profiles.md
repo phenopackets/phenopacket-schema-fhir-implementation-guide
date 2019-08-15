@@ -49,7 +49,7 @@ active: profiles
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-Cancer.html">Cancer</a></td>
+<td><a href="StructureDefinition-CancerDisease.html">Cancer Disease</a></td>
 <td></td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ active: profiles
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-CancerCondition.html">Cancer Condition</a></td>
+<td><a href="StructureDefinition-CancerPacket.html">Cancer Packet</a></td>
 <td></td>
 </tr>
 </tbody>

@@ -164,8 +164,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Cancer"/>
-                <display value="Cancer Profile"/>
+                <reference value="StructureDefinition/CancerDisease"/>
+                <display value="Cancer Disease Profile"/>
             </reference>
         </resource>
         <resource>
@@ -182,14 +182,14 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/tumor-related-condition"/>
-                <display value="Tumor Related Condition Extension"/>
+                <reference value="StructureDefinition/CancerPacket"/>
+                <display value="Cancer Packet Profile"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/CancerCondition"/>
-                <display value="Cancer Condition Profile"/>
+                <reference value="StructureDefinition/tumor-site"/>
+                <display value="Tumor Site Extension"/>
             </reference>
         </resource>
         <resource>

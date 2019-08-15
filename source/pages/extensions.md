@@ -77,8 +77,8 @@ active: profiles
 <td>The context for this extension is Specimen.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-tumor-related-condition.html">Tumor Related Condition</a></td>
-<td>The context for this extension is BodyStructure.</td>
+<td><a href="StructureDefinition-tumor-site.html">Tumor Site</a></td>
+<td>The context for this extension is CancerDisease.</td>
 </tr>
 </tbody>
 </table>

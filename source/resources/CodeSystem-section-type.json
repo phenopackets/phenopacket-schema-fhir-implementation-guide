@@ -34,7 +34,7 @@
     },
     {
       "code": "diagnostic-report",
-      "display": "Diagnostic Report",
+      "display": "Diagnostic report",
       "definition": "Diagnostic report"
     },
     {
@@ -43,9 +43,9 @@
       "definition": "Tumor"
     },
     {
-      "code": "cancer",
-      "display": "Cancer",
-      "definition": "Cancer"
+      "code": "cancer-disease",
+      "display": "Cancer disease",
+      "definition": "Cancer disease"
     },
     {
       "code": "cancer-stage",
@@ -63,9 +63,9 @@
       "definition": "HTS files"
     },
     {
-      "code": "cancer-conditions",
-      "display": "Cancer conditions",
-      "definition": "Cancer conditions"
+      "code": "cancer-packets",
+      "display": "Cancer packets",
+      "definition": "Cancer packets"
     }
   ]
 }

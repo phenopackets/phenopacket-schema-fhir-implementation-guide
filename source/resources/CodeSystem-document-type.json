@@ -28,9 +28,9 @@
       "definition": "Cohort"
     },
     {
-      "code": "cancer-condition",
-      "display": "Cancer condition",
-      "definition": "Cancer condition"
+      "code": "cancer-packet",
+      "display": "Cancer packet",
+      "definition": "Cancer packet"
     }
   ]
 }
