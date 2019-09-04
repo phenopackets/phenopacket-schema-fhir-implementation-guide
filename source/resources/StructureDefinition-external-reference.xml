@@ -37,8 +37,8 @@
           <type value="value"/>
           <path value="url"/>
         </discriminator>
-        <ordered value="true"/>
-        <rules value="openAtEnd"/>
+        <ordered value="false"/>
+        <rules value="open"/>
       </slicing>
     </element>
     
@@ -95,13 +95,13 @@
       </type>
     </element>
 
-    <!-- last (for order reasons): the fixed URI -->
+    <!-- The fixed URI -->
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/external-reference"/>
     </element>
     
-    <!-- and no value in the root -->
+    <!-- And no value in the root -->
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="0"/>

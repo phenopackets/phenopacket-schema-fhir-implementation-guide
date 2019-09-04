@@ -33,8 +33,8 @@
           <type value="value"/>
           <path value="url"/>
         </discriminator>
-        <ordered value="true"/>
-        <rules value="openAtEnd"/>
+        <ordered value="false"/>
+        <rules value="open"/>
       </slicing>
     </element>
     
@@ -42,7 +42,9 @@
     <element id="Extension.extension:evidenceCode">
       <path value="Extension.extension"/>
       <sliceName value="evidenceCode"/>
-      <short value="For example, in order to describe the evidence for a phenotypic observation that is derived from a publication, one might use the ECO term author statement from published clinical study used in manual assertion (ECO:0006017) and record a PubMed id in the reference field."/>
+      <sliceIsConstraining value="false" />
+      <label value="Evidence code" />
+      <short value="In order to describe the evidence for a phenotypic observation that is derived from a publication, one might use, for example, the ECO term author statement from published clinical study used in manual assertion (ECO:0006017) and record a PubMed id in the reference field."/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -77,17 +79,18 @@
     <element id="Extension.extension:reference">
       <path value="Extension.extension"/>
       <sliceName value="reference"/>
+      <sliceIsConstraining value="false" />
+      <label value="Reference" />
       <short value="An External Reference element is used to store a reference to the publication that supports the evidence. Not all types of evidence will have an external reference, and therefore this field is optional."/>
       <min value="0"/>
       <max value="1"/>
-    </element>
-    <element id="Extension.extension:reference.url">
-      <path value="Extension.extension.url"/>
-      <min value="1"/>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/external-reference"/>
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/external-reference" />
+      </type>
     </element>
     
-    <!-- last (for order reasons): the fixed URI -->
+    <!-- The fixed URI -->
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/evidence"/>
