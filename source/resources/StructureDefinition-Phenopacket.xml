@@ -70,6 +70,20 @@
       <path value="Composition.section" />
       <sliceName value="phenotypes" />
       <sliceIsConstraining value="false" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:phenotypes.id">
+      <path value="Composition.section.id" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:phenotypes.extension">
+      <path value="Composition.section.extension" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:phenotypes.modifierExtension">
+      <path value="Composition.section.modifierExtension" />
+      <max value="0" />
     </element>
     <element id="Composition.section:phenotypes.title">
       <path value="Composition.section.title" />
@@ -117,6 +131,10 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Composition.section:phenotypes.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
     <!-- Disallow subsections -->
     <element id="Composition.section:phenotypes.section">
       <path value="Composition.section.section" />
@@ -128,6 +146,18 @@
       <path value="Composition.section" />
       <sliceName value="diseases" />
       <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:diseases.id">
+      <path value="Composition.section.id" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:diseases.extension">
+      <path value="Composition.section.extension" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:diseases.modifierExtension">
+      <path value="Composition.section.modifierExtension" />
+      <max value="0" />
     </element>
     <element id="Composition.section:diseases.title">
       <path value="Composition.section.title" />
@@ -175,6 +205,10 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Composition.section:diseases.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
     <!-- Disallow subsections -->
     <element id="Composition.section:diseases.section">
       <path value="Composition.section.section" />
@@ -186,6 +220,18 @@
       <path value="Composition.section" />
       <sliceName value="cancerPackets" />
       <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:cancerPackets.id">
+      <path value="Composition.section.id" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancerPackets.extension">
+      <path value="Composition.section.extension" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:cancerPackets.modifierExtension">
+      <path value="Composition.section.modifierExtension" />
+      <max value="0" />
     </element>
     <element id="Composition.section:cancerPackets.title">
       <path value="Composition.section.title" />
@@ -234,6 +280,10 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Composition.section:cancerPackets.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
     <!-- Disallow subsections -->
     <element id="Composition.section:cancerPackets.section">
       <path value="Composition.section.section" />
@@ -245,6 +295,18 @@
       <path value="Composition.section" />
       <sliceName value="diagnosticReport" />
       <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:specimen.id">
+      <path value="Composition.section.id" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:specimen.extension">
+      <path value="Composition.section.extension" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:specimen.modifierExtension">
+      <path value="Composition.section.modifierExtension" />
+      <max value="0" />
     </element>
     <element id="Composition.section:specimen.title">
       <path value="Composition.section.title" />
@@ -292,6 +354,10 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Composition.section:specimen.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
     <!-- Disallow subsections -->
     <element id="Composition.section:specimen.section">
       <path value="Composition.section.section" />
@@ -303,6 +369,18 @@
       <path value="Composition.section" />
       <sliceName value="diagnosticReport" />
       <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:diagnosticReport.id">
+      <path value="Composition.diagnosticReport.id" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:diagnosticReport.extension">
+      <path value="Composition.section.extension" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:diagnosticReport.modifierExtension">
+      <path value="Composition.section.modifierExtension" />
+      <max value="0" />
     </element>
     <element id="Composition.section:diagnosticReport.title">
       <path value="Composition.section.title" />
@@ -350,6 +428,10 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="Composition.section:diagnosticReport.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
     <!-- Disallow subsections -->
     <element id="Composition.section:diagnosticReport.section">
       <path value="Composition.section.section" />
@@ -361,6 +443,18 @@
       <path value="Composition.section" />
       <sliceName value="htsFiles" />
       <sliceIsConstraining value="false" />
+    </element>
+    <element id="Composition.section:htsFiles.id">
+      <path value="Composition.diagnosticReport.id" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:htsFiles.extension">
+      <path value="Composition.section.extension" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:htsFiles.modifierExtension">
+      <path value="Composition.section.modifierExtension" />
+      <max value="0" />
     </element>
     <element id="Composition.section:htsFiles.title">
       <path value="Composition.section.title" />
@@ -407,6 +501,10 @@
         <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
         <aggregation value="bundled" />
       </type>
+    </element>
+    <element id="Composition.section:htsFiles.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
     </element>
     <!-- Disallow subsections -->
     <element id="Composition.section:htsFiles.section">
