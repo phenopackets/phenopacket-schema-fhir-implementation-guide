@@ -15,7 +15,7 @@ This page describes the mapping between the original Phenopackets and this FHIR 
 | [Disease](https://phenopackets-schema.readthedocs.io/en/latest/disease.html) | Corresponds to the [Disease](StructureDefinition-Disease.html) profile. |
 | [Evidence](https://phenopackets-schema.readthedocs.io/en/latest/evidence.html) | Corresponds to the [evidence](StructureDefinition-evidence.html) extension. |
 | [ExternalReference](https://phenopackets-schema.readthedocs.io/en/latest/externalreference.html) | Corresponds to the [external reference](StructureDefinition-external-reference.html) extension. |
-| [File and HtsFile](https://phenopackets-schema.readthedocs.io/en/latest/file.html)| Corresponds to the [Hts File](StructureDefinition-HtsFile.html) profile. |
+| [HtsFile](https://phenopackets-schema.readthedocs.io/en/latest/file.html)| Corresponds to the [Hts File](StructureDefinition-HtsFile.html) profile. |
 | [Gene](https://phenopackets-schema.readthedocs.io/en/latest/gene.html)| Maps to [ObsRegionStudied](http://build.fhir.org/ig/HL7/genomics-reporting/obs-region-studied.html) in the [FHIR Genomics Reporting Implementation Guide](http://build.fhir.org/ig/HL7/genomics-reporting/index.html). |
 | [Individual](https://phenopackets-schema.readthedocs.io/en/latest/individual.html)| Corresponds to the [Individual](StructureDefinition-Individual.html) profile. |
 | [Karyotypic sex](https://phenopackets-schema.readthedocs.io/en/latest/karyotypicsex.html)| Corresponds to the [individual karyotypic sex](StructureDefinition-individual-karyotypic-sex.html) extension. |

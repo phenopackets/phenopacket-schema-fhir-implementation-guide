@@ -5,7 +5,7 @@
   <name value="PhenotypicFeature" />
   <title value="Phenotypic Feature" />
   <status value="draft" />
-  <description value="This element is intended to be used to describe a phenotype that characterizes the subject of the Phenopacket. For medical use cases the subject will generally be a patient or a proband of a study, and the phenotypes will be abnormalities described by an ontology such as the Human Phenotype Ontology. The word phenotype is used with many different meanings including disease entity, but in this context we mean an individual phenotypic feature, observed as either present or absent (negated), with possible onset, modifiers and frequency." />
+  <description value="This element is intended to be used to describe a phenotype that characterizes the subject of the Phenopacket. For medical use cases the subject will generally be a patient or a proband of a study, and the phenotypes will be abnormalities described by an ontology such as the Human Phenotype Ontology. The word phenotype is used with many different meanings including disease entity, but in this context we mean an individual phenotypic feature, observed as either present or absent, with possible onset, modifiers and frequency." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -43,6 +43,7 @@
       <short value="This element is an ontology class that describes the severity of the condition e.g. subclasses of Severity (HP:0012824) or SNOMED:272141005-Severities." />
       <definition value="This element is an ontology class that describes the severity of the condition e.g. subclasses of Severity (HP:0012824) or SNOMED:272141005-Severities." />
       <max value="1" />
+      <mustSupport value="true"/>
       <type>
         <code value="Extension" />
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotypic-feature-severity" />
@@ -58,6 +59,7 @@
       <short value="This element is a list of ontology class elements that can be empty or contain one or more ontology terms that are intended to provide more expressive or precise descriptions of a phenotypic feature, including attributes such as positionality and external factors that tend to trigger or ameliorate the feature." />
       <definition value="This element is a list of ontology class elements that can be empty or contain one or more ontology terms that are intended to provide more expressive or precise descriptions of a phenotypic feature, including attributes such as positionality and external factors that tend to trigger or ameliorate the feature. Terms can be taken from the hierarchy of Clinical modifier in the HPO (noting that severity should be coded in the severity element)." />
       <max value="*" />
+      <mustSupport value="true"/>
       <type>
         <code value="Extension" />
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotypic-feature-modifier" />
@@ -73,6 +75,7 @@
       <short value="This element can be used to describe the age at which a phenotypic feature was first noticed or diagnosed." />
       <definition value="This element can be used to describe the age at which a phenotypic feature was first noticed or diagnosed. For many medical use cases, either the Age subelement or an ontology class (e.g., from the HPO Onset (HP:0003674) terms) will be used." />
       <max value="1" />
+      <mustSupport value="true"/>
       <type>
         <code value="Extension" />
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotypic-feature-onset" />
@@ -88,6 +91,7 @@
       <short value="This element is recommended and contain one or more Evidence elements that specify how the phenotype was determined." />
       <definition value="This element is recommended and contain one or more Evidence elements that specify how the phenotype was determined." />
       <max value="*" />
+      <mustSupport value="true"/>
       <type>
         <code value="Extension" />
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/evidence" />
@@ -107,7 +111,7 @@
         </extension>
         <strength value="preferred" />
         <description value="The primary ontology class which describes the phenotype." />
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotype-type" />
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotypic-feature-type" />
       </binding>
     </element>
     
@@ -130,7 +134,7 @@
       </type>
       <binding>
         <strength value="extensible" />
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/presence" />
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotypic-feature-presence" />
       </binding>
     </element>
     

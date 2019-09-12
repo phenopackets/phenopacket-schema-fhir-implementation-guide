@@ -41,60 +41,7 @@
         <code value="Extension" />
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/disease-onset" />
       </type>
-    </element>
-    
-    <!-- Forbidden elements -->
-    <element id="Condition.clinicalStatus">
-      <path value="Condition.clinicalStatus" />
-      <max value="0" />
-    </element>
-    <element id="Condition.verificationStatus">
-      <path value="Condition.verificationStatus" />
-      <max value="0" />
-    </element>
-    <element id="Condition.category">
-      <path value="Condition.category" />
-      <max value="0" />
-    </element>
-    <element id="Condition.severity">
-      <path value="Condition.severity" />
-      <max value="0" />
-    </element>
-    <element id="Condition.bodySite">
-      <path value="Condition.bodySite" />
-      <max value="0" />
-    </element>
-    <element id="Condition.encounter">
-      <path value="Condition.encounter" />
-      <max value="0" />
-    </element>
-    <element id="Condition.abatement[x]">
-      <path value="Condition.abatement[x]" />
-      <max value="0" />
-    </element>
-    <element id="Condition.recordedDate">
-      <path value="Condition.recordedDate" />
-      <max value="0" />
-    </element>
-    <element id="Condition.recorder">
-      <path value="Condition.recorder" />
-      <max value="0" />
-    </element>
-    <element id="Condition.asserter">
-      <path value="Condition.asserter" />
-      <max value="0" />
-    </element>
-    <element id="Condition.stage">
-      <path value="Condition.stage" />
-      <max value="0" />
-    </element>
-    <element id="Condition.evidence">
-      <path value="Condition.evidence" />
-      <max value="0" />
-    </element>
-    <element id="Condition.note">
-      <path value="Condition.note" />
-      <max value="0" />
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -7,7 +7,7 @@
   "status": "active",
   "experimental": false,
   "publisher": "GA4GH",
-  "description": "An enumeration used to represent whether a person is affected by a condition of interest in the context of a pedigree (PED) file.",
+  "description": "An enumeration used to represent whether a person is affected by a condition of interest in the context of a pedigree.",
   "caseSensitive": false,
   "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/affected-status?vs",
   "title": "Affected Status",

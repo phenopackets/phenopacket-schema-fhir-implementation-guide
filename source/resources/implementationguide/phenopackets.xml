@@ -272,13 +272,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/phenotype-type"/>
+                <reference value="ValueSet/phenotypic-feature-type"/>
                 <display value="Phenotype Type Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/presence"/>
+                <reference value="ValueSet/phenotypic-feature-presence"/>
                 <display value="Presence Value Set"/>
             </reference>
         </resource>

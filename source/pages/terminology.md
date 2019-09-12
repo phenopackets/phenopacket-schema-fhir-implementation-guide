@@ -11,3 +11,74 @@ active: terminology
 
 <br/>
 
+### Code Systems
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/evidenceontology/evidenceontology/">Evidence &amp; Conclusion Ontology (ECO)</a></td>
+<td>ECO is used to represent scientific evidence in biological research. This is an OWL ontology transformed into an FHIR code system.</td>
+</tr>
+<tr>
+<td><a href="CodeSystem-hts-format.html">Hts Format</a></td>
+<td>An enumeration used to represent different high-throughput sequencing file formats.</td>
+</tr>
+<tr>
+<td><a href="CodeSystem-karyotypic-sex.html">Karyotypic Sex</a></td>
+<td>Represents the chromosomal sex of an individual.</td>
+</tr>
+<tr>
+<td><a href="https://www.ncbi.nlm.nih.gov/taxonomy">NCBI Taxonomy</a></td>
+<td>The NCBI Taxonomy Database is a curated classification and nomenclature for all of the organisms in the public sequence databases. This is an OWL ontology transformed into an FHIR code system.</td>
+</tr>
+<tr>
+<td><a href=""></a></td>
+<td></td>
+</tr>
+
+</tbody>
+</table>
+
+### Value Sets
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="ValueSet-onset.html">Onset</a></td>
+<td>Onset terms from HPO and SNOMED CT.</td>
+</tr>
+<tr>
+<td><a href="ValueSet-phenotypic-feature-severity.html">Severity</a></td>
+<td>Severity terms from HPO and SNOMED CT.</td>
+</tr>
+<tr>
+<td><a href="ValueSet-phenotypic-feature-modifier.html">Clinical modifiers</a></td>
+<td>Clinical modifier terms from HPO. TODO: add corresponding SNOMED CT terms.</td>
+</tr>
+<tr>
+<td><a href="ValueSet-phenotypic-feature-type.html">Type of phenotype</a></td>
+<td>The primary ontology class which describes the phenotype.</td>
+</tr>
+<tr>
+<td><a href="ValueSet-phenotypic-feature-presence.html">Presence or absence of phenotype</a></td>
+<td>Concepts to indicate presence or absence of a phenotypic feature.</td>
+</tr>
+<tr>
+<td><a href="ValueSet-cancer.html">Cancer</a></td>
+<td>Cancer conditions from NCIt and SNOMED CT.</td>
+</tr>
+</tbody>
+</table>
+

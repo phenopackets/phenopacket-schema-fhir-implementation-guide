@@ -7,7 +7,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="FamilyMemberHistory" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/familymemberhistory-genetic" />
   <derivation value="constraint" />
   <differential>
   
@@ -28,37 +28,6 @@
         <ordered value="false"/>
         <rules value="open" />
       </slicing>
-    </element>
-    
-    <!-- The slice that contains the parents -->
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-parent">
-      <path value="FamilyMemberHistory.extension" />
-      <sliceName value="family-member-history-genetics-parent" />
-      <sliceIsConstraining value="false" />
-      <label value="parent" />
-      <short value="Identifies a parent of the relative." />
-      <definition value="Identifies a parent of the relative." />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-parent" />
-      </type>
-      <mustSupport value="false" />
-    </element>
-    
-    <!-- The slice that contains the siblings -->
-    <element id="FamilyMemberHistory.extension:family-member-history-genetics-sibling">
-      <path value="FamilyMemberHistory.extension" />
-      <sliceName value="family-member-history-genetics-sibling" />
-      <sliceIsConstraining value="false" />
-      <label value="sibling" />
-      <short value="Identifies a sibling of the relative." />
-      <definition value="Identifies a sibling of the relative." />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/family-member-history-genetics-sibling" />
-      </type>
-      <mustSupport value="false" />
     </element>
     
     <!-- The slice that contains the affected status -->
@@ -95,14 +64,14 @@
       <mustSupport value="false" />
     </element>
     
-    <!-- The slice that contains the reference to the individual -->
+    <!-- The slice that contains an optional reference to the individual -->
     <element id="FamilyMemberHistory.extension:individual">
       <path value="FamilyMemberHistory.extension" />
       <sliceName value="individual" />
       <label value="identifier" />
-      <short value="A reference to the individual referenced by this pedigree node." />
-      <definition value="A reference to the individual referenced by this pedigree node." />
-      <min value="1" />
+      <short value="A reference to the individual referenced by this pedigree node, if available." />
+      <definition value="A reference to the individual referenced by this pedigree node, if available." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -111,52 +80,20 @@
       <mustSupport value="false" />
     </element>
     
+    <!-- We want this reference to be to the Individual profile. -->
+    <element id="FamilyMemberHistory.patient">
+      <path value="FamilyMemberHistory.patient" />
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node-individual"/>
+      </type>
+    </element>
+    
     <!-- Mandatory elements. -->
     <element id="FamilyMemberHistory.sex">
       <path value="FamilyMemberHistory.sex" />
       <min value="1" />
     </element>
     
-    <!-- Forbidden elements. -->
-    <element id="FamilyMemberHistory.instantiatesCanonical">
-      <path value="FamilyMemberHistory.instantiatesCanonical" />
-      <max value="0" />
-    </element>
-    <element id="FamilyMemberHistory.instantiatesUri">
-      <path value="FamilyMemberHistory.instantiatesUri" />
-      <max value="0" />
-    </element>
-    <element id="FamilyMemberHistory.dataAbsentReason">
-      <path value="FamilyMemberHistory.dataAbsentReason" />
-      <max value="0" />
-    </element>
-    <element id="FamilyMemberHistory.date">
-      <path value="FamilyMemberHistory.date" />
-      <max value="0" />
-    </element>
-    <element id="FamilyMemberHistory.name">
-      <path value="FamilyMemberHistory.name" />
-      <max value="0" />
-    </element>
-    <element id="FamilyMemberHistory.born[x]">
-      <path value="FamilyMemberHistory.born[x]" />
-      <max value="0" />
-    </element>
-    <element id="FamilyMemberHistory.age[x]">
-      <path value="FamilyMemberHistory.age[x]" />
-      <max value="0" />
-    </element>
-    <element id="FamilyMemberHistory.estimatedAge">
-      <path value="FamilyMemberHistory.estimatedAge" />
-      <max value="0" />
-    </element>
-    <element id="FamilyMemberHistory.reasonCode">
-      <path value="FamilyMemberHistory.reasonCode" />
-      <max value="0" />
-    </element>
-    <element id="FamilyMemberHistory.reasonReference">
-      <path value="FamilyMemberHistory.reasonReference" />
-      <max value="0" />
-    </element>
   </differential>
 </StructureDefinition>

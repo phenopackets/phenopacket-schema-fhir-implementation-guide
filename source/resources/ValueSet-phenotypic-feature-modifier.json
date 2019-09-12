@@ -5,7 +5,7 @@
     "name": "PhenotypeModifier",
     "title": "Phenotype Modifier",
     "status": "active",
-    "description": "Clinical modifier terms from the Human Phenotype Ontology.",
+    "description": "Clinical modifier terms from the Human Phenotype Ontology. TODO: include corresponding concepts from SNOMED CT.",
     "compose": {
         "include": [
             {

@@ -21,7 +21,7 @@
 
 -->
 - [Home](index.html)
-- [General Guidance](guidance.html)
+- [Implementation Guidance](guidance.html)
 - [Mapping](mapping.html)
 - [Profiles](profiles.html)
 - [Extensions](extensions.html)

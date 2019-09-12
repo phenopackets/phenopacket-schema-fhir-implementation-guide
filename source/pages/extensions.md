@@ -25,6 +25,10 @@ active: profiles
 <td>The context for this extension is Observation and the Evidence extension. </td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-evidence.html">Evidence</a></td>
+<td>The context for this extension is Observation.</td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-individual-karyotypic-sex.html">Individual Karyotypic Sex</a></td>
 <td>The context for this extension is Patient.</td>
 </tr>
@@ -46,10 +50,6 @@ active: profiles
 </tr>
 <tr>
 <td><a href="StructureDefinition-phenotypic-feature-severity.html">Phenotype Severity</a></td>
-<td>The context for this extension is Observation.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-evidence.html">Evidence</a></td>
 <td>The context for this extension is Observation.</td>
 </tr>
 <tr>

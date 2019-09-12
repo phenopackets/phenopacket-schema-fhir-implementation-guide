@@ -2,8 +2,8 @@ The word phenotype is used with many different meanings, including “the observ
 
 #### Mapping Notes
 
-The Disease element in Phenopackets is very simple. The Disease FHIR profile constrains several attributes to match the attributes in Phenopackets. Future versions should consider including some of these attributes, such as _clinical status_ and _abatement_, which can be useful when dealing with longitudinal records.
+The Disease element in Phenopackets is very simple. The only attribute that is not available in the base FHIR Condition resource is a coded onset. Note that this implementation guide defines a different profile to represent cancer, which includes the _tumor stage_ attribute. Therefore, this attribute is not part of the base Disease profile.
 
 #### Extensions
 
-FHIR provides different ways of capturing onset, but these do not include a Coding or CodeableConcept, which are provided in the original Phenopackets specification. The [disease-onset](StructureDefinition-disease-onset.html) extension is used to enable capturing an onset using a Coding.
+FHIR provides different ways of capturing onset, but these do not include a Coding or CodeableConcept, which are provided in the original Phenopackets specification. The [disease-onset](StructureDefinition-disease-onset.html) extension is used to enable capturing an onset using a Coding. The onset codes are bound to the [onset value set](ValueSet-onset.html).

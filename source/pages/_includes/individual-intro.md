@@ -2,7 +2,7 @@ The subject of the Phenopacket is represented by an Individual element. This ele
 
 #### Mapping Notes
 
-This element is mapped to the [Patient](https://www.hl7.org/fhir/patient.html) resource in FHIR. No specific field was defined for the dataset_id because this can be represented with the _identifiers_ property that is already available in FHIR.
+This element is mapped to the [Patient](https://www.hl7.org/fhir/patient.html) resource in FHIR. The _alternate ids_ attribute can be mapped to the standard identifiers in FHIR which already support multiple values. The _date of birth_ attribute maps to _Patient.birthDate_. The _sex_ attribute maps to _Patient.gender_.
 
 #### Extensions
 

@@ -221,13 +221,13 @@
       "base": "ValueSet-phenotypic-feature-severity.html",
       "defns": "ValueSet-phenotypic-feature-severity-definitions.html"
     },
-    "ValueSet/phenotype-type": {
-      "base": "ValueSet-phenotype-type.html",
-      "defns": "ValueSet-phenotype-type-definitions.html"
+    "ValueSet/phenotypic-feature-type": {
+      "base": "ValueSet-phenotypic-feature-type.html",
+      "defns": "ValueSet-phenotypic-feature-type-definitions.html"
     },
     "ValueSet/presence": {
-      "base": "ValueSet-presence.html",
-      "defns": "ValueSet-presence-definitions.html"
+      "base": "ValueSet-phenotypic-feature-presence.html",
+      "defns": "ValueSet-phenotypic-feature-presence-definitions.html"
     }
   },
   "version": "4.0.0",

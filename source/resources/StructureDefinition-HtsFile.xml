@@ -51,12 +51,14 @@
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-genome-assembly" />
       </type>
       <isModifier value="false"/>
+      <mustSupport value="true"/>
     </element>
     
     <!-- Fixed status - always current. -->
     <element id="DocumentReference.status">
       <path value="DocumentReference.status" />
       <fixedCode value="current" />
+      <mustSupport value="true"/>
     </element>
     
     <!-- Type of document. We change the binding to required. -->
@@ -68,8 +70,9 @@
       <binding>
         <strength value="required" />
         <description value="This indicates which format the file has." />
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type?vs" />
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/CodeSystem/hts-format?vs" />
       </binding>
+      <mustSupport value="true"/>
     </element>
     
     <!-- Subject limited to referencing types in IG. -->
@@ -78,10 +81,10 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenopacket" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Biosample" />
         <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Cohort" />
         <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Family" />
       </type>
+      <mustSupport value="true"/>
     </element>
     
     <!-- Constrained elements. -->

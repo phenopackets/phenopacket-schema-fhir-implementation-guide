@@ -20,7 +20,6 @@
       <definition value="The affected status of a person in a pedigree."/>
       <min value="1"/>
       <max value="1"/>
-      <mustSupport value="true" />
       <isModifier value="false" />
     </element>
 	<element id="Extension.extension">
