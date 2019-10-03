@@ -4,6 +4,7 @@
   "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/affected-status",
   "version": "1.0.0",
   "name": "AffectedStatus",
+  "title": "Affected Status",
   "status": "active",
   "experimental": false,
   "publisher": "GA4GH",

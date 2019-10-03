@@ -5,6 +5,8 @@
     "name": "TumorMorphology",
     "title": "Tumor Morphology",
     "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
     "description": "Tumor Morphology from NCIt and SNOMED CT.",
     "compose": {
         "include": [

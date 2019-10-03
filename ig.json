@@ -125,13 +125,13 @@
       "base": "StructureDefinition-HtsFile.html",
       "defns": "StructureDefinition-HtsFile-definitions.html"
     },
-    "StructureDefinition/affected-status": {
-      "base": "StructureDefinition-affected-status.html",
-      "defns": "StructureDefinition-affected-status-definitions.html"
+    "StructureDefinition/pedigree-node-affected-status": {
+      "base": "StructureDefinition-pedigree-node-affected-status.html",
+      "defns": "StructureDefinition-pedigree-node-affected-status-definitions.html"
     },
-    "StructureDefinition/family-identifier": {
-      "base": "StructureDefinition-family-identifier.html",
-      "defns": "StructureDefinition-family-identifier-definitions.html"
+    "StructureDefinition/pedigree-node-family-identifier": {
+      "base": "StructureDefinition-pedigree-node-family-identifier.html",
+      "defns": "StructureDefinition-pedigree-node-family-identifier-definitions.html"
     },
     "StructureDefinition/pedigree-node-individual": {
       "base": "StructureDefinition-pedigree-node-individual.html",
@@ -141,9 +141,9 @@
       "base": "StructureDefinition-PedigreeNode.html",
       "defns": "StructureDefinition-PedigreeNode-definitions.html"
     },
-    "StructureDefinition/Biosample": {
-      "base": "StructureDefinition-Biosample.html",
-      "defns": "StructureDefinition-Biosample-definitions.html"
+    "StructureDefinition/Encounter-Phenopackets": {
+      "base": "StructureDefinition-Encounter-Phenopackets.html",
+      "defns": "StructureDefinition-Encounter-Phenopackets-definitions.html"
     },
     "StructureDefinition/Specimen-Phenopackets": {
       "base": "StructureDefinition-Specimen-Phenopackets.html",
@@ -226,8 +226,12 @@
       "defns": "ValueSet-phenotypic-feature-type-definitions.html"
     },
     "ValueSet/presence": {
-      "base": "ValueSet-phenotypic-feature-presence.html",
-      "defns": "ValueSet-phenotypic-feature-presence-definitions.html"
+      "base": "ValueSet-phenotypic-feature-interpretation.html",
+      "defns": "ValueSet-phenotypic-feature-interpretation-definitions.html"
+    },
+    "ValueSet/taxonomy": {
+      "base": "ValueSet-taxonomy.html",
+      "defns": "ValueSet-taxonomy-definitions.html"
     }
   },
   "version": "4.0.0",

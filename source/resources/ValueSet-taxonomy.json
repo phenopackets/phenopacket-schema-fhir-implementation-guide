@@ -1,0 +1,18 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/taxonomy",
+    "version": "1.0.0",
+    "name": "Taxonomy",
+    "title": "Taxonomy",
+    "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
+    "description": "Taxonomic identifiers of an organism.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/ncbitaxon.owl"
+            }
+        ]
+    }
+}

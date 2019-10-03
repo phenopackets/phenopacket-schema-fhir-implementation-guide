@@ -5,6 +5,8 @@
     "name": "PhenotypicFeatureSeverity",
     "title": "Phenotypic Feature Severity",
     "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
     "description": "Phenotypic feature severity from the Human Phenotype Ontology and SNOMED CT.",
     "compose": {
         "include": [

@@ -105,11 +105,12 @@
       <short value="The element represents the primary ontology class which describes the phenotype. For example Craniosynostosis (HP:0001363)." />
       <definition value="The element represents the primary ontology class which describes the phenotype. For example Craniosynostosis (HP:0001363)." />
       <requirements value="A computable phenotype needs a code from an ontology." />
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ObservationCode" />
         </extension>
-        <strength value="preferred" />
+        <strength value="required" />
         <description value="The primary ontology class which describes the phenotype." />
         <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotypic-feature-type" />
       </binding>
@@ -124,17 +125,15 @@
       </type>
     </element>
     
-    <!-- Make value required and constrain value to be present or absent. -->
-    <element id="Observation.valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+    <!-- The Phenopackets attribute "negated" can be represented using interpretation. -->
+    <element id="Observation.interpretation">
+      <path value="Observation.interpretation" />
       <min value="1" />
       <max value="1" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
+      <mustSupport value="true"/>
       <binding>
-        <strength value="extensible" />
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotypic-feature-presence" />
+        <strength value="required" />
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotypic-feature-interpretation" />
       </binding>
     </element>
     
@@ -145,86 +144,47 @@
       <short value="This element represents a free-text description of the phenotype." />
       <definition value="This element represents a free-text description of the phenotype." />
       <comment value="It should not be used as the primary means of describing the phenotype, but can be used to supplement the record if ontology terms are not sufficiently able to capture all the nuances. In general, the type and onset etc… fields should be used for this purpose, and this field is a last resort." />
-    </element>
-    
-    <!-- Fix status to final. -->
-    <element id="Observation.status">
-      <path value="Observation.status" />
-      <fixedCode value="final" />
+      <mustSupport value="true"/>
     </element>
     
     <!-- Forbidden elements. -->
-    <element id="Observation.basedOn">
-      <path value="Observation.basedOn" />
+    
+    <!-- Forbidden because phenotypic observations are coded and have no value. -->
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <min value="0" />
       <max value="0" />
+      <requirements value="Forbidden because phenotypic observations are coded and have no value." />
     </element>
-    <element id="Observation.partOf">
-      <path value="Observation.partOf" />
-      <max value="0" />
-    </element>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <max value="0" />
-    </element>
+    
+    <!-- Forbidden because phenotypic features are always about an individual. -->
     <element id="Observation.focus">
       <path value="Observation.focus" />
       <max value="0" />
+      <requirements value="Forbidden because phenotypic features are always about an individual." />
     </element>
-    <element id="Observation.encounter">
-      <path value="Observation.encounter" />
-      <max value="0" />
-    </element>
-    <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
-      <max value="0" />
-    </element>
-    <element id="Observation.issued">
-      <path value="Observation.issued" />
-      <max value="0" />
-    </element>
-    <element id="Observation.performer">
-      <path value="Observation.performer" />
-      <max value="0" />
-    </element>
-    <element id="Observation.dataAbsentReason">
-      <path value="Observation.dataAbsentReason" />
-      <max value="0" />
-    </element>
-    <element id="Observation.interpretation">
-      <path value="Observation.interpretation" />
-      <max value="0" />
-    </element>
-    <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
-      <max value="0" />
-    </element>
-    <element id="Observation.method">
-      <path value="Observation.method" />
-      <max value="0" />
-    </element>
-    <element id="Observation.specimen">
-      <path value="Observation.specimen" />
-      <max value="0" />
-    </element>
-    <element id="Observation.device">
-      <path value="Observation.device" />
-      <max value="0" />
-    </element>
+
+    <!-- Forbidden because phenotypic features are not meant to have a reference range. These might be present in other
+    observations that are used to derive the phenotypic feature, e.g., observation of "Potassium in blood" with outcome of 
+    "high" linked to the phenotypic feature "Hyperkalemia". -->
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange" />
       <max value="0" />
+      <requirements value="Forbidden because phenotypic features are not meant to have a reference range. These might be present in other observations that are used to derive the phenotypic feature, e.g., observation of __Potassium in blood__ with outcome of __high__ linked to the phenotypic feature __Hyperkalemia__." />
     </element>
+    
+    <!-- Forbidden because phenotypic features don't have member observations. -->
     <element id="Observation.hasMember">
       <path value="Observation.hasMember" />
       <max value="0" />
+      <requirements value="Forbidden because phenotypic features don't have member observations." />
     </element>
-    <element id="Observation.derivedFrom">
-      <path value="Observation.derivedFrom" />
-      <max value="0" />
-    </element>
+    
+    <!-- Forbidden because phenotypic features don't have components. -->
     <element id="Observation.component">
       <path value="Observation.component" />
       <max value="0" />
+      <requirements value="Forbidden because phenotypic features don't have components." />
     </element>
   </differential>
 </StructureDefinition>

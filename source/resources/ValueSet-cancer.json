@@ -5,6 +5,8 @@
     "name": "Cancer",
     "title": "Cancer",
     "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
     "description": "Cancer conditions from NCIt and SNOMED CT.",
     "compose": {
         "include": [

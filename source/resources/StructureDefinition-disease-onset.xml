@@ -36,16 +36,16 @@
       </type>
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/disease-onset"/>
     </element>
-    <element id="Extension.valueCoding">
-      <path value="Extension.valueCoding"/>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
       <type>
-        <code value="Coding"/>
+        <code value="CodeableConcept"/>
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Onset"/>
         </extension>
-        <strength value="preferred"/>
+        <strength value="required"/>
         <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/onset"/>
       </binding>
     </element>

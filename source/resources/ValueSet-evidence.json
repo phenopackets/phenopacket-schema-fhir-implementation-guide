@@ -1,0 +1,18 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/evidence",
+    "version": "1.0.0",
+    "name": "Evidence",
+    "title": "Evidence",
+    "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
+    "description": "Codes from the Evidence & Conclusion Ontology.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/eco.owl"
+            }
+        ]
+    }
+}

@@ -104,13 +104,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/affected-status"/>
+                <reference value="StructureDefinition/pedigree-node-affected-status"/>
                 <display value="Affected Status Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/family-identifier"/>
+                <reference value="StructureDefinition/pedigree-node-family-identifier"/>
                 <display value="Family Identifier Extension"/>
             </reference>
         </resource>
@@ -148,6 +148,12 @@
             <reference>
                 <reference value="StructureDefinition/DiagnosticReport-Phenopackets"/>
                 <display value="DiagnosticReport-Phenopackets Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Encounter-Phenopackets"/>
+                <display value="Encounter-Phenopackets Profile"/>
             </reference>
         </resource>
         <resource>
@@ -278,8 +284,20 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/phenotypic-feature-presence"/>
+                <reference value="ValueSet/phenotypic-feature-interpretation"/>
                 <display value="Presence Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/taxonomy"/>
+                <display value="Taxonomy Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/pedigree-affected-status"/>
+                <display value="Pedigree Affected Status Value Set"/>
             </reference>
         </resource>
         <page>

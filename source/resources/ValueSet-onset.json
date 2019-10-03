@@ -4,6 +4,8 @@
     "version": "1.0.0",
     "name": "Onset",
     "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
     "description": "Onset terms from the Human Phenotype Ontology and SNOMED CT.",
     "compose": {
         "include": [

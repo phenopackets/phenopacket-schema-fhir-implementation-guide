@@ -37,17 +37,17 @@
       </type>
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual-karyotypic-sex"/>
     </element>
-    <element id="Extension.valueCoding">
-      <path value="Extension.valueCoding"/>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
       <type>
-        <code value="Coding"/>
+        <code value="CodeableConcept"/>
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Karyotypic Sex"/>
         </extension>
         <strength value="required"/>
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/CodeSystem/karyotypic-sex?vs"/>
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/karyotypic-sex"/>
       </binding>
     </element>
   </differential>

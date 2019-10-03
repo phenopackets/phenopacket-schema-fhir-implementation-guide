@@ -37,16 +37,16 @@
       </type>
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/phenotypic-feature-modifier"/>
     </element>
-    <element id="Extension.valueCoding">
-      <path value="Extension.valueCoding"/>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
       <type>
-        <code value="Coding"/>
+        <code value="CodeableConcept"/>
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Phenotype Modifier"/>
         </extension>
-        <strength value="preferred"/>
+        <strength value="required"/>
         <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/phenotypic-feature-modifier"/>
       </binding>
     </element>

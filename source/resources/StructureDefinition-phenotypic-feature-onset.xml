@@ -53,13 +53,13 @@
         <code value="string" />
       </type>
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Onset"/>
         </extension>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/onset" />
       </binding>
     </element>

@@ -38,8 +38,12 @@ active: terminology
 <td>The NCBI Taxonomy Database is a curated classification and nomenclature for all of the organisms in the public sequence databases. This is an OWL ontology transformed into an FHIR code system.</td>
 </tr>
 <tr>
-<td><a href=""></a></td>
-<td></td>
+<td><a href="http://snomed.info/sct">SNOMED CT</a></td>
+<td>SNOMED CT is the most comprehensive, multilingual clinical healthcare terminology in the world.</td>
+</tr>
+<tr>
+<td><a href="https://hpo.jax.org/app/">HPO</a></td>
+<td>The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease.</td>
 </tr>
 
 </tbody>
@@ -55,6 +59,10 @@ active: terminology
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="ValueSet-evidence.html">Evidence</a></td>
+<td>Codes from the Evidence &amp; Conclusion Ontology.</td>
+</tr>
 <tr>
 <td><a href="ValueSet-onset.html">Onset</a></td>
 <td>Onset terms from HPO and SNOMED CT.</td>
@@ -72,8 +80,16 @@ active: terminology
 <td>The primary ontology class which describes the phenotype.</td>
 </tr>
 <tr>
-<td><a href="ValueSet-phenotypic-feature-presence.html">Presence or absence of phenotype</a></td>
+<td><a href="ValueSet-phenotypic-feature-interpretation.html">Presence or absence of phenotype</a></td>
 <td>Concepts to indicate presence or absence of a phenotypic feature.</td>
+</tr>
+<tr>
+<td><a href="ValueSet-Karyotypic-sex.html">Karyotypic sex</a></td>
+<td>Represents the chromosomal sex of an individual.</td>
+</tr>
+<tr>
+<td><a href="ValueSet-taxonomy.html">Taxonomy</a></td>
+<td>Taxonomic identifiers of an organism.</td>
 </tr>
 <tr>
 <td><a href="ValueSet-cancer.html">Cancer</a></td>

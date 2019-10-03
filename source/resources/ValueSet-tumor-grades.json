@@ -5,6 +5,8 @@
     "name": "TumorGrades",
     "title": "Tumor Grades",
     "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
     "description": "Tumor grades from NCIt and SNOMED CT.",
     "compose": {
         "include": [

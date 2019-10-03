@@ -5,6 +5,8 @@
     "name": "CancerStages",
     "title": "Cancer Stages",
     "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
     "description": "Cancer stages from NCIt and SNOMED CT.",
     "compose": {
         "include": [

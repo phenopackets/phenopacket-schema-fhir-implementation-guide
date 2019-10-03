@@ -57,11 +57,11 @@ active: profiles
 <td>The context for this extension is DocumentReference.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-affected-status.html">Affected Status</a></td>
+<td><a href="StructureDefinition-pedigree-node-affected-status.html">Affected Status</a></td>
 <td>The context for this extension is FamilyMemberHistory.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-family-identifier.html">FamilyIdentifier</a></td>
+<td><a href="StructureDefinition-pedigree-node-family-identifier.html">FamilyIdentifier</a></td>
 <td>The context for this extension is FamilyMemberHistory.</td>
 </tr>
 <tr>

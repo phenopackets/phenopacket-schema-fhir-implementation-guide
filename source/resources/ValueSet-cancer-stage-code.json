@@ -5,6 +5,8 @@
     "name": "CancerStageCode",
     "title": "Cancer Stage Code",
     "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
     "description": "Cancer stage codes from NCIt and SNOMED CT.",
     "compose": {
         "include": [

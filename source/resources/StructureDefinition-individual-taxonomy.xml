@@ -37,17 +37,17 @@
       </type>
       <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual-taxonomy"/>
     </element>
-    <element id="Extension.valueCoding">
-      <path value="Extension.valueCoding"/>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
       <type>
-        <code value="Coding"/>
+        <code value="CodeableConcept"/>
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Taxonomy"/>
         </extension>
-        <strength value="preferred"/>
-        <valueSet value="http://purl.obolibrary.org/obo/ncbitaxon.owl?vs"/>
+        <strength value="required"/>
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/taxonomy"/>
       </binding>
     </element>
   </differential>
