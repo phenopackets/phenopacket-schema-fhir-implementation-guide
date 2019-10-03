@@ -18,6 +18,70 @@
     <packageId value="ga4gh.fhir.phenopackets"/>
     <fhirVersion value="4.0.0"/>
     <definition>
+    
+        <!-- CODE SYSTEMS -->
+        <resource>
+            <reference>
+                <reference value="CodeSystem/affected-status"/>
+                <display value="Affected Status Code System"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/document-type"/>
+                <display value="Document Type Code System"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/hts-format"/>
+                <display value="HTS Format Code System"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/karyotypic-sex"/>
+                <display value="Karyotypic Sex Code System"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/section-type"/>
+                <display value="Section Type Code System"/>
+            </reference>
+        </resource>
+        
+        <!-- STRUCTURE DEFINITIONS -->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/CancerDisease"/>
+                <display value="Cancer Disease Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/CancerPacket"/>
+                <display value="Cancer Packet Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/CancerStage"/>
+                <display value="Cancer Stage Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Cohort"/>
+                <display value="Cohort Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DiagnosticReport-Phenopackets"/>
+                <display value="DiagnosticReport-Phenopackets Profile"/>
+            </reference>
+        </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/disease-onset"/>
@@ -32,8 +96,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/external-reference"/>
-                <display value="External Reference Extension"/>
+                <reference value="StructureDefinition/Encounter-Phenopackets"/>
+                <display value="Encounter-Phenopackets Profile"/>
             </reference>
         </resource>
         <resource>
@@ -44,50 +108,14 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Individual"/>
-                <display value="Individual Profile"/>
+                <reference value="StructureDefinition/external-reference"/>
+                <display value="External Reference Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/individual-taxonomy"/>
-                <display value="Individual Taxonomy Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/individual-karyotypic-sex"/>
-                <display value="Individual Karyotypic Sex Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/individual-age"/>
-                <display value="Individual Age Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/phenotypic-feature-modifier"/>
-                <display value="Phenotypic Feature Modifier Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/phenotypic-feature-onset"/>
-                <display value="Phenotypci Feature Onset Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/phenotypic-feature-severity"/>
-                <display value="Phenotypic Feature Severity Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PhenotypicFeature"/>
-                <display value="Phenotypic Feature Profile"/>
+                <reference value="StructureDefinition/Family"/>
+                <display value="Family Profile"/>
             </reference>
         </resource>
         <resource>
@@ -100,6 +128,30 @@
             <reference>
                 <reference value="StructureDefinition/HtsFile"/>
                 <display value="HTS File Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/individual-age"/>
+                <display value="Individual Age Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/individual-karyotypic-sex"/>
+                <display value="Individual Karyotypic Sex Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/individual-taxonomy"/>
+                <display value="Individual Taxonomy Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Individual"/>
+                <display value="Individual Profile"/>
             </reference>
         </resource>
         <resource>
@@ -134,8 +186,26 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Specimen-Phenopackets"/>
-                <display value="Specimen-Phenopackets Profile"/>
+                <reference value="StructureDefinition/phenotypic-feature-modifier"/>
+                <display value="Phenotypic Feature Modifier Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/phenotypic-feature-onset"/>
+                <display value="Phenotypci Feature Onset Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/phenotypic-feature-severity"/>
+                <display value="Phenotypic Feature Severity Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/PhenotypicFeature"/>
+                <display value="Phenotypic Feature Profile"/>
             </reference>
         </resource>
         <resource>
@@ -146,14 +216,20 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/DiagnosticReport-Phenopackets"/>
-                <display value="DiagnosticReport-Phenopackets Profile"/>
+                <reference value="StructureDefinition/specimen-individual-age-at-collection"/>
+                <display value="Specimen Individual Age at Collection Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Encounter-Phenopackets"/>
-                <display value="Encounter-Phenopackets Profile"/>
+                <reference value="StructureDefinition/Specimen-Phenopackets"/>
+                <display value="Specimen-Phenopackets Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/tumor-site"/>
+                <display value="Tumor Site Extension"/>
             </reference>
         </resource>
         <resource>
@@ -164,40 +240,12 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/specimen-individual-age-at-collection"/>
-                <display value="Specimen Individual Age at Collection Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CancerDisease"/>
-                <display value="Cancer Disease Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CancerStage"/>
-                <display value="Cancer Stage Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/TumorGrade"/>
                 <display value="Tumor Grade Profile"/>
             </reference>
         </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CancerPacket"/>
-                <display value="Cancer Packet Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/tumor-site"/>
-                <display value="Tumor Site Extension"/>
-            </reference>
-        </resource>
+        
+        <!-- VALUE SETS -->
         <resource>
             <reference>
                 <reference value="ValueSet/cancer-stage-code"/>
@@ -212,56 +260,44 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/tumor-grade-code"/>
-                <display value="Tumor Grade Code Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/tumor-grades"/>
-                <display value="Tumor Grades Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/tumor-morphology"/>
-                <display value="Tumor Morphology Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/cancer"/>
                 <display value="Cancer Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/document-type"/>
-                <display value="Document Type Code System"/>
+                <reference value="ValueSet/evidence"/>
+                <display value="Evidence Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/karyotypic-sex"/>
-                <display value="Karyotypic Sex Code System"/>
+                <reference value="ValueSet/hts-format"/>
+                <display value="HTS Format Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/hts-format"/>
-                <display value="HTS Format Code System"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/affected-status"/>
-                <display value="Affected Status Code System"/>
+                <reference value="ValueSet/karyotypic-sex"/>
+                <display value="Karyotypic Sex Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
                 <reference value="ValueSet/onset"/>
                 <display value="Onset Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/pedigree-affected-status"/>
+                <display value="Pedigree Affected Status Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/phenotypic-feature-interpretation"/>
+                <display value="Presence Value Set"/>
             </reference>
         </resource>
         <resource>
@@ -284,20 +320,26 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/phenotypic-feature-interpretation"/>
-                <display value="Presence Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/taxonomy"/>
                 <display value="Taxonomy Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/pedigree-affected-status"/>
-                <display value="Pedigree Affected Status Value Set"/>
+                <reference value="ValueSet/tumor-grade-code"/>
+                <display value="Tumor Grade Code Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/tumor-grades"/>
+                <display value="Tumor Grades Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/tumor-morphology"/>
+                <display value="Tumor Morphology Value Set"/>
             </reference>
         </resource>
         <page>

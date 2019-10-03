@@ -4,6 +4,7 @@
   <name value="HtsFile" />
   <title value="Hts File" />
   <status value="draft" />
+  <description value="Phenopackets can be used to hold phenotypic information that can inform the analysis of sequencing data in VCF format as well as other high-throughput sequencing (HTS) or other data types. The Phenopacket provides two messages that allow phenopackets to link files with data." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
@@ -70,7 +71,7 @@
       <binding>
         <strength value="required" />
         <description value="This indicates which format the file has." />
-        <valueSet value="http://ga4gh.org/fhir/phenopackets/CodeSystem/hts-format?vs" />
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/hts-format" />
       </binding>
       <mustSupport value="true"/>
     </element>
@@ -85,44 +86,6 @@
         <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Family" />
       </type>
       <mustSupport value="true"/>
-    </element>
-    
-    <!-- Constrained elements. -->
-    <element id="DocumentReference.docStatus">
-      <path value="DocumentReference.docStatus" />
-      <max value="0" />
-    </element>
-    <element id="DocumentReference.category">
-      <path value="DocumentReference.category" />
-      <max value="0" />
-    </element>
-    <element id="DocumentReference.date">
-      <path value="DocumentReference.date" />
-      <max value="0" />
-    </element>
-    <element id="DocumentReference.author">
-      <path value="DocumentReference.author" />
-      <max value="0" />
-    </element>
-    <element id="DocumentReference.authenticator">
-      <path value="DocumentReference.authenticator" />
-      <max value="0" />
-    </element>
-    <element id="DocumentReference.custodian">
-      <path value="DocumentReference.custodian" />
-      <max value="0" />
-    </element>
-    <element id="DocumentReference.relatesTo">
-      <path value="DocumentReference.relatesTo" />
-      <max value="0" />
-    </element>
-    <element id="DocumentReference.securityLabel">
-      <path value="DocumentReference.securityLabel" />
-      <max value="0" />
-    </element>
-    <element id="DocumentReference.context">
-      <path value="DocumentReference.context" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

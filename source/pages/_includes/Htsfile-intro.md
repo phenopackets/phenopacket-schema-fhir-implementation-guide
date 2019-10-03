@@ -1,27 +1,10 @@
-Phenopackets can be used to hold phenotypic information that can inform the analysis of sequencing data in VCF format as well as other high-throughput sequencing (HTS) or other data types. The Phenopacket provides two messages that allow phenopackets to link files with data.
+This element is represented in FHIR as a profile of [DocumentReference](https://www.hl7.org/fhir/documentreference.html). 
 
-#### Mapping Notes
+| Phenopackets     | FHIR                                                                                                               | Comments                                                                          |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| uri              | [DocumentReference.content.attachment.url](https://www.hl7.org/fhir/datatypes-definitions.html#Attachment.url)     |                                                                                   |
+| description      | [DocumentReference.content.attachment.title](https://www.hl7.org/fhir/datatypes-definitions.html#Attachment.title) |                                                                                   |
+| hts\_format      | DocumentReference.type                                                                                             | The values are bound to the [HTS format value set](CodeSystem-hts-format.html).   |
+| genome\_assembly | [Extension](StructureDefinition-htsfile-genome-assembly.html)                                                      |                                                                                   |
+| individual\_to\_sample\_identifiers | NA                                                                                              | The sample ids in the HTS files can be referenced by adding an identifier to the [Specimen](https://www.hl7.org/fhir/specimen.html) resource. Therefore, this attribute will be excluded from this profile. TODO: look at this in more detail when building the examples. |
 
-The closest resource in FHIR to an HtsFile is a [DocumentReference](https://www.hl7.org/fhir/documentreference.html).
-
-##### HTS Format
-
-The _hts format_ attribute maps the the _type_ attribute in the DocumentReference resource. The values are bound to the [HTS format value set](CodeSystem-hts-format.html).
-
-##### Individual to Sample Identifiers
-
-The sample ids in the HTS files can be referenced by adding an identifier to the [Specimen](https://www.hl7.org/fhir/specimen.html) resource. This attribute will be excluded from the current implementation.
-
-TODO: need to look at this in more detail when building the examples.
-
-##### URI
-
-The _uri_ attribute maps to [DocumentReference.content.attachment.url](https://www.hl7.org/fhir/datatypes-definitions.html#Attachment.url).
-
-##### Description
-
-The _description_ attribute maps to [DocumentReference.content.attachment.title](https://www.hl7.org/fhir/datatypes-definitions.html#Attachment.title).
-
-#### Extensions
-
-An extension to represent the [genome assembly](StructureDefinition-htsfile-genome-assembly.html) was required. 

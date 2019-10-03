@@ -1,0 +1,18 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/hts-format",
+    "version": "1.0.0",
+    "name": "HTSFormat",
+    "title": "HTS Format",
+    "status": "active",
+    "experimental": false,
+    "publisher": "GA4GH",
+    "description": "Represents different high-throughput sequencing file formats.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://ga4gh.org/fhir/phenopackets/CodeSystem/hts-format"
+            }
+        ]
+    }
+}

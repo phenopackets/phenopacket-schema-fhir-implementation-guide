@@ -88,6 +88,10 @@ active: terminology
 <td>Represents the chromosomal sex of an individual.</td>
 </tr>
 <tr>
+<td><a href="ValueSet-hts-format.html">HTS format</a></td>
+<td>Represents different high-throughput sequencing file formats.</td>
+</tr>
+<tr>
 <td><a href="ValueSet-taxonomy.html">Taxonomy</a></td>
 <td>Taxonomic identifiers of an organism.</td>
 </tr>

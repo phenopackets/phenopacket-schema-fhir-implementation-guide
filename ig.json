@@ -65,6 +65,26 @@
     }
   },
   "resources": {
+    "StructureDefinition/CancerDisease": {
+      "base": "StructureDefinition-CancerDisease.html",
+      "defns": "StructureDefinition-CancerDisease-definitions.html"
+    },
+    "StructureDefinition/CancerPacket": {
+      "base": "StructureDefinition-CancerPacket.html",
+      "defns": "StructureDefinition-CancerPacket-definitions.html"
+    },
+    "StructureDefinition/CancerStage": {
+      "base": "StructureDefinition-CancerStage.html",
+      "defns": "StructureDefinition-CancerStage-definitions.html"
+    },
+    "StructureDefinition/Cohort": {
+      "base": "StructureDefinition-Cohort.html",
+      "defns": "StructureDefinition-Cohort-definitions.html"
+    },
+    "StructureDefinition/DiagnosticReport-Phenopackets": {
+      "base": "StructureDefinition-DiagnosticReport-Phenopackets.html",
+      "defns": "StructureDefinition-DiagnosticReport-Phenopackets-definitions.html"
+    },
     "StructureDefinition/disease-onset": {
       "base": "StructureDefinition-disease-onset.html",
       "defns": "StructureDefinition-disease-onset-definitions.html"
@@ -73,17 +93,33 @@
       "base": "StructureDefinition-Disease.html",
       "defns": "StructureDefinition-Disease-definitions.html"
     },
-    "StructureDefinition/external-referencee": {
-      "base": "StructureDefinition-external-reference.html",
-      "defns": "StructureDefinition-external-reference-definitions.html"
+    "StructureDefinition/Encounter-Phenopackets": {
+      "base": "StructureDefinition-Encounter-Phenopackets.html",
+      "defns": "StructureDefinition-Encounter-Phenopackets-definitions.html"
     },
     "StructureDefinition/evidence": {
       "base": "StructureDefinition-evidence.html",
       "defns": "StructureDefinition-evidence-definitions.html"
     },
-    "StructureDefinition/Individual": {
-      "base": "StructureDefinition-Individual.html",
-      "defns": "StructureDefinition-Individual-definitions.html"
+    "StructureDefinition/external-referencee": {
+      "base": "StructureDefinition-external-reference.html",
+      "defns": "StructureDefinition-external-reference-definitions.html"
+    },
+    "StructureDefinition/Family": {
+      "base": "StructureDefinition-Family.html",
+      "defns": "StructureDefinition-Family-definitions.html"
+    },
+    "StructureDefinition/htsfile-genome-assembly": {
+      "base": "StructureDefinition-htsfile-genome-assembly.html",
+      "defns": "StructureDefinition-htsfile-genome-assembly-definitions.html"
+    },
+    "StructureDefinition/HtsFile": {
+      "base": "StructureDefinition-HtsFile.html",
+      "defns": "StructureDefinition-HtsFile-definitions.html"
+    },
+    "StructureDefinition/individual-age": {
+      "base": "StructureDefinition-individual-age.html",
+      "defns": "StructureDefinition-individual-age-definitions.html"
     },
     "StructureDefinition/individual-karyotypic-sex": {
       "base": "StructureDefinition-individual-karyotypic-sex.html",
@@ -93,9 +129,25 @@
       "base": "StructureDefinition-individual-taxonomy.html",
       "defns": "StructureDefinition-individual-taxonomy-definitions.html"
     },
-    "StructureDefinition/individual-age": {
-      "base": "StructureDefinition-individual-age.html",
-      "defns": "StructureDefinition-individual-age-definitions.html"
+    "StructureDefinition/Individual": {
+      "base": "StructureDefinition-Individual.html",
+      "defns": "StructureDefinition-Individual-definitions.html"
+    },
+    "StructureDefinition/pedigree-node-affected-status": {
+      "base": "StructureDefinition-pedigree-node-affected-status.html",
+      "defns": "StructureDefinition-pedigree-node-affected-status-definitions.html"
+    },
+    "StructureDefinition/pedigree-node-family-identifier": {
+      "base": "StructureDefinition-pedigree-node-family-identifier.html",
+      "defns": "StructureDefinition-pedigree-node-family-identifier-definitions.html"
+    },
+    "StructureDefinition/pedigree-node-individual": {
+      "base": "StructureDefinition-pedigree-node-individual.html",
+      "defns": "StructureDefinition-pedigree-node-individual-definitions.html"
+    },
+    "StructureDefinition/PedigreeNode": {
+      "base": "StructureDefinition-PedigreeNode.html",
+      "defns": "StructureDefinition-PedigreeNode-definitions.html"
     },
     "StructureDefinition/Phenopacket": {
       "base": "StructureDefinition-Phenopacket.html",
@@ -117,73 +169,29 @@
       "base": "StructureDefinition-PhenotypicFeature.html",
       "defns": "StructureDefinition-PhenotypicFeature-definitions.html"
     },
-    "StructureDefinition/htsfile-genome-assembly": {
-      "base": "StructureDefinition-htsfile-genome-assembly.html",
-      "defns": "StructureDefinition-htsfile-genome-assembly-definitions.html"
-    },
-    "StructureDefinition/HtsFile": {
-      "base": "StructureDefinition-HtsFile.html",
-      "defns": "StructureDefinition-HtsFile-definitions.html"
-    },
-    "StructureDefinition/pedigree-node-affected-status": {
-      "base": "StructureDefinition-pedigree-node-affected-status.html",
-      "defns": "StructureDefinition-pedigree-node-affected-status-definitions.html"
-    },
-    "StructureDefinition/pedigree-node-family-identifier": {
-      "base": "StructureDefinition-pedigree-node-family-identifier.html",
-      "defns": "StructureDefinition-pedigree-node-family-identifier-definitions.html"
-    },
-    "StructureDefinition/pedigree-node-individual": {
-      "base": "StructureDefinition-pedigree-node-individual.html",
-      "defns": "StructureDefinition-pedigree-node-individual-definitions.html"
-    },
-    "StructureDefinition/PedigreeNode": {
-      "base": "StructureDefinition-PedigreeNode.html",
-      "defns": "StructureDefinition-PedigreeNode-definitions.html"
-    },
-    "StructureDefinition/Encounter-Phenopackets": {
-      "base": "StructureDefinition-Encounter-Phenopackets.html",
-      "defns": "StructureDefinition-Encounter-Phenopackets-definitions.html"
-    },
-    "StructureDefinition/Specimen-Phenopackets": {
-      "base": "StructureDefinition-Specimen-Phenopackets.html",
-      "defns": "StructureDefinition-Specimen-Phenopackets-definitions.html"
+    "StructureDefinition/specimen-control": {
+      "base": "StructureDefinition-specimen-control.html",
+      "defns": "StructureDefinition-specimen-control-definitions.html"
     },
     "StructureDefinition/specimen-individual-age-at-collection": {
       "base": "StructureDefinition-specimen-individual-age-at-collection.html",
       "defns": "StructureDefinition-specimen-individual-age-at-collection-definitions.html"
     },
-    "StructureDefinition/specimen-control": {
-      "base": "StructureDefinition-specimen-control.html",
-      "defns": "StructureDefinition-specimen-control-definitions.html"
+    "StructureDefinition/Specimen-Phenopackets": {
+      "base": "StructureDefinition-Specimen-Phenopackets.html",
+      "defns": "StructureDefinition-Specimen-Phenopackets-definitions.html"
     },
-    "StructureDefinition/DiagnosticReport-Phenopackets": {
-      "base": "StructureDefinition-DiagnosticReport-Phenopackets.html",
-      "defns": "StructureDefinition-DiagnosticReport-Phenopackets-definitions.html"
+    "StructureDefinition/tumor-site": {
+      "base": "StructureDefinition-tumor-site.html",
+      "defns": "StructureDefinition-tumor-site-definitions.html"
     },
     "StructureDefinition/Tumor": {
       "base": "StructureDefinition-Tumor.html",
       "defns": "StructureDefinition-Tumor-definitions.html"
     },
-    "StructureDefinition/CancerDisease": {
-      "base": "StructureDefinition-CancerDisease.html",
-      "defns": "StructureDefinition-CancerDisease-definitions.html"
-    },
-    "StructureDefinition/CancerStage": {
-      "base": "StructureDefinition-CancerStage.html",
-      "defns": "StructureDefinition-CancerStage-definitions.html"
-    },
     "StructureDefinition/TumorGrade": {
       "base": "StructureDefinition-TumorGrade.html",
       "defns": "StructureDefinition-TumorGrade-definitions.html"
-    },
-    "StructureDefinition/CancerPacket": {
-      "base": "StructureDefinition-CancerPacket.html",
-      "defns": "StructureDefinition-CancerPacket-definitions.html"
-    },
-    "StructureDefinition/tumor-site": {
-      "base": "StructureDefinition-tumor-site.html",
-      "defns": "StructureDefinition-tumor-site-definitions.html"
     },
     "ValueSet/cancer-stage-code": {
       "base": "ValueSet-cancer-stage-code.html",
@@ -193,25 +201,33 @@
       "base": "ValueSet-cancer-stages.html",
       "defns": "ValueSet-cancer-stages-definitions.html"
     },
-    "ValueSet/tumor-grade-code": {
-      "base": "ValueSet-tumor-grade-code.html",
-      "defns": "ValueSet-tumor-grade-code-definitions.html"
-    },
-    "ValueSet/tumor-grades": {
-      "base": "ValueSet-tumor-grades.html",
-      "defns": "ValueSet-tumor-grades-definitions.html"
-    },
-    "ValueSet/tumor-morphology": {
-      "base": "ValueSet-tumor-morphology.html",
-      "defns": "ValueSet-tumor-morphology-definitions.html"
-    },
     "ValueSet/cancer": {
       "base": "ValueSet-cancer.html",
       "defns": "ValueSet-cancer-definitions.html"
     },
+    "ValueSet/evidence": {
+      "base": "ValueSet-evidence.html",
+      "defns": "ValueSet-evidence-definitions.html"
+    },
+    "ValueSet/hts-file": {
+      "base": "ValueSet-hts-format.html",
+      "defns": "ValueSet-hts-format-definitions.html"
+    },
+    "ValueSet/karyotypic-sex": {
+      "base": "ValueSet-karyotypic-sex.html",
+      "defns": "ValueSet-karyotypic-sex-definitions.html"
+    },
     "ValueSet/onset": {
       "base": "ValueSet-onset.html",
       "defns": "ValueSet-onset-definitions.html"
+    },
+    "ValueSet/pedigree-affected-status": {
+      "base": "ValueSet-pedigree-affected-status.html",
+      "defns": "ValueSet-pedigree-affected-status-definitions.html"
+    },
+    "ValueSet/presence": {
+      "base": "ValueSet-phenotypic-feature-interpretation.html",
+      "defns": "ValueSet-phenotypic-feature-interpretation-definitions.html"
     },
     "ValueSet/phenotypic-feature-modifier": {
       "base": "ValueSet-phenotypic-feature-modifier.html",
@@ -225,13 +241,21 @@
       "base": "ValueSet-phenotypic-feature-type.html",
       "defns": "ValueSet-phenotypic-feature-type-definitions.html"
     },
-    "ValueSet/presence": {
-      "base": "ValueSet-phenotypic-feature-interpretation.html",
-      "defns": "ValueSet-phenotypic-feature-interpretation-definitions.html"
-    },
     "ValueSet/taxonomy": {
       "base": "ValueSet-taxonomy.html",
       "defns": "ValueSet-taxonomy-definitions.html"
+    },
+    "ValueSet/tumor-grade-code": {
+      "base": "ValueSet-tumor-grade-code.html",
+      "defns": "ValueSet-tumor-grade-code-definitions.html"
+    },
+    "ValueSet/tumor-grades": {
+      "base": "ValueSet-tumor-grades.html",
+      "defns": "ValueSet-tumor-grades-definitions.html"
+    },
+    "ValueSet/tumor-morphology": {
+      "base": "ValueSet-tumor-morphology.html",
+      "defns": "ValueSet-tumor-morphology-definitions.html"
     }
   },
   "version": "4.0.0",

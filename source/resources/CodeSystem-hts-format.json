@@ -13,6 +13,10 @@
   "content": "complete",
   "concept": [
     {
+      "code": "UNKNOWN",
+      "display": "Unknown",
+      "definition": "An HTS file of unknown type"
+    }, {
       "code": "SAM",
       "display": "SAM",
       "definition": "Sequence Alignment Map (SAM) file"
