@@ -232,9 +232,9 @@
       "base": "StructureDefinition-PhenotypicFeature.html",
       "defns": "StructureDefinition-PhenotypicFeature-definitions.html"
     },
-    "StructureDefinition/primary-cancer-condition-extension": {
-      "base": "StructureDefinition-primary-cancer-condition-extension.html",
-      "defns": "StructureDefinition-primary-cancer-condition-extension-definitions.html"
+    "StructureDefinition/primary-cancer-condition": {
+      "base": "StructureDefinition-primary-cancer-condition.html",
+      "defns": "StructureDefinition-primary-cancer-condition-definitions.html"
     },
     "StructureDefinition/PrimaryCancerCondition": {
       "base": "StructureDefinition-PrimaryCancerCondition.html",
@@ -288,6 +288,14 @@
       "base": "ValueSet-anatomical-orientation.html",
       "defns": "ValueSet-anatomical-orientation-definitions.html"
     },
+    "ValueSet/cancer-body-location": {
+      "base": "ValueSet-cancer-body-location.html",
+      "defns": "ValueSet-cancer-body-location-definitions.html"
+    },
+    "ValueSet/cancer-staging-system": {
+      "base": "ValueSet-cancer-staging-system.html",
+      "defns": "ValueSet-cancer-staging-system-definitions.html"
+    },
     "ValueSet/evidence": {
       "base": "ValueSet-evidence.html",
       "defns": "ValueSet-evidence-definitions.html"
@@ -331,6 +339,14 @@
     "ValueSet/phenotypic-feature-type": {
       "base": "ValueSet-phenotypic-feature-type.html",
       "defns": "ValueSet-phenotypic-feature-type-definitions.html"
+    },
+    "ValueSet/primary-or-uncertain-behavior-cancer-disorder": {
+      "base": "ValueSet-primary-or-uncertain-behavior-cancer-disorder.html",
+      "defns": "ValueSet-primary-or-uncertain-behavior-cancer-disorder-definitions.html"
+    },
+    "ValueSet/secondary-cancer-disorder": {
+      "base": "ValueSet-secondary-cancer-disorder.html",
+      "defns": "ValueSet-secondary-cancer-disorder-definitions.html"
     },
     "ValueSet/taxonomy": {
       "base": "ValueSet-taxonomy.html",

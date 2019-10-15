@@ -5,6 +5,7 @@
     "name": "AnatomicalOrientation",
     "title": "Anatomical Orientation",
     "status": "draft",
+    "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
     "contact": [
         {

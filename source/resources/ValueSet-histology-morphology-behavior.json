@@ -5,6 +5,7 @@
     "name": "HistologyMorphologyBehavior",
     "title": "Histology Morphology Behavior",
     "status": "draft",
+    "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
     "contact": [
         {

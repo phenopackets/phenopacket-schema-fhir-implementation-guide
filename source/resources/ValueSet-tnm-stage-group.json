@@ -5,6 +5,7 @@
     "name": "TNMStageGroup",
     "title": "TNM Stage Group",
     "status": "draft",
+    "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
     "contact": [
         {

@@ -79,7 +79,7 @@
           <valueString value="Evidence"/>
         </extension>
         <strength value="preferred"/>
-        <valueSet value="http://purl.obolibrary.org/obo/eco.owl?vs"/>
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/evidence"/>
       </binding>
     </element>
     

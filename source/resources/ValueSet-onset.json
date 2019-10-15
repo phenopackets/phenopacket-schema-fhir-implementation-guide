@@ -3,7 +3,8 @@
     "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/onset",
     "version": "0.1.0",
     "name": "Onset",
-    "status": "active",
+    "title": "Onset",
+    "status": "draft",
     "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
     "contact": [

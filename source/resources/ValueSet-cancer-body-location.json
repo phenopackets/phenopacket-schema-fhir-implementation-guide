@@ -1,9 +1,9 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/anatomical-direction",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/cancer-body-location",
     "version": "0.1.0",
-    "name": "AnatomicalDirection",
-    "title": "Anatomical Direction",
+    "name": "CancerBodyLocation",
+    "title": "Cancer Body Location",
     "status": "draft",
     "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
@@ -17,7 +17,7 @@
             ]
         }
     ],
-    "description": "Terms that specify anatomical direction.",
+    "description": "Codes describing the location(s) of primary or secondary cancer. The value set includes all codes from the SNOMED CT body structure hierarchy (codes descending from 123037004 'Body Structure'). The cancer body location may also be expressed using ICD-O-3 topography codes, however, those codes are not included here due to intellectual property restrictions. No other code systems are considered conformant.",
     "compose": {
         "include": [
             {
@@ -26,7 +26,7 @@
                     {
                         "property": "concept",
                         "op": "is-a",
-                        "value": "272424004"
+                        "value": "123037004"
                     }
                 ]
             }

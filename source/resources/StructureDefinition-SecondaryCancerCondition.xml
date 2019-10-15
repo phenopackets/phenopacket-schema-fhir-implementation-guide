@@ -71,7 +71,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/primary-cancer-condition-extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/primary-cancer-condition" />
       </type>
       <isModifier value="false" />
       <isSummary value="false" />
@@ -83,7 +83,7 @@
         <path value="Condition.code" />
         <binding>
             <strength value="required" />
-            <valueSet value="http://hl7.org/fhir/us/mcode/ValueSet/onco-core-SecondaryCancerDisorderVS" />
+            <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/secondary-cancer-disorder" />
         </binding>
     </element>
 

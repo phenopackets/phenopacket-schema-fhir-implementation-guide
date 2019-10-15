@@ -5,6 +5,7 @@
     "name": "TNMPrimaryTumorCategory",
     "title": "TNM Primary Tumor Category",
     "status": "draft",
+    "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
     "contact": [
         {

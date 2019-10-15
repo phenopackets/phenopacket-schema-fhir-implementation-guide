@@ -156,7 +156,7 @@
       <definition value="Method or staging system used to stage the cancer." />
       <binding>
         <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/us/mcode/ValueSet/onco-core-CancerStagingSystemVS" />
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/cancer-staging-system" />
       </binding>
     </element>
     

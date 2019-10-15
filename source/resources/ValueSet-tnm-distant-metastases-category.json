@@ -5,6 +5,7 @@
     "name": "TNMDistantMetastasesCategory",
     "title": "TNM Distant Metastases Category",
     "status": "draft",
+    "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
     "contact": [
         {

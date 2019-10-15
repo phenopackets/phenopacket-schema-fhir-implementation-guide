@@ -62,7 +62,7 @@
         <path value="Condition.code" />
         <binding>
             <strength value="required" />
-            <valueSet value="http://hl7.org/fhir/us/mcode/ValueSet/onco-core-PrimaryOrUncertainBehaviorCancerDisorderVS" />
+            <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/primary-or-uncertain-behavior-cancer-disorder" />
         </binding>
     </element>
     

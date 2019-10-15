@@ -5,6 +5,7 @@
     "name": "UnitsOfLength",
     "title": "Units Of Length",
     "status": "draft",
+    "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
     "contact": [
         {

@@ -5,6 +5,7 @@
     "name": "TNMRegionalNodesCategory",
     "title": "TNM Regional Nodes Category",
     "status": "draft",
+    "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
     "contact": [
         {

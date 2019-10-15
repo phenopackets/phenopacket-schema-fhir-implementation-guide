@@ -44,9 +44,5 @@ active: profiles
 <td><a href="StructureDefinition-Biosample.html">Biosample</a></td>
 <td></td>
 </tr>
-<tr>
-<td><a href="StructureDefinition-Tumor.html">Tumor</a></td>
-<td></td>
-</tr>
 </tbody>
 </table>

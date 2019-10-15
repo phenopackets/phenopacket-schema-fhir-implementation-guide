@@ -1,9 +1,9 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/anatomical-direction",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/secondary-cancer-disorder",
     "version": "0.1.0",
-    "name": "AnatomicalDirection",
-    "title": "Anatomical Direction",
+    "name": "SecondaryCancerDisorder",
+    "title": "Secondary Cancer Disorder",
     "status": "draft",
     "experimental": false,
     "publisher": "Global Alliance for Genomics and Health",
@@ -17,7 +17,7 @@
             ]
         }
     ],
-    "description": "Terms that specify anatomical direction.",
+    "description": "Types of secondary malignant neoplastic disease, coded in SNOMED CT. Use a code from the disorder hierarchy under secondary malignant neoplastic disease (SNOMED CT 128462008).",
     "compose": {
         "include": [
             {
@@ -26,7 +26,7 @@
                     {
                         "property": "concept",
                         "op": "is-a",
-                        "value": "272424004"
+                        "value": "128462008"
                     }
                 ]
             }

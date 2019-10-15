@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/primary-cancer-condition-extension" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/primary-cancer-condition" />
   <version value="0.1.0" />
   <name value="PrimaryCancerCondition" />
   <title value="Primary Cancer Condition" />
@@ -42,7 +42,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/primary-cancer-condition-extension" />
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/primary-cancer-condition" />
     </element>
     <element id="Extension.valueReference">
       <path value="Extension.valueReference" />

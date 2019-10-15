@@ -102,8 +102,8 @@
     
     <!-- Mandatory elements. -->
     <element id="FamilyMemberHistory.sex:Sex">
-      <path value="FamilyMemberHistory.sex"/> 
-      <path value="FamilyMemberHistory.sex" />
+      <path value="FamilyMemberHistory.sex"/>
+      <sliceName value="Sex"/> 
       <min value="1" />
     </element>
     

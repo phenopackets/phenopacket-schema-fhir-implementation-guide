@@ -276,7 +276,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/primary-cancer-condition-extension"/>
+                <reference value="StructureDefinition/primary-cancer-condition"/>
                 <display value="Primary Cancer Condition Extension"/>
             </reference>
         </resource>
@@ -362,6 +362,18 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/cancer-body-location"/>
+                <display value="Cancer Body Location Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/cancer-staging-system"/>
+                <display value="Cancer Staging System Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/evidence"/>
                 <display value="Evidence Value Set"/>
             </reference>
@@ -424,6 +436,18 @@
             <reference>
                 <reference value="ValueSet/phenotypic-feature-type"/>
                 <display value="Phenotype Type Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/primary-or-uncertain-behavior-cancer-disorder"/>
+                <display value="Primary Or Uncertain Behavior Cancer Disorder Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/secondary-cancer-disorder"/>
+                <display value="Secondary Cancer Disorder Value Set"/>
             </reference>
         </resource>
         <resource>
