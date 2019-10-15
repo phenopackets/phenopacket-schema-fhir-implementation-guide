@@ -84,7 +84,7 @@ active: terminology
 <td>Concepts to indicate presence or absence of a phenotypic feature.</td>
 </tr>
 <tr>
-<td><a href="ValueSet-Karyotypic-sex.html">Karyotypic sex</a></td>
+<td><a href="ValueSet-karyotypic-sex.html">Karyotypic sex</a></td>
 <td>Represents the chromosomal sex of an individual.</td>
 </tr>
 <tr>
@@ -94,10 +94,6 @@ active: terminology
 <tr>
 <td><a href="ValueSet-taxonomy.html">Taxonomy</a></td>
 <td>Taxonomic identifiers of an organism.</td>
-</tr>
-<tr>
-<td><a href="ValueSet-cancer.html">Cancer</a></td>
-<td>Cancer conditions from NCIt and SNOMED CT.</td>
 </tr>
 </tbody>
 </table>

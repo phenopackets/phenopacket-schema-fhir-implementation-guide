@@ -1,12 +1,22 @@
 {
     "resourceType": "ValueSet",
     "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/hts-format",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "name": "HTSFormat",
     "title": "HTS Format",
     "status": "active",
     "experimental": false,
-    "publisher": "GA4GH",
+    "publisher": "Global Alliance for Genomics and Health",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ga4gh.org"
+                }
+            ]
+        }
+    ],
     "description": "Represents different high-throughput sequencing file formats.",
     "compose": {
         "include": [

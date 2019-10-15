@@ -41,27 +41,11 @@ active: profiles
 <td></td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-Specimen-Phenopackets.html">Specimen-Phenopackets</a></td>
+<td><a href="StructureDefinition-Biosample.html">Biosample</a></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="StructureDefinition-Tumor.html">Tumor</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-CancerDisease.html">Cancer Disease</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-CancerStage.html">Cancer Stage</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-TumorGrade.html">Tumor Grade</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-CancerPacket.html">Cancer Packet</a></td>
 <td></td>
 </tr>
 </tbody>

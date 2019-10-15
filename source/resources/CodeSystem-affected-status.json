@@ -1,17 +1,25 @@
 {
   "resourceType": "CodeSystem",
-  "id": "affected-status",
   "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/affected-status",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "name": "AffectedStatus",
   "title": "Affected Status",
   "status": "active",
   "experimental": false,
-  "publisher": "GA4GH",
+  "publisher": "Global Alliance for Genomics and Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ga4gh.org"
+        }
+      ]
+    }
+  ],
   "description": "An enumeration used to represent whether a person is affected by a condition of interest in the context of a pedigree.",
   "caseSensitive": false,
   "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/affected-status?vs",
-  "title": "Affected Status",
   "content": "complete",
   "concept": [
     {

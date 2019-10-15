@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/PhenotypicFeature" />
-  <version value="1.0.0" />
+  <version value="0.1.0" />
   <name value="PhenotypicFeature" />
   <title value="Phenotypic Feature" />
   <status value="draft" />
+  <publisher value="Global Alliance for Genomics and Health" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://ga4gh.org" />
+      <rank value="1" />
+    </telecom>
+  </contact>
   <description value="This element is intended to be used to describe a phenotype that characterizes the subject of the Phenopacket. For medical use cases the subject will generally be a patient or a proband of a study, and the phenotypes will be abnormalities described by an ontology such as the Human Phenotype Ontology. The word phenotype is used with many different meanings including disease entity, but in this context we mean an individual phenotypic feature, observed as either present or absent, with possible onset, modifiers and frequency." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -119,6 +127,7 @@
     <!-- Constrain subject to be an Individual. -->
     <element id="Observation.subject">
       <path value="Observation.subject" />
+      <mustSupport value="true"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Individual" />
@@ -144,6 +153,12 @@
       <short value="This element represents a free-text description of the phenotype." />
       <definition value="This element represents a free-text description of the phenotype." />
       <comment value="It should not be used as the primary means of describing the phenotype, but can be used to supplement the record if ontology terms are not sufficiently able to capture all the nuances. In general, the type and onset etc… fields should be used for this purpose, and this field is a last resort." />
+      <mustSupport value="true"/>
+    </element>
+    
+    <!-- Must support because it links to biosamples. -->
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
       <mustSupport value="true"/>
     </element>
     

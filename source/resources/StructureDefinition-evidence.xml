@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/evidence" />
-  <version value="1.0.0" />
+  <version value="0.1.0" />
   <name value="Evidence" />
   <title value="Evidence" />
   <status value="draft" />
+  <publisher value="Global Alliance for Genomics and Health" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://ga4gh.org" />
+      <rank value="1" />
+    </telecom>
+  </contact>
   <description value="This element intends to represent the evidence for an assertion such as an observation of a PhenotypicFeature element. We recommend the use of terms from the Evidence and Conclusion Ontology (ECO)." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

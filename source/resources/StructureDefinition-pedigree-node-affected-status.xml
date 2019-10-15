@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node-affected-status" />
+  <version value="0.1.0" />
   <name value="AffectedStatus" />
   <status value="draft" />
+  <publisher value="Global Alliance for Genomics and Health" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://ga4gh.org" />
+      <rank value="1" />
+    </telecom>
+  </contact>
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />

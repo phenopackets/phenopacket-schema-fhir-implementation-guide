@@ -1,0 +1,1 @@
+This element is a specialization of [Disease](StructureDefinition-Disease.html) used to represent primary cancer conditions (the original or first tumors in the body). There is no corresponding element in the original Phenopackets.

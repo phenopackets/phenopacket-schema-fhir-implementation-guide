@@ -4,8 +4,6 @@ layout: default
 active: home
 ---
 
-{% include publish-box.html %}
-
 <!-- { :.no_toc } -->
 
 ### Description

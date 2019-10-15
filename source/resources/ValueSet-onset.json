@@ -1,11 +1,21 @@
 {
     "resourceType": "ValueSet",
     "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/onset",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "name": "Onset",
     "status": "active",
     "experimental": false,
-    "publisher": "GA4GH",
+    "publisher": "Global Alliance for Genomics and Health",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ga4gh.org"
+                }
+            ]
+        }
+    ],
     "description": "Onset terms from the Human Phenotype Ontology and SNOMED CT.",
     "compose": {
         "include": [

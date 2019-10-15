@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Biosample" />
+  <version value="0.1.0" />
+  <name value="Biosample" />
+  <title value="Biosample" />
+  <status value="draft" />
+  <publisher value="Global Alliance for Genomics and Health" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://ga4gh.org" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Specimen" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen" />
+  <derivation value="constraint" />
+  <differential>
+    <!-- Root node - required for differential. -->
+    <element id="Specimen">
+      <path value="Specimen" />
+    </element>
+    
+    <!-- Set up slicing -->
+    <element id="Specimen.extension">
+      <path value="Specimen.extension" />
+      <!-- Slice the extension element -->
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <!-- We don't care what the order of any extensions is -->
+        <ordered value="false"/>
+        <rules value="open" />
+      </slicing>
+    </element>
+    
+    <!-- The slice that contains the age -->
+    <element id="Specimen.extension:individualAgeAtCollection">
+      <path value="Specimen.extension" />
+      <sliceName value="individualAgeAtCollection" />
+      <sliceIsConstraining value="false" />
+      <label value="individualAgeAtCollection" />
+      <short value="Age of the proband at the time the specimen was taken." />
+      <definition value="Age of the proband at the time the specimen was taken." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/biosample-individual-age-at-collection" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    
+    <!-- The slice that contains the control flag -->
+    <element id="Specimen.extension:isControlSample">
+      <path value="Specimen.extension" />
+      <sliceName value="isControlSample" />
+      <sliceIsConstraining value="false" />
+      <label value="isControlSample" />
+      <short value="Whether the sample is being used as a normal control." />
+      <definition value="Whether the sample is being used as a normal control." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/biosample-control" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    
+    <!-- Must support elements. -->
+    <element id="Specimen.identifier">
+      <path value="Specimen.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.subject">
+      <path value="Specimen.subject" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.note">
+      <path value="Specimen.note" />
+      <mustSupport value="true"/>
+    </element>
+    <element id="Specimen.type">
+      <path value="Specimen.type" />
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

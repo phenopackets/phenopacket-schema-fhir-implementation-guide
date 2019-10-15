@@ -69,16 +69,12 @@ active: profiles
 <td>The context for this extension is FamilyMemberHistory.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-specimen-control.html">Specimen Control</a></td>
-<td>The context for this extension is Specimen.</td>
+<td><a href="StructureDefinition-biosample-control.html">Biosample Control</a></td>
+<td>The context for this extension is Biosample.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-specimen-individual-age-at-collection.html">Specimen Individual Age at Collection</a></td>
-<td>The context for this extension is Specimen.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-tumor-site.html">Tumor Site</a></td>
-<td>The context for this extension is CancerDisease.</td>
+<td><a href="StructureDefinition-biosample-individual-age-at-collection.html">Biosample Individual Age at Collection</a></td>
+<td>The context for this extension is Biosample.</td>
 </tr>
 </tbody>
 </table>

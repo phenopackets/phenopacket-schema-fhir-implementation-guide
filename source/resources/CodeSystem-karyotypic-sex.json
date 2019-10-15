@@ -1,11 +1,21 @@
 {
   "resourceType": "CodeSystem",
   "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/karyotypic-sex",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "name": "KaryotypicSex",
   "status": "active",
   "experimental": false,
-  "publisher": "GA4GH",
+  "publisher": "Global Alliance for Genomics and Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ga4gh.org"
+        }
+      ]
+    }
+  ],
   "description": "Represents the chromosomal sex of an individual.",
   "caseSensitive": false,
   "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/karyotypic-sex?vs",

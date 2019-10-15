@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
+  <version value="0.1.0" />
   <name value="HtsFile" />
   <title value="Hts File" />
   <status value="draft" />
-  <description value="Phenopackets can be used to hold phenotypic information that can inform the analysis of sequencing data in VCF format as well as other high-throughput sequencing (HTS) or other data types. The Phenopacket provides two messages that allow phenopackets to link files with data." />
+  <publisher value="Global Alliance for Genomics and Health" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://ga4gh.org" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Phenopackets can be used to hold phenotypic information that can inform the analysis of sequencing data in VCF format as well as other high-throughput sequencing (HTS) or other data types." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />

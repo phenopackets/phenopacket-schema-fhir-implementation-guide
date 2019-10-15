@@ -13,6 +13,6 @@ can only resize using html  or css ;-(
 -->
 
 
-<a no-external="true" href="http://csiro.au">
-<img alt="CSIRO website" class="img-responsive project-logo" src="assets/images/csiro-logo.png"/>
+<a no-external="true" href="https://www.ga4gh.org/">
+<img alt="GA4GH website" class="img-responsive project-logo" src="assets/images/ga4gh-logo.svg"/>
 </a>

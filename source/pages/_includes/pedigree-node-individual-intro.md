@@ -1,6 +1,1 @@
----
-title: StructureDefinition-pedigree-node-individual-intro
-layout: default
-active: StructureDefinition-pedigree-node-individual-intro
----
-
+An extension that allows referencing an individual that corresponds to this pedigree node.
