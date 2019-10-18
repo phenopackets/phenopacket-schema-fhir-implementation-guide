@@ -23,9 +23,14 @@
   "content": "complete",
   "concept": [
     {
-      "code": "phenotypes",
-      "display": "Phenotypes",
-      "definition": "Phenotypes"
+      "code": "observations",
+      "display": "Observations",
+      "definition": "Observations"
+    },
+    {
+      "code": "encounters",
+      "display": "Encounters",
+      "definition": "Encounters"
     },
     {
       "code": "diseases",
@@ -33,39 +38,24 @@
       "definition": "Diseases"
     },
     {
-      "code": "specimen",
-      "display": "Specimen",
-      "definition": "Specimen"
+      "code": "biosamples",
+      "display": "Biosamples",
+      "definition": "Biosamples"
     },
     {
-      "code": "results",
-      "display": "Results",
-      "definition": "Results"
+      "code": "genomics-reports",
+      "display": "Genomics reports",
+      "definition": "Genomics reports"
     },
     {
-      "code": "diagnostic-report",
-      "display": "Diagnostic report",
-      "definition": "Diagnostic report"
+      "code": "relatives",
+      "display": "Relatives",
+      "definition": "Relatives"
     },
     {
-      "code": "tumor",
-      "display": "Tumor",
-      "definition": "Tumor"
-    },
-    {
-      "code": "cancer-disease",
-      "display": "Cancer disease",
-      "definition": "Cancer disease"
-    },
-    {
-      "code": "cancer-stage",
-      "display": "Cancer stage",
-      "definition": "Cancer stage"
-    },
-    {
-      "code": "tumor-grade",
-      "display": "Tumor grade",
-      "definition": "Tumor grade"
+      "code": "pedigree",
+      "display": "Pedigree",
+      "definition": "Pedigree"
     },
     {
       "code": "hts-files",
@@ -73,9 +63,14 @@
       "definition": "HTS files"
     },
     {
-      "code": "cancer-packets",
-      "display": "Cancer packets",
-      "definition": "Cancer packets"
+      "code": "members",
+      "display": "Members",
+      "definition": "Members"
+    },
+    {
+      "code": "phenotypic-features",
+      "display": "Phenotypic features",
+      "definition": "Phenotypic features"
     }
   ]
 }

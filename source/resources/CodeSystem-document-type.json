@@ -36,11 +36,6 @@
       "code": "cohort",
       "display": "Cohort",
       "definition": "Cohort"
-    },
-    {
-      "code": "cancer-packet",
-      "display": "Cancer packet",
-      "definition": "Cancer packet"
     }
   ]
 }

@@ -29,6 +29,16 @@
                         "value": "HP:0012823"
                     }
                 ]
+            },
+            {
+                "system": "http://purl.obolibrary.org/obo/hp.owl",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "HP:0031797"
+                    }
+                ]
             }
         ]
     }
