@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="ga4gh.fhir.phenopackets-0.0.1"/>
-    <url value="http://ga4gh.org/fhir/phenopackets/ImplementationGuide/ga4gh.fhir.phenopackets-0.0.1"/>
-    <version value="0.0.1"/>
+    <id value="ga4gh.fhir.phenopackets-0.1.0"/>
+    <url value="http://ga4gh.org/fhir/phenopackets/ImplementationGuide/ga4gh.fhir.phenopackets-0.1.0"/>
+    <version value="0.1.0"/>
     <name value="Phenopackets"/>
     <title value="Phenopackets"/>
     <status value="draft"/>
