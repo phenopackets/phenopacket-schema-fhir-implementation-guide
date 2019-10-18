@@ -61,6 +61,7 @@
     
     <element id="Encounter.subject">
       <path value="Encounter.subject" />
+      <min value="1" />
       <type>
         <code value="Reference"/>
         <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Individual" />
