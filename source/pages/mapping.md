@@ -40,7 +40,7 @@ This page describes the mapping between the original Phenopackets and this FHIR 
 
 #### <a name="notes"></a>Notes
 
-Phenopackets does not include the notion of an _encounter_, which makes it hard to store longitudinal information. This implementation guide uses the [Encounter-Phonopackets](StructureDefinition-Encounter-Phenopackets.html) profile to represent encounters.
+Phenopackets does not include the notion of an _encounter_, which makes it hard to store longitudinal information. This implementation guide uses the [Encounter-Phenopackets](StructureDefinition-Encounter-Phenopackets.html) profile to represent encounters.
 
 In Phenopackets, a Biosample is meant to be "a unit of biological material from which the substrate molecules (e.g. genomic DNA, RNA, proteins) for molecular analyses (e.g. sequencing, array hybridisation, mass-spectrometry) are extracted." However, the model includes additional information that goes beyond this definition, including cancer-related attributes.
 

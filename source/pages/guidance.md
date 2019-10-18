@@ -27,7 +27,7 @@ The Phenopackets on FHIR Implementation Guide (IG) constrains and extends the ba
 
 #### Java (Standalone)
 
-A FHIR server is not needed to create a FHIR Phenopacket instance. The HPI FHIR libraries can be used to create an instance, validate it against the IG and save it in JSON, XML or RDF.
+A FHIR server is not needed to create a FHIR Phenopacket instance. The HAPI FHIR libraries can be used to create an instance, validate it against the IG and save it in JSON, XML or RDF.
 
 The following steps will describe how to create a simple Phenopacket in Java and validate it using the IG. First, the HAPI dependencies need to be added to the project. If you are using Maven, these are:
 
@@ -74,9 +74,30 @@ Check the HAPI FHIR [downloads page](https://hapifhir.io/download.html) for up t
 
 #### Java (Server)
 
+TODO
+
 ### Examples
 
 #### Rare Disease
 
+This example shows how to create a FHIR Phenopacket to represent a [case report](https://www.ncbi.nlm.nih.gov/pubmed/30808312) about a boy with Bethlem myopathy.
+
+The following block creates a FHIR Bundle that will contain everything. This bundle is of type _document_ so the first element should be a [Composition resource](https://www.hl7.org/fhir/composition.html).
+
+```java
+Bundle bundle = 
+  new Bundle()
+    .setType(BundleType.DOCUMENT)
+    .setIdentifier(new Identifier().setSystem(GA4GH_SYSTEM).setValue("1"));
+bundle
+  .getMeta()
+    .setLastUpdated(new Date());
+```
+
+The proband is created with the following code:
+
+
 #### Cancer
+
+TODO
 
