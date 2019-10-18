@@ -16,66 +16,10 @@ active: profiles
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="StructureDefinition-disease-onset.html">Disease Onset</a></td>
-<td>The context for this extension is Condition. </td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-external-reference.html">External Reference</a></td>
-<td>The context for this extension is Observation and the Evidence extension. </td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-evidence.html">Evidence</a></td>
-<td>The context for this extension is Observation.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-individual-karyotypic-sex.html">Individual Karyotypic Sex</a></td>
-<td>The context for this extension is Patient.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-individual-taxonomy.html">Individual Taxonomy</a></td>
-<td>The context for this extension is Patient.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-individual-age.html">Individual Age</a></td>
-<td>The context for this extension is Patient.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-phenotypic-feature-modifier.html">Phenotype Modifier</a></td>
-<td>The context for this extension is Observation.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-phenotypic-feature-onset.html">Phenotype Onset</a></td>
-<td>The context for this extension is Observation.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-phenotypic-feature-severity.html">Phenotype Severity</a></td>
-<td>The context for this extension is Observation.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-htsfile-genome-assembly.html">HTS File Genome Assembly</a></td>
-<td>The context for this extension is DocumentReference.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-pedigree-node-affected-status.html">Affected Status</a></td>
-<td>The context for this extension is FamilyMemberHistory.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-pedigree-node-family-identifier.html">FamilyIdentifier</a></td>
-<td>The context for this extension is FamilyMemberHistory.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-pedigree-node-individual.html">Pedigree Node Individual</a></td>
-<td>The context for this extension is FamilyMemberHistory.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-biosample-control.html">Biosample Control</a></td>
-<td>The context for this extension is Biosample.</td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-biosample-individual-age-at-collection.html">Biosample Individual Age at Collection</a></td>
-<td>The context for this extension is Biosample.</td>
-</tr>
+
+
+
+
 </tbody>
 </table>
 

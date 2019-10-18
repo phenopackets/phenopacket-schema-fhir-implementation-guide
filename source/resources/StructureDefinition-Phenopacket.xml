@@ -13,6 +13,7 @@
       <rank value="1" />
     </telecom>
   </contact>
+  <description value="A Phenopacket is an anonymous phenotypic description of an individual or biosample with potential genes of interest and/or diagnoses." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />

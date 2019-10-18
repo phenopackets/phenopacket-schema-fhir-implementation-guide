@@ -3,6 +3,7 @@
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Disease" />
   <version value="0.1.0" />
   <name value="Disease" />
+  <title value="Disease" />
   <status value="draft" />
   <publisher value="Global Alliance for Genomics and Health" />
   <contact>
