@@ -13,6 +13,7 @@
       <rank value="1" />
     </telecom>
   </contact>
+  <description value="Describes the age at which a phenotypic feature was first noticed or diagnosed." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />

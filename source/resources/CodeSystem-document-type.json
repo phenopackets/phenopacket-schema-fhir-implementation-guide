@@ -3,6 +3,7 @@
   "url": "http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type",
   "version": "0.1.0",
   "name": "DocumentType",
+  "title": "Document Type",
   "status": "active",
   "experimental": false,
   "publisher": "Global Alliance for Genomics and Health",
@@ -19,7 +20,6 @@
   "description": "Represents the different types of documents in the Phenopackets standard.",
   "caseSensitive": false,
   "valueSet": "http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type?vs",
-  "title": "Document Type",
   "content": "complete",
   "concept": [
     {

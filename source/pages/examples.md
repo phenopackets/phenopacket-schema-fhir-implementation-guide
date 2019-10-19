@@ -112,27 +112,27 @@ Variants are represented using a profile derived from the Genomics Reporting pro
 
 ```java
 Observation heterozygousCOL6A1Variant = 
-		new Observation()
-			.setStatus(ObservationStatus.FINAL)
-			.setCode(getCodeableConcept(LOINC, "69548-6", "Genetic variant assessment"))
-			.setValue(getCodeableConcept(LOINC, "LA9633-4", "Present"));
+    new Observation()
+      .setStatus(ObservationStatus.FINAL)
+      .setCode(getCodeableConcept(LOINC, "69548-6", "Genetic variant assessment"))
+      .setValue(getCodeableConcept(LOINC, "LA9633-4", "Present"));
 heterozygousCOL6A1Variant.setId(UUID.randomUUID().toString());
 
 heterozygousCOL6A1Variant
-	.addComponent()
-		.setCode(getCodeableConcept(LOINC, "81290-9", "Genomic DNA change (gHGVS)"))
-		.setValue(getCodeableConcept(HGVS, "NM_001848.2:c.877G>A", "Homo sapiens collagen type VI alpha 1 chain (COL6A1), mRNA"));
+  .addComponent()
+    .setCode(getCodeableConcept(LOINC, "81290-9", "Genomic DNA change (gHGVS)"))
+    .setValue(getCodeableConcept(HGVS, "NM_001848.2:c.877G>A", "Homo sapiens collagen type VI alpha 1 chain (COL6A1), mRNA"));
 
 heterozygousCOL6A1Variant
-	.addComponent()
-		.setCode(getCodeableConcept(LOINC, "53034-5", "Allelic state"))
-		.setValue(getCodeableConcept(LOINC, "LA6706-1", "Heterozygous"));
-	
+  .addComponent()
+    .setCode(getCodeableConcept(LOINC, "53034-5", "Allelic state"))
+    .setValue(getCodeableConcept(LOINC, "LA6706-1", "Heterozygous"));
+  
 DiagnosticReport report = 
-		new DiagnosticReport()
-			.setCode(getCodeableConcept(LOINC, "81247-9", "Master HL7 genetic variant reporting panel"))
-			.setStatus(DiagnosticReportStatus.FINAL)
-			.setSubject(new Reference(proband));
+    new DiagnosticReport()
+      .setCode(getCodeableConcept(LOINC, "81247-9", "Master HL7 genetic variant reporting panel"))
+      .setStatus(DiagnosticReportStatus.FINAL)
+      .setSubject(new Reference(proband));
 report.setId(UUID.randomUUID().toString());
 report.addResult().setResource(heterozygousCOL6A1Variant);  
 ```
@@ -142,26 +142,26 @@ A complex extension was created to represent an evidence element.
 ```java
 Extension evidence = new Extension(EVIDENCE_URL);
 evidence.addExtension("evidenceCode", getCodeableConcept(ECO, "ECO:0000033", 
-		"author statement supported by traceable reference"));
+    "author statement supported by traceable reference"));
 Extension reference = new Extension(REFERENCE_URL);
 reference.addExtension("id", new UrlType("http://www.ncbi.nlm.nih.gov/pubmed/30808312"));
 reference.addExtension("description", new StringType(
-		"COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report."));
+    "COL6A1 mutation leading to Bethlem myopathy with recurrent hematuria: a case report."));
 evidence.addExtension(reference);
 ```
 
-Phenotypic features are represented as a profile on the Observation resource. Extensions were required to represent _severity_, _modifiers_, coded _onset_ and _evidence. The following example shows how to add an extension to represent coded onset. The other phenotypic features in the example are excluded for brevity.
+Phenotypic features are represented as a profile on the Observation resource. Extensions were required to represent _severity_, _modifiers_, coded _onset_ and _evidence_. The following example shows how to add an extension to represent coded onset. The other phenotypic features in the example are excluded for brevity.
 
 ```java
 Observation decreasedFetalMovement = 
-	new Observation()
-		.setStatus(ObservationStatus.FINAL)
-		.setCode(getCodeableConcept(HPO, "HP:0001558", "Decreased fetal movement"))
-		.setInterpretation(getInterpretation(true))
-		.setSubject(new Reference(proband));
+  new Observation()
+    .setStatus(ObservationStatus.FINAL)
+    .setCode(getCodeableConcept(HPO, "HP:0001558", "Decreased fetal movement"))
+    .setInterpretation(getInterpretation(true))
+    .setSubject(new Reference(proband));
 decreasedFetalMovement.setId(UUID.randomUUID().toString());
 decreasedFetalMovement.addExtension(ONSET_URL, 
-		getCodeableConcept(HPO, "HP:0011461", "Fetal onset"));
+    getCodeableConcept(HPO, "HP:0011461", "Fetal onset"));
 decreasedFetalMovement.addExtension(evidence);
 ```
 
@@ -169,25 +169,25 @@ A Phenopacket is represented as a Composition with different sections that conta
 
 ```java
 Composition phenopacket = 
-		new Composition()
-			.setStatus(CompositionStatus.FINAL)
-			.setType(getCodeableConcept(GA4GH_DOC_TYPE, "phenopacket", "Phenopacket"))
-			.setDate(new Date())
-			.setTitle("Phenopacket")
-			.setSubject(new Reference(proband))
-			.addAuthor(new Reference(author));
-	phenopacket.setId(UUID.randomUUID().toString());
+    new Composition()
+      .setStatus(CompositionStatus.FINAL)
+      .setType(getCodeableConcept(GA4GH_DOC_TYPE, "phenopacket", "Phenopacket"))
+      .setDate(new Date())
+      .setTitle("Phenopacket")
+      .setSubject(new Reference(proband))
+      .addAuthor(new Reference(author));
+  phenopacket.setId(UUID.randomUUID().toString());
 
 if (phenotypicFeatures != null) {
-	SectionComponent phenotypicFeaturesSection = phenopacket
-		.addSection()
-			.setTitle("Phenotypic Features")
-			.setCode(getCodeableConcept(GA4GH_SECTION_TYPE, "phenotypic-features", 
-					"Phenotypic features"))
-			.setMode(SectionMode.SNAPSHOT);
-	for (Observation obs : phenotypicFeatures) {
-		phenotypicFeaturesSection.addEntry(new Reference(obs));
-	}
+  SectionComponent phenotypicFeaturesSection = phenopacket
+    .addSection()
+      .setTitle("Phenotypic Features")
+      .setCode(getCodeableConcept(GA4GH_SECTION_TYPE, "phenotypic-features", 
+          "Phenotypic features"))
+      .setMode(SectionMode.SNAPSHOT);
+  for (Observation obs : phenotypicFeatures) {
+    phenotypicFeaturesSection.addEntry(new Reference(obs));
+  }
 }
 ...
 ```
@@ -196,18 +196,18 @@ The composition does not contain the resources directly. All the resources, incl
 
 ```java
 Bundle bundle = 
-		new Bundle()
-			.setType(BundleType.DOCUMENT)
-			.setIdentifier(new Identifier()
-				.setSystem(GA4GH_SYSTEM)
-				.setValue(UUID.randomUUID().toString()));
+    new Bundle()
+      .setType(BundleType.DOCUMENT)
+      .setIdentifier(new Identifier()
+        .setSystem(GA4GH_SYSTEM)
+        .setValue(UUID.randomUUID().toString()));
 bundle
-	.getMeta()
-		.setLastUpdated(new Date());
+  .getMeta()
+    .setLastUpdated(new Date());
 
 bundle.addEntry()
-	.setResource(composition)
-	.setFullUrl("urn:uuid:" + composition.getId());
+  .setResource(composition)
+  .setFullUrl("urn:uuid:" + composition.getId());
 ...
 ```
 

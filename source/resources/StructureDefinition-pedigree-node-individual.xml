@@ -12,6 +12,7 @@
       <rank value="1" />
     </telecom>
   </contact>
+  <description value="A reference to the individual referenced by this pedigree node." />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
