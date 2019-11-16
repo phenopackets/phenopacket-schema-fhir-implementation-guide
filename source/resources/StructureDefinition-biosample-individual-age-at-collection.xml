@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="Age of the proband at the time the biosample was taken." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>

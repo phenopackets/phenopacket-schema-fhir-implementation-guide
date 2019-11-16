@@ -1,0 +1,35 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/diagnostic-markers",
+    "version": "0.1.0",
+    "name": "DiagnosticMarkers",
+    "title": "Diagnostic Markers",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "Global Alliance for Genomics and Health",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ga4gh.org"
+                }
+            ]
+        }
+    ],
+    "description": "Codes to indicate clinically relevant bio markers.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/ncit.owl",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "NCIT:C36292"
+                    }
+                ]
+            }
+        ]
+    }
+}

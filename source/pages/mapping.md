@@ -12,7 +12,7 @@ This page describes the mapping between the original Phenopackets and this FHIR 
 | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
 | [Age](https://phenopackets-schema.readthedocs.io/en/latest/age.html)                             | Not needed because FHIR has its own [age](https://www.hl7.org/fhir/datatypes.html#Age) data type.             |
 | [AgeRange](https://phenopackets-schema.readthedocs.io/en/latest/age.html#agerange)               | Not needed because FHIR has its own [range](https://www.hl7.org/fhir/datatypes.html#Range) data type.         |
-| [Biosample](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html)                 | Corresponds to the [Biosample](StructureDefinition-Biosample.html) profile. See [notes](#notes).              |
+| [Biosample](https://phenopackets-schema.readthedocs.io/en/latest/biosample.html)                 | Corresponds to the [Biosample](StructureDefinition-Biosample.html) profile.               |
 | [Disease](https://phenopackets-schema.readthedocs.io/en/latest/disease.html)                     | Corresponds to the [Disease](StructureDefinition-Disease.html) profile.                                       |
 | [Evidence](https://phenopackets-schema.readthedocs.io/en/latest/evidence.html)                   | Corresponds to the [evidence](StructureDefinition-evidence.html) extension.                                   |
 | [ExternalReference](https://phenopackets-schema.readthedocs.io/en/latest/externalreference.html) | Corresponds to the [external reference](StructureDefinition-external-reference.html) extension.               |
@@ -34,28 +34,7 @@ This page describes the mapping between the original Phenopackets and this FHIR 
 | Phenopackets element                                                                       | Comment                                                                               |
 | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
 | [Phenopacket](https://phenopackets-schema.readthedocs.io/en/latest/phenopacket.html)       | Corresponds to the [Phenopackets](StructureDefinition-Phenopacket.html) profile.      |
-| [Family](https://phenopackets-schema.readthedocs.io/en/latest/family.html)                 | Corresponds to the [Family](StructureDefinition-Family) profile.                      |
-| [Cohort](https://phenopackets-schema.readthedocs.io/en/latest/cohort.html)                 | Corresponds to the [Cohort](StructureDefinition-Cohort) profile.                      |
-| [Interpretation](https://phenopackets-schema.readthedocs.io/en/latest/interpretation.html) | Corresponds to the [GenomicsReport](StructureDefinition-GenomicsReport.html) profile. |
-
-#### <a name="notes"></a>Notes
-
-Phenopackets does not include the notion of an _encounter_, which makes it hard to store longitudinal information. This implementation guide uses the [Encounter-Phenopackets](StructureDefinition-Encounter-Phenopackets.html) profile to represent encounters.
-
-In Phenopackets, a Biosample is meant to be "a unit of biological material from which the substrate molecules (e.g. genomic DNA, RNA, proteins) for molecular analyses (e.g. sequencing, array hybridisation, mass-spectrometry) are extracted." However, the model includes additional information that goes beyond this definition, including cancer-related attributes.
-
-In this IG, [mCODE](http://standardhealthrecord.org/guides/mcode/) is used as the basis to model cancer-related resources. The profiles cannot be used directly because mCODE depends on USCore and the scope of this IG is international. However, the cancer-related profiles developed in this IG are closely aligned to the corresponding profiles in mCODE.
-
-The following are the cancer-related profiles that were developed:
-
-* [Primary cancer condition](StructureDefinition-PrimaryCancerCondition.html)
-* [Secondary cancer condition](StructureDefinition-SecondaryCancerCondition.html)
-* [TNM clinical stage group](StructureDefinition-TNMClinicalStageGroup.html)
-* [TNM clinical primary tumor category](StructureDefinition-TNMClinicalPrimaryTumorCategory.html)
-* [TNM clinical regional nodes category](StructureDefinition-TNMClinicalRegionalNodesCategory.html)
-* [TNM clinical distant metastases category](StructureDefinition-TNMClinicalDistantMetastasesCategory.html)
-* [TNM pathologic stage group](StructureDefinition-TNMPathologicStageGroup.html)
-* [TNM pathologic primary tumor category](StructureDefinition-TNMPathologicPrimaryTumorCategory.html)
-* [TNM pathologic regional nodes category](StructureDefinition-TNMPathologicRegionalNodesCategory.html)
-* [TNM pathologic distant metastases category](StructureDefinition-TNMPathologicDistantMetastasesCategory.html)
+| [Family](https://phenopackets-schema.readthedocs.io/en/latest/family.html)                 | Corresponds to the [Family](StructureDefinition-Family.html) profile.                 |
+| [Cohort](https://phenopackets-schema.readthedocs.io/en/latest/cohort.html)                 | Corresponds to the [Cohort](StructureDefinition-Cohort.html) profile.                 |
+| [Interpretation](https://phenopackets-schema.readthedocs.io/en/latest/interpretation.html) | TODO                                                                                  |
 

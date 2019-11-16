@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/variants" />
+  <version value="0.1.0" />
+  <name value="Variants" />
+  <title value="Variants" />
+  <status value="draft" />
+  <publisher value="Global Alliance for Genomics and Health" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://ga4gh.org" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="This is a field for genetic variants and can be used for listing either candidate variants or diagnosed causative variants. If this biosample represents a cancer specimen, the variants might refer to somatic variants identified in the biosample. The resources using these fields should define what this represents in their context." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="DiagnosticReport" />
+    <expression value="Composition" />
+    <expression value="Specimen" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="This is a field for genetic variants and can be used for listing either candidate variants or diagnosed causative variants."/>
+      <definition value="This is a field for genetic variants and can be used for listing either candidate variants or diagnosed causative variants."/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/variants"/>
+    </element>
+    <element id="Extension.valueReference">
+      <path value="Extension.valueReference"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

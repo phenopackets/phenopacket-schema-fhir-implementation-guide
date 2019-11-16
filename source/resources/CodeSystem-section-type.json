@@ -71,6 +71,11 @@
       "code": "phenotypic-features",
       "display": "Phenotypic features",
       "definition": "Phenotypic features"
+    },
+    {
+      "code": "variants",
+      "display": "Variants",
+      "definition": "Variants"
     }
   ]
 }

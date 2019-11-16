@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="For resources where there may be more than one organism being studied it is advisable to indicate the taxonomic identifier of that organism, to its most specific level." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -27,7 +27,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="The taxonomy an individual."/>
+      <short value="The taxonomy of an individual."/>
       <definition value="The taxonomy of an individual."/>
       <min value="0"/>
       <max value="1"/>

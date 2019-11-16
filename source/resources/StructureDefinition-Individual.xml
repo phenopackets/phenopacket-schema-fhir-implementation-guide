@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="The subject of the Phenopacket is represented by an Individual element. This element intends to represent an individual human or other organism." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
@@ -40,6 +40,23 @@
         <ordered value="false"/>
         <rules value="open" />
       </slicing>
+    </element>
+    
+    <!-- The slice that contains the age -->
+    <element id="Patient.extension:age">
+      <path value="Patient.extension" />
+      <sliceName value="age" />
+      <sliceIsConstraining value="false" />
+      <label value="age" />
+      <short value="An age object describing the age of the individual at the time of collection of biospecimens or phenotypic observations reported in the current Phenopacket." />
+      <definition value="An age object describing the age of the individual at the time of collection of biospecimens or phenotypic observations reported in the current Phenopacket." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual-age" />
+      </type>
+      <mustSupport value="true"/>
     </element>
     
     <!-- The slice that contains the karyotipic sex extension -->

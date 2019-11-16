@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="A Phenopacket is an anonymous phenotypic description of an individual or biosample with potential genes of interest and/or diagnoses." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Composition" />
@@ -74,56 +74,6 @@
       </slicing>
     </element>
     
-    <!-- Encounters section -->
-    <element id="Composition.section:encounters">
-      <path value="Composition.section" />
-      <sliceName value="encounters" />
-      <sliceIsConstraining value="false" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Composition.section:encounters.title">
-      <path value="Composition.section.title" />
-      <short value="Encounters" />
-      <definition value="This is a list of interactions between the subject and a healthcare provider." />
-      <fixedString value="Encounters" />
-    </element>
-    <element id="Composition.section:encounters.code">
-      <path value="Composition.section.code" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
-          <version value="0.1.0" />
-          <code value="encounters" />
-          <display value="Encounters" />
-        </coding>
-      </fixedCodeableConcept>
-    </element>
-    <!-- Forbidden because the section should always be about the subject of the composition. -->
-    <element id="Composition.section:encounters.focus">
-      <path value="Composition.section.focus" />
-      <max value="0" />
-    </element>
-    <element id="Composition.section:encounters.entry">
-      <path value="Composition.section.entry" />
-      <short value="This is a list of interactions between the subject and a healthcare provider." />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Encounter-Phenopackets" />
-        <aggregation value="bundled" />
-      </type>
-    </element>
-    <!-- No need. Multiplicity is 0..1. -->
-    <element id="Composition.section:encounters.emptyReason">
-      <path value="Composition.section.emptyReason" />
-      <max value="0" />
-    </element>
-    <!-- No nested sections -->
-    <element id="Composition.section:encounters.section">
-      <path value="Composition.section.section" />
-      <max value="0" />
-    </element>
-    
     <!-- Phenotypic features section. -->
     <element id="Composition.section:phenotypicFeatures">
       <path value="Composition.section" />
@@ -173,56 +123,7 @@
       <path value="Composition.section.section" />
       <max value="0" />
     </element>
-    
-    <!-- Observations section. Should not include phenotypic features. -->
-    <element id="Composition.section:observations">
-      <path value="Composition.section" />
-      <sliceName value="observations" />
-      <sliceIsConstraining value="false" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Composition.section:observations.title">
-      <path value="Composition.section.title" />
-      <short value="Observations" />
-      <definition value="This is a list of observations related to the patient. Includes phenotypic features." />
-      <fixedString value="Observations" />
-    </element>
-    <element id="Composition.section:observations.code">
-      <path value="Composition.section.code" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
-          <version value="0.1.0" />
-          <code value="observations" />
-          <display value="Observations" />
-        </coding>
-      </fixedCodeableConcept>
-    </element>
-    <!-- Forbidden because the section should always be about the subject of the composition. -->
-    <element id="Composition.section:observations.focus">
-      <path value="Composition.section.focus" />
-      <max value="0" />
-    </element>
-    <element id="Composition.section:observations.entry">
-      <path value="Composition.section.entry" />
-      <short value="This is a list of observations related to the patient. Includes phenotypic features." />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
-        <aggregation value="bundled" />
-      </type>
-    </element>
-    <!-- No need. Multiplicity is 0..1. -->
-    <element id="Composition.section:observations.emptyReason">
-      <path value="Composition.section.emptyReason" />
-      <max value="0" />
-    </element>
-    <!-- No nested sections -->
-    <element id="Composition.section:observations.section">
-      <path value="Composition.section.section" />
-      <max value="0" />
-    </element>
+
     
     <!-- Biosamples section -->
     <element id="Composition.section:biosamples">
@@ -274,52 +175,52 @@
       <max value="0" />
     </element>
     
-    <!-- Genomics report section. Note that genes, variants and HTS files are contained in genomics reports. -->
-    <element id="Composition.section:genomicsReports">
+    <!-- Variants -->
+    <element id="Composition.section:variants">
       <path value="Composition.section" />
-      <sliceName value="genomicsReports" />
+      <sliceName value="variants" />
       <sliceIsConstraining value="false" />
       <min value="0" />
       <max value="1" />
     </element>
-    <element id="Composition.section:genomicsReports.title">
+    <element id="Composition.section:variants.title">
       <path value="Composition.section.title" />
-      <short value="Genomics Reports" />
-      <definition value="Genomics reports about the patient who is the subject of the Phenopacket." />
-      <fixedString value="Genomics Reports" />
+      <short value="Variants" />
+      <definition value="Variants identified in the proband." />
+      <fixedString value="Variants" />
     </element>
-    <element id="Composition.section:genomicsReports.code">
+    <element id="Composition.section:variants.code">
       <path value="Composition.section.code" />
       <fixedCodeableConcept>
         <coding>
           <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
           <version value="0.1.0" />
-          <code value="genomics-reports" />
-          <display value="Genomics Reports" />
+          <code value="variants" />
+          <display value="Variants" />
         </coding>
       </fixedCodeableConcept>
     </element>
     <!-- Forbidden because the section should always be about the subject of the composition. -->
-    <element id="Composition.section:genomicsReports.focus">
+    <element id="Composition.section:variants.focus">
       <path value="Composition.section.focus" />
       <max value="0" />
     </element>
-    <element id="Composition.section:genomicsReports.entry">
+    <element id="Composition.section:variants.entry">
       <path value="Composition.section.entry" />
-      <short value="Genomics reports about the patient who is the subject of the Phenopacket." />
+      <short value="Variants identified in the proband." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/GenomicsReport" />
+        <targetProfile value="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant" />
         <aggregation value="bundled" />
       </type>
     </element>
     <!-- No need. Multiplicity is 0..1. -->
-    <element id="Composition.section:genomicsReports.emptyReason">
+    <element id="Composition.section:variants.emptyReason">
       <path value="Composition.section.emptyReason" />
       <max value="0" />
     </element>
     <!-- No nested sections -->
-    <element id="Composition.section:genomicsReports.section">
+    <element id="Composition.section:variants.section">
       <path value="Composition.section.section" />
       <max value="0" />
     </element>
@@ -370,6 +271,56 @@
     </element>
     <!-- No nested sections -->
     <element id="Composition.section:diseases.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    
+    <!-- HTS files -->
+    <element id="Composition.section:htsFiles">
+      <path value="Composition.section" />
+      <sliceName value="htsFiles" />
+      <sliceIsConstraining value="false" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:htsFiles.title">
+      <path value="Composition.section.title" />
+      <short value="HTS Files" />
+      <definition value="VCF or other high-throughput sequencing files." />
+      <fixedString value="HTS Files" />
+    </element>
+    <element id="Composition.section:htsFiles.code">
+      <path value="Composition.section.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
+          <version value="0.1.0" />
+          <code value="hts-files" />
+          <display value="HTS Files" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <!-- Forbidden because the section should always be about the subject of the composition. -->
+    <element id="Composition.section:htsFiles.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:htsFiles.entry">
+      <path value="Composition.section.entry" />
+      <short value="VCF or other high-throughput sequencing files." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <!-- No need. Multiplicity is 0..1. -->
+    <element id="Composition.section:htsFiles.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <!-- No nested sections -->
+    <element id="Composition.section:htsFiles.section">
       <path value="Composition.section.section" />
       <max value="0" />
     </element>

@@ -1,0 +1,45 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/histological-diagnosis",
+    "version": "0.1.0",
+    "name": "HistologicalDiagnosis",
+    "title": "HistologicalDiagnosis",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "Global Alliance for Genomics and Health",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ga4gh.org"
+                }
+            ]
+        }
+    ],
+    "description": "Histological diagnosis codes from NCIT.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/ncit.owl",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "NCIT:C28101"
+                    }
+                ]
+            },
+            {
+              "system": "http://purl.obolibrary.org/obo/ncit.owl",
+              "filter": [
+                  {
+                      "property": "concept",
+                      "op": "descendent-of",
+                      "value": "NCIT:C2991"
+                  }
+              ]
+          }
+        ]
+    }
+}

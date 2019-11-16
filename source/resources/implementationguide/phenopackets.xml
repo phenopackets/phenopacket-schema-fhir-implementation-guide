@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="ga4gh.fhir.phenopackets-0.1.0"/>
-    <url value="http://ga4gh.org/fhir/phenopackets/ImplementationGuide/ga4gh.fhir.phenopackets-0.1.0"/>
+    <id value="ga4gh.fhir.phenopackets"/>
+    <url value="http://ga4gh.org/fhir/phenopackets/ImplementationGuide/ga4gh.fhir.phenopackets"/>
     <version value="0.1.0"/>
     <name value="Phenopackets"/>
     <title value="Phenopackets"/>
@@ -16,7 +16,7 @@
     </contact>
     <description value="An open standard for sharing disease and phenotype information will improve our ability to understand, diagnose, and treat both rare and common diseases. A PhenoPacket links detailed phenotype descriptions with disease, patient, and genetic information, enabling clinicians, biologists, and disease and drug researchers to build more complete models of disease. The standard is designed to encourage wide adoption and synergy between the people, organizations and systems that comprise the joint effort to address human disease and biological understanding."/>
     <packageId value="ga4gh.fhir.phenopackets"/>
-    <fhirVersion value="4.0.0"/>
+    <fhirVersion value="4.0.1"/>
     <definition>
     
         <!-- CODE SYSTEMS -->
@@ -54,14 +54,20 @@
         <!-- STRUCTURE DEFINITIONS -->
         <resource>
             <reference>
-                <reference value="StructureDefinition/anatomical-orientation"/>
-                <display value="Anatomical Orientation Extension"/>
+                <reference value="StructureDefinition/biosample-control"/>
+                <display value="Biosample Control Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/biosample-control"/>
-                <display value="Biosample Control Extension"/>
+                <reference value="StructureDefinition/biosample-diagnostic-markers"/>
+                <display value="Biosample Diagnostic Markers Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/biosample-histological-diagnosis"/>
+                <display value="Histological Diagnosis Extension"/>
             </reference>
         </resource>
         <resource>
@@ -72,26 +78,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/biosample-tumor-grade"/>
+                <display value="Biosample Tumor Grade Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/biosample-tumor-progression"/>
+                <display value="Biosample Tumor Progression Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Biosample"/>
                 <display value="Biosample Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CancerCondition"/>
-                <display value="Cancer Condition Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CancerStageGroup"/>
-                <display value="Cancer Stage Group Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/code"/>
-                <display value="Code Extension"/>
             </reference>
         </resource>
         <resource>
@@ -108,14 +108,14 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Disease"/>
-                <display value="Disease Profile"/>
+                <reference value="StructureDefinition/disease-tumor-stage"/>
+                <display value="Disease Tumor Stage Extension"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Encounter-Phenopackets"/>
-                <display value="Encounter-Phenopackets Profile"/>
+                <reference value="StructureDefinition/Disease"/>
+                <display value="Disease Profile"/>
             </reference>
         </resource>
         <resource>
@@ -134,18 +134,6 @@
             <reference>
                 <reference value="StructureDefinition/Family"/>
                 <display value="Family Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/GenomicsReport"/>
-                <display value="Genomics Report Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/histology-morphology-behavior"/>
-                <display value="Histology Morphology Behavior Extension"/>
             </reference>
         </resource>
         <resource>
@@ -192,36 +180,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/landmark-location"/>
-                <display value="Landmark Location Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/landmark-to-body-location-direction"/>
-                <display value="Landmark to Body Location Direction Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/landmark-to-body-location-distance"/>
-                <display value="Landmark to Body Location Distance Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/landmark-type"/>
-                <display value="Landmark Type Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/laterality"/>
-                <display value="Laterality Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/pedigree-node-affected-status"/>
                 <display value="Affected Status Extension"/>
             </reference>
@@ -259,7 +217,7 @@
         <resource>
             <reference>
                 <reference value="StructureDefinition/phenotypic-feature-onset"/>
-                <display value="Phenotypci Feature Onset Extension"/>
+                <display value="Phenotypic Feature Onset Extension"/>
             </reference>
         </resource>
         <resource>
@@ -276,100 +234,17 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/primary-cancer-condition"/>
-                <display value="Primary Cancer Condition Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PrimaryCancerCondition"/>
-                <display value="Primary Cancer Condition Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/relation-to-landmark"/>
-                <display value="Relation to Landmark Extension"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SecondaryCancerCondition"/>
-                <display value="Secondary Cancer Condition Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TNMClinicalDistantMetastasesCategory"/>
-                <display value="TNM Clinical Distant Metastases Category"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TNMClinicalPrimaryTumorCategory"/>
-                <display value="TNM Clinical Primary Tumor Category"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TNMClinicalRegionalNodesCategory"/>
-                <display value="TNM Clinical Regional Nodes Category"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TNMClinicalStageGroup"/>
-                <display value="TNM Clinical Stage Group Profile"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TNMPathologicDistantMetastasesCategory"/>
-                <display value="TNM Pathologic Distant Metastases Category"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TNMPathologicPrimaryTumorCategory"/>
-                <display value="TNM Pathologic Primary Tumor Category"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TNMPathologicRegionalNodesCategory"/>
-                <display value="TNM Pathologic Regional Nodes Category"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TNMPathologicStageGroup"/>
-                <display value="TNM Pathologic Stage Group"/>
+                <reference value="StructureDefinition/variants"/>
+                <display value="Variants Extension"/>
             </reference>
         </resource>
         
         <!-- VALUE SETS -->
+        
         <resource>
             <reference>
-                <reference value="ValueSet/anatomical-direction"/>
-                <display value="Anatomical Direction Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/anatomical-orientation"/>
-                <display value="Anatomical Orientation Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/cancer-body-location"/>
-                <display value="Cancer Body Location Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/cancer-staging-system"/>
-                <display value="Cancer Staging System Value Set"/>
+                <reference value="ValueSet/diagnostic-markers"/>
+                <display value="Diagnostic Markers Value Set"/>
             </reference>
         </resource>
         <resource>
@@ -380,8 +255,8 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/histology-morphology-behavior"/>
-                <display value="Histology Morphology Behavior Value Set"/>
+                <reference value="ValueSet/histological-diagnosis"/>
+                <display value="Histological Diagnosis Value Set"/>
             </reference>
         </resource>
         <resource>
@@ -394,12 +269,6 @@
             <reference>
                 <reference value="ValueSet/karyotypic-sex"/>
                 <display value="Karyotypic Sex Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/landmark-type"/>
-                <display value="Landmark Type Value Set"/>
             </reference>
         </resource>
         <resource>
@@ -440,50 +309,26 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/primary-or-uncertain-behavior-cancer-disorder"/>
-                <display value="Primary Or Uncertain Behavior Cancer Disorder Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/secondary-cancer-disorder"/>
-                <display value="Secondary Cancer Disorder Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/taxonomy"/>
                 <display value="Taxonomy Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/tnm-distant-metastases-category"/>
-                <display value="TNM Distant Metastases Category Value Set"/>
+                <reference value="ValueSet/tumor-grade"/>
+                <display value="Tumor Grade Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/tnm-primary-tumor-category"/>
-                <display value="TNM Primary Tumor Category Value Set"/>
+                <reference value="ValueSet/tumor-progression"/>
+                <display value="Tumor Progression Value Set"/>
             </reference>
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/tnm-regional-nodes-category"/>
-                <display value="TNM Regional Nodes Category Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/tnm-stage-group"/>
-                <display value="TNM Stage Group Value Set"/>
-            </reference>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/units-of-length"/>
-                <display value="Units of Length Value Set"/>
+                <reference value="ValueSet/tumor-stage"/>
+                <display value="Tumor Stage Value Set"/>
             </reference>
         </resource>
         <page>

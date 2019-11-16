@@ -14,13 +14,14 @@
     </telecom>
   </contact>
   <description value="List of high-throughput sequencing files generated as part of a genomic test." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
     <expression value="DiagnosticReport" />
     <expression value="Composition" />
+    <expression value="Specimen" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -50,7 +51,8 @@
       <path value="Extension.valueReference"/>
       <type>
         <code value="Reference"/>
-        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
+        <aggregation value="bundled" />
       </type>
     </element>
   </differential>

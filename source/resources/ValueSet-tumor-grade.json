@@ -1,0 +1,35 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/tumor-grade",
+    "version": "0.1.0",
+    "name": "TumorGrade",
+    "title": "Tumor Grade",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "Global Alliance for Genomics and Health",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ga4gh.org"
+                }
+            ]
+        }
+    ],
+    "description": "Codes to indicate the grade of a tumor.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/ncit.owl",
+                "filter": [
+                    {
+                        "property": "concept",
+                        "op": "descendent-of",
+                        "value": "NCIT:C28076"
+                    }
+                ]
+            }
+        ]
+    }
+}

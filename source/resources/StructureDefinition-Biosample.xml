@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="A unit of biological material from which the substrate molecules (e.g. genomic DNA, RNA, proteins) for molecular analyses (e.g. sequencing, array hybridisation, mass-spectrometry) are extracted." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Specimen" />
@@ -56,6 +56,108 @@
         <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/biosample-individual-age-at-collection" />
       </type>
       <mustSupport value="true" />
+    </element>
+    
+    <!-- The slice that contains the histological diagnosis -->
+    <element id="Specimen.extension:histologicalDiagnosis">
+      <path value="Specimen.extension" />
+      <sliceName value="histologicalDiagnosis" />
+      <sliceIsConstraining value="false" />
+      <label value="histologicalDiagnosis" />
+      <short value="The pathologist’s diagnosis." />
+      <definition value="The pathologist’s diagnosis." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/biosample-histological-diagnosis" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    
+    <!-- The slice that contains the tumor progression -->
+    <element id="Specimen.extension:tumorProgression">
+      <path value="Specimen.extension" />
+      <sliceName value="tumorProgression" />
+      <sliceIsConstraining value="false" />
+      <label value="tumorProgression" />
+      <short value="This field can be used to indicate if a specimen is from the primary tumor, a metastasis or a recurrence." />
+      <definition value="This field can be used to indicate if a specimen is from the primary tumor, a metastasis or a recurrence." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/biosample-tumor-progression" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    
+    <!-- The slice that contains the tumor grade -->
+    <element id="Specimen.extension:tumorGrade">
+      <path value="Specimen.extension" />
+      <sliceName value="tumorGrade" />
+      <sliceIsConstraining value="false" />
+      <label value="tumorGrade" />
+      <short value="List of terms representing the tumor grade." />
+      <definition value="List of terms representing the tumor grade." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/biosample-tumor-grade" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    
+    <!-- The slice that contains the diagnostic markers -->
+    <element id="Specimen.extension:diagnosticMarkers">
+      <path value="Specimen.extension" />
+      <sliceName value="diagnosticMarkers" />
+      <sliceIsConstraining value="false" />
+      <label value="diagnosticMarkers" />
+      <short value="Clinically relevant bio markers." />
+      <definition value="Clinically relevant bio markers." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/biosample-diagnostic-markers" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    
+    <!-- The slice that contains the reference to the HTS files -->
+    <element id="Specimen.extension:htsFiles">
+      <path value="Specimen.extension" />
+      <sliceName value="htsFiles" />
+      <sliceIsConstraining value="false" />
+      <label value="htsFiles" />
+      <short value="List of high-throughput sequencing files generated as part of a genomic test." />
+      <definition value="List of high-throughput sequencing files generated as part of a genomic test." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfiles" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    
+    <!-- The slice that contains the reference to the variants -->
+    <element id="Specimen.extension:variants">
+      <path value="Specimen.extension" />
+      <sliceName value="variants" />
+      <sliceIsConstraining value="false" />
+      <label value="variants" />
+      <short value="This is a field for genetic variants and can be used for listing either candidate variants or diagnosed causative variants." />
+      <definition value="This is a field for genetic variants and can be used for listing either candidate variants or diagnosed causative variants. " />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/variants" />
+      </type>
+      <mustSupport value="true"/>
     </element>
     
     <!-- The slice that contains the control flag -->

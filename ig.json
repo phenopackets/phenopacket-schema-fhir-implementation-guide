@@ -84,33 +84,34 @@
     "CodeSystem/section-type": {
       "base": "CodeSystem-section-type.html",
       "defns": "CodeSystem-section-type-definitions.html"
-    },"StructureDefinition/anatomical-orientation": {
-      "base": "StructureDefinition-anatomical-orientation.html",
-      "defns": "StructureDefinition-anatomical-orientation-definitions.html"
     },
     "StructureDefinition/biosample-control": {
       "base": "StructureDefinition-biosample-control.html",
       "defns": "StructureDefinition-biosample-control-definitions.html"
     },
+    "StructureDefinition/biosample-diagnostic-markers": {
+      "base": "StructureDefinition-biosample-diagnostic-markers.html",
+      "defns": "StructureDefinition-biosample-diagnostic-markers-definitions.html"
+    },
+    "StructureDefinition/biosample-histological-diagnosis": {
+      "base": "StructureDefinition-biosample-histological-diagnosis.html",
+      "defns": "StructureDefinition-biosample-histological-diagnosis-definitions.html"
+    },
     "StructureDefinition/biosample-individual-age-at-collection": {
       "base": "StructureDefinition-biosample-individual-age-at-collection.html",
       "defns": "StructureDefinition-biosample-individual-age-at-collection-definitions.html"
     },
+    "StructureDefinition/biosample-tumor-grade": {
+      "base": "StructureDefinition-biosample-tumor-grade.html",
+      "defns": "StructureDefinition-biosample-tumor-grade-definitions.html"
+    },
+    "StructureDefinition/biosample-tumor-progression": {
+      "base": "StructureDefinition-biosample-tumor-progression.html",
+      "defns": "StructureDefinition-biosample-tumor-progression-definitions.html"
+    },
     "StructureDefinition/Biosample": {
       "base": "StructureDefinition-Biosample.html",
       "defns": "StructureDefinition-Biosample-definitions.html"
-    },
-    "StructureDefinition/CancerCondition": {
-      "base": "StructureDefinition-CancerCondition.html",
-      "defns": "StructureDefinition-CancerCondition-definitions.html"
-    },
-    "StructureDefinition/CancerStageGroup": {
-      "base": "StructureDefinition-CancerStageGroup.html",
-      "defns": "StructureDefinition-CancerStageGroup-definitions.html"
-    },
-    "StructureDefinition/code": {
-      "base": "StructureDefinition-code.html",
-      "defns": "StructureDefinition-code-definitions.html"
     },
     "StructureDefinition/Cohort": {
       "base": "StructureDefinition-Cohort.html",
@@ -120,13 +121,13 @@
       "base": "StructureDefinition-disease-onset.html",
       "defns": "StructureDefinition-disease-onset-definitions.html"
     },
+    "StructureDefinition/disease-tumor-stage": {
+      "base": "StructureDefinition-disease-tumor-stage.html",
+      "defns": "StructureDefinition-disease-tumor-stage-definitions.html"
+    },
     "StructureDefinition/Disease": {
       "base": "StructureDefinition-Disease.html",
       "defns": "StructureDefinition-Disease-definitions.html"
-    },
-    "StructureDefinition/Encounter-Phenopackets": {
-      "base": "StructureDefinition-Encounter-Phenopackets.html",
-      "defns": "StructureDefinition-Encounter-Phenopackets-definitions.html"
     },
     "StructureDefinition/evidence": {
       "base": "StructureDefinition-evidence.html",
@@ -139,14 +140,6 @@
     "StructureDefinition/Family": {
       "base": "StructureDefinition-Family.html",
       "defns": "StructureDefinition-Family-definitions.html"
-    },
-    "StructureDefinition/GenomicsReport": {
-      "base": "StructureDefinition-GenomicsReport.html",
-      "defns": "StructureDefinition-GenomicsReport-definitions.html"
-    },
-    "StructureDefinition/histology-morphology-behavior": {
-      "base": "StructureDefinition-histology-morphology-behavior.html",
-      "defns": "StructureDefinition-histology-morphology-behavior-definitions.html"
     },
     "StructureDefinition/htsfile-genome-assembly": {
       "base": "StructureDefinition-htsfile-genome-assembly.html",
@@ -175,26 +168,6 @@
     "StructureDefinition/Individual": {
       "base": "StructureDefinition-Individual.html",
       "defns": "StructureDefinition-Individual-definitions.html"
-    },
-    "StructureDefinition/landmark-location": {
-      "base": "StructureDefinition-landmark-location.html",
-      "defns": "StructureDefinition-landmark-location-definitions.html"
-    },
-    "StructureDefinition/landmark-to-body-location-direction": {
-      "base": "StructureDefinition-landmark-to-body-location-direction.html",
-      "defns": "StructureDefinition-landmark-to-body-location-direction-definitions.html"
-    },
-    "StructureDefinition/landmark-to-body-location-distance": {
-      "base": "StructureDefinition-landmark-to-body-location-distance.html",
-      "defns": "StructureDefinition-landmark-to-body-location-distance-definitions.html"
-    },
-    "StructureDefinition/landmark-type": {
-      "base": "StructureDefinition-landmark-type.html",
-      "defns": "StructureDefinition-landmark-type-definitions.html"
-    },
-    "StructureDefinition/laterality": {
-      "base": "StructureDefinition-laterality.html",
-      "defns": "StructureDefinition-laterality-definitions.html"
     },
     "StructureDefinition/pedigree-node-affected-status": {
       "base": "StructureDefinition-pedigree-node-affected-status.html",
@@ -232,77 +205,21 @@
       "base": "StructureDefinition-PhenotypicFeature.html",
       "defns": "StructureDefinition-PhenotypicFeature-definitions.html"
     },
-    "StructureDefinition/primary-cancer-condition": {
-      "base": "StructureDefinition-primary-cancer-condition.html",
-      "defns": "StructureDefinition-primary-cancer-condition-definitions.html"
+    "StructureDefinition/variants": {
+      "base": "StructureDefinition-variants.html",
+      "defns": "StructureDefinition-variants-definitions.html"
     },
-    "StructureDefinition/PrimaryCancerCondition": {
-      "base": "StructureDefinition-PrimaryCancerCondition.html",
-      "defns": "StructureDefinition-PrimaryCancerCondition-definitions.html"
-    },
-    "StructureDefinition/relation-to-landmark": {
-      "base": "StructureDefinition-relation-to-landmark.html",
-      "defns": "StructureDefinition-relation-to-landmark-definitions.html"
-    },
-    "StructureDefinition/SecondaryCancerCondition": {
-      "base": "StructureDefinition-SecondaryCancerCondition.html",
-      "defns": "StructureDefinition-SecondaryCancerCondition-definitions.html"
-    },
-    "StructureDefinition/TNMClinicalDistantMetastasesCategory": {
-      "base": "StructureDefinition-TNMClinicalDistantMetastasesCategory.html",
-      "defns": "StructureDefinition-TNMClinicalDistantMetastasesCategory-definitions.html"
-    },
-    "StructureDefinition/TNMClinicalPrimaryTumorCategory": {
-      "base": "StructureDefinition-TNMClinicalPrimaryTumorCategory.html",
-      "defns": "StructureDefinition-TNMClinicalPrimaryTumorCategory-definitions.html"
-    },
-    "StructureDefinition/TNMClinicalRegionalNodesCategory": {
-      "base": "StructureDefinition-TNMClinicalRegionalNodesCategory.html",
-      "defns": "StructureDefinition-TNMClinicalRegionalNodesCategory-definitions.html"
-    },
-    "StructureDefinition/TNMClinicalStageGroup": {
-      "base": "StructureDefinition-TNMClinicalStageGroup.html",
-      "defns": "StructureDefinition-TNMClinicalStageGroup-definitions.html"
-    },
-    "StructureDefinition/TNMPathologicDistantMetastasesCategory": {
-      "base": "StructureDefinition-TNMPathologicDistantMetastasesCategory.html",
-      "defns": "StructureDefinition-TNMPathologicDistantMetastasesCategory-definitions.html"
-    },
-    "StructureDefinition/TNMPathologicPrimaryTumorCategory": {
-      "base": "StructureDefinition-TNMPathologicPrimaryTumorCategory.html",
-      "defns": "StructureDefinition-TNMPathologicPrimaryTumorCategory-definitions.html"
-    },
-    "StructureDefinition/TNMPathologicRegionalNodesCategory": {
-      "base": "StructureDefinition-TNMPathologicRegionalNodesCategory.html",
-      "defns": "StructureDefinition-TNMPathologicRegionalNodesCategory-definitions.html"
-    },
-    "StructureDefinition/TNMPathologicStageGroup": {
-      "base": "StructureDefinition-TNMPathologicStageGroup.html",
-      "defns": "StructureDefinition-TNMPathologicStageGroup-definitions.html"
-    },
-    "ValueSet/anatomical-direction": {
-      "base": "ValueSet-anatomical-direction.html",
-      "defns": "ValueSet-anatomical-direction-definitions.html"
-    },
-    "ValueSet/anatomical-orientation": {
-      "base": "ValueSet-anatomical-orientation.html",
-      "defns": "ValueSet-anatomical-orientation-definitions.html"
-    },
-    "ValueSet/cancer-body-location": {
-      "base": "ValueSet-cancer-body-location.html",
-      "defns": "ValueSet-cancer-body-location-definitions.html"
-    },
-    "ValueSet/cancer-staging-system": {
-      "base": "ValueSet-cancer-staging-system.html",
-      "defns": "ValueSet-cancer-staging-system-definitions.html"
+    "ValueSet/diagnostic-markers": {
+      "base": "ValueSet-diagnostic-markers.html",
+      "defns": "ValueSet-diagnostic-markers-definitions.html"
     },
     "ValueSet/evidence": {
       "base": "ValueSet-evidence.html",
       "defns": "ValueSet-evidence-definitions.html"
     },
-    "ValueSet/histology-morphology-behavior": {
-      "base": "ValueSet-histology-morphology-behavior.html",
-      "defns": "ValueSet-histology-morphology-behavior-definitions.html"
+    "ValueSet/histological-diagnosis": {
+      "base": "ValueSet-histological-diagnosis.html",
+      "defns": "ValueSet-histological-diagnosis-definitions.html"
     },
     "ValueSet/hts-format": {
       "base": "ValueSet-hts-format.html",
@@ -311,10 +228,6 @@
     "ValueSet/karyotypic-sex": {
       "base": "ValueSet-karyotypic-sex.html",
       "defns": "ValueSet-karyotypic-sex-definitions.html"
-    },
-    "ValueSet/landmark-type": {
-      "base": "ValueSet-landmark-type.html",
-      "defns": "ValueSet-landmark-type-definitions.html"
     },
     "ValueSet/onset": {
       "base": "ValueSet-onset.html",
@@ -340,39 +253,23 @@
       "base": "ValueSet-phenotypic-feature-type.html",
       "defns": "ValueSet-phenotypic-feature-type-definitions.html"
     },
-    "ValueSet/primary-or-uncertain-behavior-cancer-disorder": {
-      "base": "ValueSet-primary-or-uncertain-behavior-cancer-disorder.html",
-      "defns": "ValueSet-primary-or-uncertain-behavior-cancer-disorder-definitions.html"
-    },
-    "ValueSet/secondary-cancer-disorder": {
-      "base": "ValueSet-secondary-cancer-disorder.html",
-      "defns": "ValueSet-secondary-cancer-disorder-definitions.html"
-    },
     "ValueSet/taxonomy": {
       "base": "ValueSet-taxonomy.html",
       "defns": "ValueSet-taxonomy-definitions.html"
     },
-    "ValueSet/tnm-distant-metastases-category": {
-      "base": "ValueSet-tnm-distant-metastases-category.html",
-      "defns": "ValueSet-tnm-distant-metastases-category-definitions.html"
+    "ValueSet/tumor-grade": {
+      "base": "ValueSet-tumor-grade.html",
+      "defns": "ValueSet-tumor-grade-definitions.html"
     },
-    "ValueSet/tnm-primary-tumor-category": {
-      "base": "ValueSet-tnm-primary-tumor-category.html",
-      "defns": "ValueSet-tnm-primary-tumor-category-definitions.html"
+    "ValueSet/tumor-progression": {
+      "base": "ValueSet-tumor-progression.html",
+      "defns": "ValueSet-tumor-progression-definitions.html"
     },
-    "ValueSet/tnm-regional-nodes-category": {
-      "base": "ValueSet-tnm-regional-nodes-category.html",
-      "defns": "ValueSet-tnm-regional-nodes-category-definitions.html"
-    },
-    "ValueSet/tnm-stage-group": {
-      "base": "ValueSet-tnm-stage-group.html",
-      "defns": "ValueSet-tnm-stage-group-definitions.html"
-    },
-    "ValueSet/units-of-length": {
-      "base": "ValueSet-units-of-length.html",
-      "defns": "ValueSet-units-of-length-definitions.html"
+    "ValueSet/tumor-stage": {
+      "base": "ValueSet-tumor-stage.html",
+      "defns": "ValueSet-tumor-stage-definitions.html"
     }
   },
-  "version": "4.0.0",
+  "version": "4.0.1",
   "fixed-business-version": "0.1.0"
 }

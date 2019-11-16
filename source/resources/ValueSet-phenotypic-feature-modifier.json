@@ -17,7 +17,7 @@
             ]
         }
     ],
-    "description": "Clinical modifier terms from the Human Phenotype Ontology. TODO: include corresponding concepts from SNOMED CT.",
+    "description": "Clinical modifier codes from the Human Phenotype Ontology. TODO: include corresponding codes from SNOMED CT.",
     "compose": {
         "include": [
             {

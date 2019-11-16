@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="The chromosomal sex of an individual." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>

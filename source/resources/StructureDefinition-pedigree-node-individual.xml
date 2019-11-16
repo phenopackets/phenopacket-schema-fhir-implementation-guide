@@ -3,6 +3,7 @@
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node-individual" />
   <version value="0.1.0" />
   <name value="PedigreeNodeIndividual" />
+  <title value="Pedigree Node Individual" />
   <status value="draft" />
   <publisher value="Global Alliance for Genomics and Health" />
   <contact>
@@ -13,7 +14,7 @@
     </telecom>
   </contact>
   <description value="A reference to the individual referenced by this pedigree node." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>

@@ -14,16 +14,12 @@
     </telecom>
   </contact>
   <description value="This element encodes the evidence type using, for example the Evidence &amp; Conclusion Ontology (ECO)." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element"/>
-    <expression value="Observation"/>
-  </context>
-  <context>
-    <type value="extension"/>
-    <expression value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/evidence"/>
+    <expression value="Extension"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

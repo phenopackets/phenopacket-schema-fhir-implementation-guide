@@ -1,0 +1,42 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://ga4gh.org/fhir/phenopackets/ValueSet/tumor-progression",
+    "version": "0.1.0",
+    "name": "TumorProgression",
+    "title": "Tumor Progression",
+    "status": "draft",
+    "experimental": false,
+    "publisher": "Global Alliance for Genomics and Health",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ga4gh.org"
+                }
+            ]
+        }
+    ],
+    "description": "Codes to indicate if a specimen is from the primary tumor, a metastasis or a recurrence.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://purl.obolibrary.org/obo/ncit.owl",
+                "concept": [
+                    {
+                        "code": "NCIT:C8509",
+                        "display": "Primary Neoplasm"
+                    },
+                    {
+                        "code": "NCIT:C3261",
+                        "display": "Metastatic Neoplasm"
+                    },
+                    {
+                        "code": "NCIT:C4798",
+                        "display": "Recurrent Neoplasm"
+                    }
+                ]
+            }
+        ]
+    }
+}
