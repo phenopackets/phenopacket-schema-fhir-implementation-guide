@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfiles" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node" />
   <version value="0.1.0" />
-  <name value="HtsFiles" />
-  <title value="Hts Files" />
+  <name value="PedigreeNode" />
+  <title value="Pedigree Node" />
   <status value="draft" />
   <publisher value="Global Alliance for Genomics and Health" />
   <contact>
@@ -13,15 +13,12 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="List of high-throughput sequencing files generated as part of a genomic test." />
+  <description value="Describes the family relationships of each specimen along with their gender and phenotype." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="DiagnosticReport" />
-    <expression value="Composition" />
-    <expression value="Specimen" />
     <expression value="Group" />
   </context>
   <type value="Extension" />
@@ -30,10 +27,10 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="A list of references to HTS files."/>
-      <definition value="A list of references to HTS files."/>
+      <short value="Describes the family relationships of each specimen along with their gender and phenotype."/>
+      <definition value="Describes the family relationships of each specimen along with their gender and phenotype."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <mustSupport value="true" />
       <isModifier value="false" />
     </element>
@@ -46,13 +43,13 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfiles"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node"/>
     </element>
     <element id="Extension.valueReference">
       <path value="Extension.valueReference"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/PedigreeNode" />
         <aggregation value="bundled" />
       </type>
     </element>

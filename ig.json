@@ -26,7 +26,7 @@
      {
         "name" : "GenomicsReporting",
         "package" : "hl7.fhir.uv.genomics-reporting",
-        "version" : "current"
+        "version" : "1.0.0"
      }
    ],
   "defaults": {
@@ -72,6 +72,10 @@
     "CodeSystem/document-type": {
       "base": "CodeSystem-document-type.html",
       "defns": "CodeSystem-document-type-definitions.html"
+    },
+    "CodeSystem/family-member-type": {
+      "base": "CodeSystem-family-member-type.html",
+      "defns": "CodeSystem-family-member-type-definitions.html"
     },
     "CodeSystem/hts-format": {
       "base": "CodeSystem-hts-format.html",
@@ -137,6 +141,14 @@
       "base": "StructureDefinition-external-reference.html",
       "defns": "StructureDefinition-external-reference-definitions.html"
     },
+    "StructureDefinition/family-member-phenopacket": {
+      "base": "StructureDefinition-family-member-phenopacket.html",
+      "defns": "StructureDefinition-family-member-phenopacket-definitions.html"
+    },
+    "StructureDefinition/family-member-type": {
+      "base": "StructureDefinition-family-member-type.html",
+      "defns": "StructureDefinition-family-member-type-definitions.html"
+    },
     "StructureDefinition/Family": {
       "base": "StructureDefinition-Family.html",
       "defns": "StructureDefinition-Family-definitions.html"
@@ -181,6 +193,10 @@
       "base": "StructureDefinition-pedigree-node-individual.html",
       "defns": "StructureDefinition-pedigree-node-individual-definitions.html"
     },
+    "StructureDefinition/pedigree-node": {
+      "base": "StructureDefinition-pedigree-node.html",
+      "defns": "StructureDefinition-pedigree-node-definitions.html"
+    },
     "StructureDefinition/PedigreeNode": {
       "base": "StructureDefinition-PedigreeNode.html",
       "defns": "StructureDefinition-PedigreeNode-definitions.html"
@@ -216,6 +232,10 @@
     "ValueSet/evidence": {
       "base": "ValueSet-evidence.html",
       "defns": "ValueSet-evidence-definitions.html"
+    },
+    "ValueSet/family-member-type": {
+      "base": "ValueSet-family-member-type.html",
+      "defns": "ValueSet-family-member-type-definitions.html"
     },
     "ValueSet/histological-diagnosis": {
       "base": "ValueSet-histological-diagnosis.html",

@@ -28,11 +28,6 @@
       "definition": "Phenopacket"
     },
     {
-      "code": "family",
-      "display": "Family",
-      "definition": "Family"
-    },
-    {
       "code": "cohort",
       "display": "Cohort",
       "definition": "Cohort"

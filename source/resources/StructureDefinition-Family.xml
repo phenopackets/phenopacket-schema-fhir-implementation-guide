@@ -17,214 +17,130 @@
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
-  <type value="Composition" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <type value="Group" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Group" />
   <derivation value="constraint" />
   <differential>
     
     <!-- Missing nodes - required for differential. -->
-    <element id="Composition">
-      <path value="Composition" />
-    </element>
-    <element id="Composition.type">
-      <path value="Composition.type" />
-    </element>
-    <element id="Composition.type.coding">
-      <path value="Composition.type.coding" />
+    <element id="Group">
+      <path value="Group" />
     </element>
     
-    <!-- Fixed value for the composition type. -->
-    <element id="Composition.type.coding.system">
-      <path value="Composition.type.coding.system" />
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/CodeSystem/document-type" />
-    </element>
-    <element id="Composition.type.coding.code">
-      <path value="Composition.type.coding.code" />
-      <fixedCode value="family" />
+    <!--  A family is made of persons. -->
+    <element id="Group.type">
+      <path value="Group.type" />
+      <fixedCode value="person" />
     </element>
     
-    <!-- The subject will be the Phenopacket that represents the proband. -->
-    <element id="Composition.subject">
-      <path value="Composition.subject" />
-      <short value="The proband (index patient) in the family" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenopacket" />
-        <aggregation value="bundled" />
-      </type>
-      <mustSupport value="true" />
+    <!--  This is an actual group. -->
+    <element id="Group.actual">
+      <path value="Group.actual" />
+      <fixedBoolean value="true" />
     </element>
     
-    <!-- Fixed value for title. -->
-    <element id="Composition.title">
-      <path value="Composition.title" />
-      <fixedString value="Family" />
-    </element>
-    
-    <!-- Slice on sections. -->
-    <element id="Composition.section">
-      <path value="Composition.section" />
+    <!-- Slice Group.extension to include references to HTS files and pedigree -->
+    <element id="Group.extension">
+      <path value="Group.extension" />
+      <!-- Slice the extension element -->
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="url" />
         </discriminator>
-        <!-- We don't care what the order of the sections is -->
+        <!-- We don't care what the order of any extensions is -->
         <ordered value="false"/>
-        <!-- We don't want any additional content -->
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
     </element>
     
-    <!-- Relatives section -->
-    <element id="Composition.section:relatives">
-      <path value="Composition.section" />
-      <sliceName value="relatives" />
-      <sliceIsConstraining value="false" />
-      <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Composition.section:relatives.title">
-      <path value="Composition.section.title" />
-      <short value="Relatives" />
-      <definition value="List of Phenopackets for family members other than the proband." />
-      <fixedString value="Relatives" />
-    </element>
-    <element id="Composition.section:relatives.code">
-      <path value="Composition.section.code" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
-          <version value="0.1.0" />
-          <code value="relatives" />
-          <display value="Relatives" />
-        </coding>
-      </fixedCodeableConcept>
-    </element>
-    <!-- Forbidden because the section should always be about the subject of the composition. -->
-    <element id="Composition.section:relatives.focus">
-      <path value="Composition.section.focus" />
-      <max value="0" />
-    </element>
-    <element id="Composition.section:relatives.entry">
-      <path value="Composition.section.entry" />
-      <short value="List of Phenopackets for family members other than the proband." />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenopacket" />
-        <aggregation value="bundled" />
-      </type>
-    </element>
-    <!-- No need. Multiplicity is 0..1. -->
-    <element id="Composition.section:relatives.emptyReason">
-      <path value="Composition.section.emptyReason" />
-      <max value="0" />
-    </element>
-    <!-- No nested sections -->
-    <element id="Composition.section:relatives.section">
-      <path value="Composition.section.section" />
-      <max value="0" />
-    </element>
-    
-    <!-- Pedigree section. -->
-    <element id="Composition.section:pedigree">
-      <path value="Composition.section" />
-      <sliceName value="pedigree" />
-      <sliceIsConstraining value="false" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Composition.section:pedigree.title">
-      <path value="Composition.section.title" />
-      <short value="Pedigree" />
-      <definition value="Representation of the pedigree." />
-      <fixedString value="Pedigree" />
-    </element>
-    <element id="Composition.section:pedigree.code">
-      <path value="Composition.section.code" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
-          <version value="0.1.0" />
-          <code value="pedigree" />
-          <display value="Pedigree" />
-        </coding>
-      </fixedCodeableConcept>
-    </element>
-    <!-- Forbidden because the section should always be about the subject of the composition. -->
-    <element id="Composition.section:pedigree.focus">
-      <path value="Composition.section.focus" />
-      <max value="0" />
-    </element>
-    <element id="Composition.section:pedigree.entry">
-      <path value="Composition.section.entry" />
-      <short value="Representation of the pedigree" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/PedigreeNode" />
-        <aggregation value="bundled" />
-      </type>
-    </element>
-    <!-- No need. Multiplicity is 0..1. -->
-    <element id="Composition.section:pedigree.emptyReason">
-      <path value="Composition.section.emptyReason" />
-      <max value="0" />
-    </element>
-    <!-- No nested sections -->
-    <element id="Composition.section:pedigree.section">
-      <path value="Composition.section.section" />
-      <max value="0" />
-    </element>
-    
-    <!-- HTS files section -->
-    <element id="Composition.section:htsFiles">
-      <path value="Composition.section" />
+    <!-- The slice that contains the reference to the HTS files -->
+    <element id="Group.extension:htsFiles">
+      <path value="Group.extension" />
       <sliceName value="htsFiles" />
       <sliceIsConstraining value="false" />
+      <label value="htsFiles" />
+      <short value="List of high-throughput sequencing files generated as part of a genomic test." />
+      <definition value="List of high-throughput sequencing files generated as part of a genomic test." />
       <min value="0" />
-      <max value="1" />
-    </element>
-    <element id="Composition.section:htsFiles.title">
-      <path value="Composition.section.title" />
-      <short value="HTS Files" />
-      <definition value="List of high-throughput sequencing files." />
-      <fixedString value="HTS Files" />
-    </element>
-    <element id="Composition.section:htsFiles.code">
-      <path value="Composition.section.code" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://ga4gh.org/fhir/phenopackets/CodeSystem/section-type" />
-          <version value="0.1.0" />
-          <code value="hts-files" />
-          <display value="HTS files" />
-        </coding>
-      </fixedCodeableConcept>
-    </element>
-    <!-- Forbidden because the section should always be about the subject of the composition. -->
-    <element id="Composition.section:htsFiles.focus">
-      <path value="Composition.section.focus" />
-      <max value="0" />
-    </element>
-    <element id="Composition.section:htsFiles.entry">
-      <path value="Composition.section.entry" />
-      <short value="List of high-throughput sequencing files." />
+      <max value="*" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
-        <aggregation value="bundled" />
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfiles" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    
+    <!-- The slice that contains the reference to the pedigree -->
+    <element id="Group.extension:pedigreeNode">
+      <path value="Group.extension" />
+      <sliceName value="pedigreeNode" />
+      <sliceIsConstraining value="false" />
+      <label value="pedigreeNode" />
+      <short value="Describes the family relationships of each specimen along with their gender and phenotype." />
+      <definition value="Describes the family relationships of each specimen along with their gender and phenotype." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    
+    <element id="Group.member">
+      <path value="Group.member" />
+    </element>
+    
+    <!-- Slice Group.member.extension to include type and reference to Phenopacket -->
+    <element id="Group.member.extension">
+      <path value="Group.member.extension" />
+      <!-- Slice the extension element -->
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <!-- We don't care what the order of any extensions is -->
+        <ordered value="false"/>
+        <rules value="open" />
+      </slicing>
+    </element>
+    
+    <!-- TODO: Need constraint to ensure there is a single proband and multiple relatives-->
+    
+    <!-- The slice that contains the type of member -->
+    <element id="Group.member.extension:family-member-type">
+      <path value="Group.member.extension" />
+      <sliceName value="family-member-type" />
+      <sliceIsConstraining value="false" />
+      <label value="type" />
+      <short value="The type of member of this family." />
+      <definition value="The type of member of this family." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true"/>
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/family-member-type" />
       </type>
     </element>
-    <!-- No need. Multiplicity is 0..1. -->
-    <element id="Composition.section:htsFiles.emptyReason">
-      <path value="Composition.section.emptyReason" />
-      <max value="0" />
-    </element>
-    <!-- No nested sections -->
-    <element id="Composition.section:htsFiles.section">
-      <path value="Composition.section.section" />
-      <max value="0" />
+    
+    <!-- The slice that contains the reference to the phenopacket that represents this member -->
+    <element id="Group.member.extension:family-member-phenopacket">
+      <path value="Group.member.extension" />
+      <sliceName value="family-member-phenopacket" />
+      <sliceIsConstraining value="false" />
+      <label value="phenopacket" />
+      <short value="A reference to a phenopacket associated to this family member." />
+      <definition value="A reference to a phenopacket associated to this family member." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true"/>
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/family-member-phenopacket" />
+      </type>
     </element>
     
   </differential>

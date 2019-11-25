@@ -34,6 +34,12 @@
         </resource>
         <resource>
             <reference>
+                <reference value="CodeSystem/family-member-type"/>
+                <display value="Family Member Type Code System"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="CodeSystem/hts-format"/>
                 <display value="HTS Format Code System"/>
             </reference>
@@ -132,6 +138,18 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/family-member-phenopacket"/>
+                <display value="Family Member Phenopacket Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/family-member-type"/>
+                <display value="Family Member Type Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Family"/>
                 <display value="Family Profile"/>
             </reference>
@@ -198,6 +216,12 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/pedigree-node"/>
+                <display value="Pedigree Node Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/PedigreeNode"/>
                 <display value="Pedigree Node Profile"/>
             </reference>
@@ -251,6 +275,12 @@
             <reference>
                 <reference value="ValueSet/evidence"/>
                 <display value="Evidence Value Set"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/family-member-type"/>
+                <display value="Family Member Type Value Set"/>
             </reference>
         </resource>
         <resource>

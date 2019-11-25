@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfiles" />
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/family-member-type" />
   <version value="0.1.0" />
-  <name value="HtsFiles" />
-  <title value="Hts Files" />
+  <name value="FamilyMemberType" />
+  <title value="Family Member Type" />
   <status value="draft" />
   <publisher value="Global Alliance for Genomics and Health" />
   <contact>
@@ -13,16 +13,13 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="List of high-throughput sequencing files generated as part of a genomic test." />
+  <description value="The type of member of this family." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="DiagnosticReport" />
-    <expression value="Composition" />
-    <expression value="Specimen" />
-    <expression value="Group" />
+    <expression value="Group.member" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -30,10 +27,10 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="A list of references to HTS files."/>
-      <definition value="A list of references to HTS files."/>
+      <short value="The type of member of this family."/>
+      <definition value="The type of member of this family."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <mustSupport value="true" />
       <isModifier value="false" />
     </element>
@@ -46,15 +43,20 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfiles"/>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/family-member-type"/>
     </element>
-    <element id="Extension.valueReference">
-      <path value="Extension.valueReference"/>
+    <element id="Extension.valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept"/>
       <type>
-        <code value="Reference"/>
-        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/HtsFile" />
-        <aggregation value="bundled" />
+        <code value="CodeableConcept"/>
       </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Member type"/>
+        </extension>
+        <strength value="required"/>
+        <valueSet value="http://ga4gh.org/fhir/phenopackets/ValueSet/family-member-type"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
