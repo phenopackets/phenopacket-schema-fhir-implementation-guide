@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/individual-karyotypic-sex" />
   <version value="0.1.0" />
-  <name value="KaryotypicSex" />
-  <title value="Karyotypic Sex" />
+  <name value="IndividualKaryotypicSex" />
+  <title value="Individual Karyotypic Sex" />
   <status value="draft" />
   <publisher value="Global Alliance for Genomics and Health" />
   <contact>

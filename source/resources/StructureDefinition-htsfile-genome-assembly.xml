@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/htsfile-genome-assembly" />
   <version value="0.1.0" />
-  <name value="GenomeAssembly" />
-  <title value="Genome Assembly" />
+  <name value="HTSFileGenomeAssembly" />
+  <title value="HTS File Genome Assembly" />
   <status value="draft" />
   <publisher value="Global Alliance for Genomics and Health" />
   <contact>

@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node-family-identifier" />
   <version value="0.1.0" />
-  <name value="FamilyIdentifier" />
-  <title value="Family Identifier" />
+  <name value="PedigreeNodeFamilyIdentifier" />
+  <title value="Pedigree Node Family Identifier" />
   <status value="draft" />
   <publisher value="Global Alliance for Genomics and Health" />
   <contact>

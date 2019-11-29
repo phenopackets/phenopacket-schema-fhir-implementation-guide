@@ -2,7 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/pedigree-node-affected-status" />
   <version value="0.1.0" />
-  <name value="AffectedStatus" />
+  <name value="PedigreeNodeAffectedStatus" />
+  <title value="Pedigree Node Affected Status" />
   <status value="draft" />
   <publisher value="Global Alliance for Genomics and Health" />
   <contact>
