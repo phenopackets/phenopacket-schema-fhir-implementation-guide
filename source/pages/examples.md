@@ -29,37 +29,37 @@ The following steps will describe how to create a simple Phenopacket in Java and
 <dependency>
   <groupId>ca.uhn.hapi.fhir</groupId>
   <artifactId>hapi-fhir-base</artifactId>
-  <version>4.0.0</version>
+  <version>4.0.1</version>
 </dependency>
 
 <dependency>
   <groupId>ca.uhn.hapi.fhir</groupId>
   <artifactId>hapi-fhir-structures-r4</artifactId>
-  <version>4.0.0</version>
+  <version>4.0.1</version>
 </dependency>
 
 <dependency>
   <groupId>ca.uhn.hapi.fhir</groupId>
   <artifactId>hapi-fhir-validation</artifactId>
-  <version>4.0.0</version>
+  <version>4.0.1</version>
 </dependency>
 
 <dependency>
   <groupId>ca.uhn.hapi.fhir</groupId>
   <artifactId>hapi-fhir-validation-resources-r4</artifactId>
-  <version>4.0.0</version>
+  <version>4.0.1</version>
 </dependency>
 
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-schematron</artifactId>
-  <version>5.0.4</version>
+  <version>5.2.0</version>
 </dependency>
 
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-commons</artifactId>
-  <version>9.1.1</version>
+  <version>9.3.8</version>
 </dependency>
 ```
 Check the HAPI FHIR [downloads page](https://hapifhir.io/download.html) for up to date dependencies.

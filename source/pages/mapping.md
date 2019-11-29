@@ -4,7 +4,7 @@ layout: default
 active: mapping
 ---
 
-This page describes the mapping between the original Phenopackets and this FHIR implementation guide. The general approach followed was to look at the attributes in the FHIR resources that matched the attributes in the Phenopacket elements and to flag those as mandatory to support (_mustSupport = true_). This, combined with a profile-aware API generator, can be used to create an API that is simple to use and compliant with the profiles.
+This page describes the mapping between the elements in Phenopackets and the resources, profiles and extensions in the Phenopackets on FHIR implementation guide. The mapping was done by looking for the best matching FHIR resources and adding extensions to cover any gaps that were found.
 
 #### Building Blocks
 
@@ -36,5 +36,5 @@ This page describes the mapping between the original Phenopackets and this FHIR 
 | [Phenopacket](https://phenopackets-schema.readthedocs.io/en/latest/phenopacket.html)       | Corresponds to the [Phenopackets](StructureDefinition-Phenopacket.html) profile.      |
 | [Family](https://phenopackets-schema.readthedocs.io/en/latest/family.html)                 | Corresponds to the [Family](StructureDefinition-Family.html) profile.                 |
 | [Cohort](https://phenopackets-schema.readthedocs.io/en/latest/cohort.html)                 | Corresponds to the [Cohort](StructureDefinition-Cohort.html) profile.                 |
-| [Interpretation](https://phenopackets-schema.readthedocs.io/en/latest/interpretation.html) | TODO                                                                                  |
+| [Interpretation](https://phenopackets-schema.readthedocs.io/en/latest/interpretation.html) | Corresponds to the [Interpretation](StructureDefinition-Interpretation.html) profile. |
 

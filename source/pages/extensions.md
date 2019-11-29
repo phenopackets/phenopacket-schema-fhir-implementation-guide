@@ -53,7 +53,7 @@ active: profiles
 <td>This element encodes the evidence type using, for example the Evidence & Conclusion Ontology (ECO).</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-htsfile-genome-assembly.html">Genome Assembly</a></td>
+<td><a href="StructureDefinition-htsfile-genome-assembly.html">HTS File Genome Assembly</a></td>
 <td>The genome assembly the contents of this file was called against. We recommend using the Genome Reference Consortium nomenclature e.g. GRCh37, GRCh38.</td>
 </tr>
 <tr>
@@ -65,7 +65,7 @@ active: profiles
 <td>An age object describing the age of the individual at the time of collection of biospecimens or phenotypic observations reported in the current Phenopacket.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-individual-karyotypic-sex.html">Karyotypic Sex</a></td>
+<td><a href="StructureDefinition-individual-karyotypic-sex.html">Individual Karyotypic Sex</a></td>
 <td>The chromosomal sex of an individual.</td>
 </tr>
 <tr>
@@ -73,11 +73,11 @@ active: profiles
 <td>For resources where there may be more than one organism being studied it is advisable to indicate the taxonomic identifier of that organism, to its most specific level.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-pedigree-node-affected-status.html">null</a></td>
+<td><a href="StructureDefinition-pedigree-node-affected-status.html">Pedigree Node Affected Status</a></td>
 <td>Indicates if the individual has the affected phenotype of the proband.</td>
 </tr>
 <tr>
-<td><a href="StructureDefinition-pedigree-node-family-identifier.html">Family Identifier</a></td>
+<td><a href="StructureDefinition-pedigree-node-family-identifier.html">Pedigree Node Family Identifier</a></td>
 <td>The family identifier and the individual identifiers may be made up of letters and digits, and the combination of family and individual identifiers should uniquely identify each person represented in the PED file.</td>
 </tr>
 <tr>
