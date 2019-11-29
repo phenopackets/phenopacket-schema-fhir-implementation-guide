@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/interpretation-phenopacket" />
+  <version value="0.1.0" />
+  <name value="InterpretationPhenopacket" />
+  <title value="Interpretation Phenopacket" />
+  <status value="draft" />
+  <publisher value="Global Alliance for Genomics and Health" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://ga4gh.org" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="An extension to reference a Phenopacket,an anonymous phenotypic description of an individual or biosample with potential genes of interest and/or diagnoses." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="DiagnosticReport" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value=""/>
+      <definition value="An extension to reference a Phenopacket,an anonymous phenotypic description of an individual or biosample with potential genes of interest and/or diagnoses."/>
+      <min value="0"/>
+      <max value="1"/>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/interpretation-phenopacket"/>
+    </element>
+    <element id="Extension.valueReference">
+      <path value="Extension.valueReference"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Phenopacket" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

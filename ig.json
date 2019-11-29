@@ -181,6 +181,14 @@
       "base": "StructureDefinition-Individual.html",
       "defns": "StructureDefinition-Individual-definitions.html"
     },
+    "StructureDefinition/interpretation-phenopacket": {
+      "base": "StructureDefinition-interpretation-phenopacket.html",
+      "defns": "StructureDefinition-interpretation-phenopacket-definitions.html"
+    },
+    "StructureDefinition/Interpretation": {
+      "base": "StructureDefinition-Interpretation.html",
+      "defns": "StructureDefinition-Interpretation-definitions.html"
+    },
     "StructureDefinition/pedigree-node-affected-status": {
       "base": "StructureDefinition-pedigree-node-affected-status.html",
       "defns": "StructureDefinition-pedigree-node-affected-status-definitions.html"

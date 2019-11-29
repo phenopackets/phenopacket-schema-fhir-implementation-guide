@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Interpretation" />
+  <version value="0.1.0" />
+  <name value="Interpretation" />
+  <title value="Interpretation" />
+  <status value="draft" />
+  <publisher value="Global Alliance for Genomics and Health" />
+  <contact>
+    <telecom>
+      <system value="other" />
+      <value value="http://ga4gh.org" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="Represents the interpretation of a genomic analysis, such as the report from a diagnostic laboratory." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report" />
+  <derivation value="constraint" />
+  <differential>
+    
+    <!-- Root node - required for differential -->
+    <element id="DiagnosticReport">
+      <path value="DiagnosticReport" />
+    </element>
+    
+    <!-- Set up slicing -->
+    <element id="DiagnosticReport.extension">
+      <path value="DiagnosticReport.extension" />
+      <!-- Slice the extension element -->
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <!-- We don't care what the order of any extensions is -->
+        <ordered value="false"/>
+        <rules value="open" />
+      </slicing>
+    </element>
+    
+    <!-- The slice that contains the reference to a Phenopacket -->
+    <element id="DiagnosticReport.extension:phenopacket">
+      <path value="DiagnosticReport.extension" />
+      <sliceName value="phenopacket" />
+      <sliceIsConstraining value="false" />
+      <label value="phenopacket" />
+      <short value="This element refers to the Phenopacket element for whom the interpretation is being made." />
+      <definition value="This element refers to the Phenopacket element for whom the interpretation is being made." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/interpretation-phenopacket" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    
+    <!-- Constrain subject to be an Indivdual or a Family -->
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Individual" />
+        <targetProfile value="http://ga4gh.org/fhir/phenopackets/StructureDefinition/Family" />
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    
+    <!-- Must supports-->
+    <element id="DiagnosticReport.status">
+      <path value="DiagnosticReport.status"/>
+      <mustSupport value="true" />
+    </element>
+    
+    <element id="DiagnosticReport.result:overall">
+      <path value="DiagnosticReport.result"/>
+      <sliceName value="overall"/>
+      <mustSupport value="true" />
+    </element>
+    
+    <element id="DiagnosticReport.result:inh-dis-path">
+      <path value="DiagnosticReport.result"/>
+      <sliceName value="inh-dis-path"/>
+      <mustSupport value="true" />
+    </element>
+    
+    <element id="DiagnosticReport.result:variant">
+      <path value="DiagnosticReport.result"/>
+      <sliceName value="variant"/>
+      <mustSupport value="true" />
+    </element>
+    
+    <!-- Corresponds to genes in Phenopackets. -->
+    <element id="DiagnosticReport.result:region-studied">
+      <path value="DiagnosticReport.result"/>
+      <sliceName value="region-studied"/>
+      <mustSupport value="true" />
+    </element>
+
+
+  </differential>
+</StructureDefinition>

@@ -198,6 +198,18 @@
         </resource>
         <resource>
             <reference>
+                <reference value="StructureDefinition/interpretation-phenopacket"/>
+                <display value="Interpretation Phenopacket Extension"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Interpretation"/>
+                <display value="Interpretation Profile"/>
+            </reference>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/pedigree-node-affected-status"/>
                 <display value="Affected Status Extension"/>
             </reference>
