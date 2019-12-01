@@ -68,6 +68,7 @@ active: profiles
 <td><a href="StructureDefinition-PedigreeNode.html">Pedigree Node</a></td>
 <td>The Phenopackets Pedigree element represents a PED file, which describes the family relationships of each specimen along with their gender and phenotype. PED files are typically used by software for genetic linkage analysis. PED files have six mandatory columns, and additional optional columns (that are typically not used in the context of genomic analysis). FHIR already has resources and extensions that represent a pedigree. A pedigree node extends the FamilyMemberHistory-Genetic profile.</td>
 </tr>
+<tr>
 <td><a href="StructureDefinition-PhenotypicFeature.html">Phenotypic Feature</a></td>
 <td>This element is intended to be used to describe a phenotype that characterizes the subject of the Phenopacket. For medical use cases the subject will generally be a patient or a proband of a study, and the phenotypes will be abnormalities described by an ontology such as the Human Phenotype Ontology. The word phenotype is used with many different meanings including disease entity, but in this context we mean an individual phenotypic feature, observed as either present or absent, with possible onset, modifiers and frequency.</td>
 </tr>
