@@ -8,7 +8,7 @@ It is based on the [Phenopackets standard](https://phenopackets-schema.readthedo
 Documentation
 =============
 
-This project contains the source code for the implementation guide. The website generate from this project can be found [here](https://genomics.ontoserver.csiro.au/phenopackets/).
+This project contains the source code for the implementation guide. The website generated from this project can be found [here](https://aehrc.github.io/fhir-phenopackets-ig/).
 
 Building
 =================
