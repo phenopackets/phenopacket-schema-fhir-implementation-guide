@@ -1,1 +1,0 @@
-This element is a specialization of [Disease](StructureDefinition-Disease.html) used to represent secondary cancer conditions (metastasization of cancer from its original site). There is no corresponding element in the original Phenopackets.

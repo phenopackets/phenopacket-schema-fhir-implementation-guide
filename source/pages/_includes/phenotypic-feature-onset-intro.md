@@ -1,1 +1,0 @@
-This element can be used to describe the age at which a phenotypic feature was first noticed or diagnosed. For many medical use cases, either the Age sub-element or an ontology class (e.g., from the HPO Onset (HP:0003674) terms) will be used.

@@ -1,1 +1,0 @@
-This element is an ontology class that describes the severity of the condition e.g. subclasses of Severity (HP:0012824) or SNOMED:272141005-Severities.

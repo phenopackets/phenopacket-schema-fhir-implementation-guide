@@ -1,1 +1,0 @@
-The genome assembly the contents of an HTS file was called against, using the Genome Reference Consortium nomenclature, e.g. GRCh37, GRCh38.
