@@ -410,7 +410,7 @@ Description: "The Phenopackets Pedigree element represents a PED file, which des
     FamilyIdentifier 1..1 MS and 
     IndividualReference 0..1 MS
 * patient MS
-* sex[Sex] 1..1
+// * sex[Sex] 1..1 // Removing for now because there seems to be a problem in the parent definition
 
 Profile: PhenotypicFeature
 Parent: Observation
